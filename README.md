@@ -1,2 +1,10 @@
-# Proyecto-Banco
-Repositorio para el proyecto final de la asignatura de Desarrollo de Software III (IDS345) , sección 3. El proyecto consiste en el desarrollo de la infraestructura perteneciente a un Banco (CORE bancario, Capa de integración y Aplicación de Caja) soportan las principales funcionalidades de un InternetBanking
+# PROYECTO_FINAL_IDS345
+Repositorio para el proyecto final de la asignatura de Desarrollo de Software III (IDS345), sección 3.
+
+Integrantes del eequipo
+* Rolbik Urbaez
+* Nelson Ureña
+* Cristofers Valdez
+* Huan Hao Wu 
+* Jin Cheng Wu
+* Natanael Zorrilla
