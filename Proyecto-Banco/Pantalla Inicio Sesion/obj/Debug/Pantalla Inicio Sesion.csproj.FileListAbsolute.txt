@@ -1,0 +1,11 @@
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\bin\Debug\Pantalla Inicio Sesion.exe.config
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\bin\Debug\Pantalla Inicio Sesion.exe
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\bin\Debug\Pantalla Inicio Sesion.pdb
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.csproj.AssemblyReference.cache
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla_Inicio_Sesion.InciarSesion.resources
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla_Inicio_Sesion.Properties.Resources.resources
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.csproj.GenerateResource.cache
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.exe
+C:\Users\Dell\Source\Repos\Proyecto-Banco\Proyecto-Banco\Pantalla Inicio Sesion\obj\Debug\Pantalla Inicio Sesion.pdb
