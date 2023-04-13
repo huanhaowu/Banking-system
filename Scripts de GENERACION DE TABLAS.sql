@@ -72,7 +72,8 @@ CREATE TABLE Cuenta (
 	Tipo_Cuenta_ID int NOT NULL,
 	Cliente_ID int NOT NULL,
 	Monto decimal(18,2) NOT NULL,
-	Fecha_Registro DATETIME NOT NULL
+	Fecha_Registro DATETIME NOT NULL,
+	Moneda_ID int NOT NULL
 );
 
 CREATE TABLE Moneda(

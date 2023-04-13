@@ -107,7 +107,8 @@ VALUES (
         @Numero_Cuenta,
         @Moneda_ID
     )
-END GO 
+END 
+GO 
 
 --Actualizar
 CREATE OR ALTER PROCEDURE sp_ActualizarCuenta (
@@ -125,14 +126,16 @@ SET
     Moneda_ID = @Moneda_ID
 WHERE
     Cuenta_ID = @Cuenta_ID
-END GO 
+END 
+GO 
 
 --ELIMINAR
 CREATE OR ALTER PROCEDURE sp_EliminarCuenta (@Cuenta_ID int) AS BEGIN
 DELETE FROM Cuenta
 WHERE
     Cuenta_ID = @Cuenta_ID
-END GO 
+END 
+GO 
 
 --READ por ID de cuenta
 CREATE OR ALTER PROCEDURE sp_ObtenerCuentaPorID (@Cuenta_ID int) AS BEGIN
@@ -140,14 +143,25 @@ SELECT *
 FROM Cuenta
 WHERE
     Cuenta_ID = @Cuenta_ID
-END GO 
+END 
+GO 
 
 --READ DE TODO
 CREATE OR ALTER PROCEDURE sp_ObtenerTodasLasCuentas AS BEGIN
 SELECT *
 FROM
     Cuenta
-END GO 
+END 
+GO 
+
+-- OBTENER MONTO DE UN CLIENTE
+CREATE OR ALTER PROCEDURE sp_ObtenerTodasLasCuentas(
+		@Cliente_ID int
+	) AS BEGIN
+SELECT Monto FROM Cuenta Cu
+INNER JOIN Cliente Cli ON Cli.Cliente_ID = Cu.Cliente_ID
+END 
+GO 
 
 --------------------------------------- CRUD Perfil ---------------------------------------
 --INSERTAR PERFIL
@@ -155,7 +169,8 @@ CREATE OR ALTER PROCEDURE sp_InsertarPerfil (@Descripcion nvarchar(50)) AS BEGIN
 INSERT INTO
     Perfil(Descripcion)
 VALUES (@Descripcion)
-END GO 
+END 
+GO 
 
 --ACTUALIZAR PERFIL
 CREATE OR ALTER PROCEDURE sp_ActualizarPerfil (
@@ -166,14 +181,16 @@ UPDATE Perfil
 SET Descripcion = @Descripcion
 WHERE
     Perfil_ID = @Perfil_ID
-END GO 
+END 
+GO 
 
 --ELIMINAR PERFIL
 CREATE OR ALTER PROCEDURE sp_EliminarPerfil (@Perfil_ID int) AS BEGIN
 DELETE FROM Perfil
 WHERE
     Perfil_ID = @Perfil_ID
-END GO 
+END 
+GO 
 
 --READ FILTRADO POR ID
 CREATE OR ALTER PROCEDURE sp_ObtenerPerfilPorID (@Perfil_ID int) AS BEGIN
@@ -181,13 +198,15 @@ SELECT *
 FROM Perfil
 WHERE
     Perfil_ID = @Perfil_ID
-END GO 
+END 
+GO 
 
 --READ DE TODO
 CREATE OR ALTER PROCEDURE sp_ObtenerTodosLosPerfiles AS BEGIN
 SELECT *
 FROM Perfil
-END GO
+END 
+GO
 
 
 --------------------------------------- CRUD Prestamo ---------------------------------------
