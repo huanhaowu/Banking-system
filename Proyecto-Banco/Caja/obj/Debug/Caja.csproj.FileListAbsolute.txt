@@ -1,0 +1,11 @@
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\bin\Debug\Caja.exe.config
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\bin\Debug\Caja.exe
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\bin\Debug\Caja.pdb
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Properties.Resources.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.csproj.GenerateResource.cache
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.csproj.CoreCompileInputs.cache
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.exe
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.pdb
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.InicioSesion.resources
