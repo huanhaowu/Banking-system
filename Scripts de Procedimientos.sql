@@ -316,7 +316,7 @@ END
 
 Go
 --DELETE
-CREATE OR ALTER PROCEDURE  EliminarTipoTransaccion
+CREATE OR ALTER PROCEDURE  sp_EliminarTipoTransaccion
     @TipoTransaccionID INT
 AS
 BEGIN
@@ -327,7 +327,7 @@ END
 
 Go
 --GetAll
-CREATE OR ALTER PROCEDURE  ObtenerTodosTipoTransaccion
+CREATE OR ALTER PROCEDURE  sp_ObtenerTodosTipoTransaccion
 AS
 BEGIN
     SELECT * FROM Tipo_Transaccion
@@ -345,7 +345,7 @@ END
 Go
 
 --Consultar movimientos de cuentas
-CREATE OR ALTER PROCEDURE  ConsultarMovimientosCuenta
+CREATE OR ALTER PROCEDURE sp_ConsultarMovimientosCuenta
     @CuentaID int
 AS
 BEGIN
