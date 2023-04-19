@@ -6,6 +6,10 @@ using System.Web.Services;
 
 namespace Core
 {
+
+    // CONNECTION STRING 
+    //conn = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Core\App_Data\DbCore.mdf;Integrated Security=True"
+
     /// <summary>
     /// Summary description for wsCore
     /// </summary>

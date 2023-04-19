@@ -120,16 +120,13 @@ VALUES ('Retiro');
 INSERT INTO Tipo_Transaccion (Descripcion)
 VALUES ('Pago');
 
-INSERT INTO Tipo_Transaccion (Descripcion)
-VALUES ('Compra');
-
 
 -- TRUNCATE TABLA Estado
 INSERT INTO Estado (Descripcion)
-VALUES ('Pendiente');
+VALUES ('Completado');
 
 INSERT INTO Estado (Descripcion)
-VALUES ('Completado');
+VALUES ('Pendiente');
 
 INSERT INTO Estado (Descripcion)
 VALUES ('Rechazado');
@@ -155,43 +152,72 @@ INSERT INTO Tipo_Cuenta (Descripcion)
 VALUES ('Cuenta Estudiantil');
 
 
--- TRUNCATE TABLE Cuenta_beneficiario;
-INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
-VALUES (1, 2, 'Cuenta de Ahorros de Juan');
+---- TRUNCATE TABLE Cuenta_beneficiario;
+--INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
+--VALUES (1, 2, 'Cuenta de Ahorros de Juan');
 
-INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
-VALUES (2, 1, 'Cuenta Corriente de María');
+--INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
+--VALUES (2, 1, 'Cuenta Corriente de María');
 
-INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
-VALUES (3, 4, 'Cuenta Estudiantil de Pedro');
+--INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
+--VALUES (3, 4, 'Cuenta Estudiantil de Pedro');
 
-INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
-VALUES (4, 3, 'Cuenta Nómina de Ana');
+--INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
+--VALUES (4, 3, 'Cuenta Nómina de Ana');
 
-INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
-VALUES (5, 2, 'Cuenta de Inversión de Juan');
+--INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
+--VALUES (5, 2, 'Cuenta de Inversión de Juan');
 
 
--- TRUNCATE TABLE Beneficiario
-INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) VALUES(123456, 'beneficiario1@banco.com', 1, 1);
-INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) VALUES(234567, 'beneficiario2@banco.com', 2, 2);
-INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) VALUES(345678, 'beneficiario3@banco.com', 3, 1);
-INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) VALUES(456789, 'beneficiario4@banco.com', 2, 3);
-INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) VALUES(567890, 'beneficiario5@banco.com', 1, 2);
+---- TRUNCATE TABLE Beneficiario
+--INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) 
+--VALUES(123456, 'beneficiario1@banco.com', 1, 1);
+
+--INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) 
+--VALUES(234567, 'beneficiario2@banco.com', 2, 2);
+
+--INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) 
+--VALUES(345678, 'beneficiario3@banco.com', 3, 1);
+
+--INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) 
+--VALUES(456789, 'beneficiario4@banco.com', 2, 3);
+
+--INSERT INTO Beneficiario(Beneficiario_Documento, Beneficiario_Correo, Banco_ID, Moneda_ID) 
+--VALUES(567890, 'beneficiario5@banco.com', 1, 2);
 
 
 -- TRUNCATE TABLE Banco;
-INSERT INTO Banco (Descripcion) VALUES ('Banco Santander');
-INSERT INTO Banco (Descripcion) VALUES ('Banco de Chile');
-INSERT INTO Banco (Descripcion) VALUES ('BBVA');
-INSERT INTO Banco (Descripcion) VALUES ('Banco Estado');
-INSERT INTO Banco (Descripcion) VALUES ('Banco Itaú');
-INSERT INTO Banco (Descripcion) VALUES ('Scotiabank');
+INSERT INTO Banco (Descripcion) 
+VALUES ('Banco Santander');
+
+INSERT INTO Banco (Descripcion) 
+VALUES ('Banco de Chile');
+
+INSERT INTO Banco (Descripcion) 
+VALUES ('BBVA');
+
+INSERT INTO Banco (Descripcion) 
+VALUES ('Banco Estado');
+
+INSERT INTO Banco (Descripcion) 
+VALUES ('Banco Itaú');
+
+INSERT INTO Banco (Descripcion) 
+VALUES ('Scotiabank');
 
 
 -- TRUNCATE TABLE Prestamo;
-INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) VALUES (1, 2.5, '2022-01-01', '2022-06-01', 5000.00, 5500.00, 1, 1, 1);
-INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) VALUES (2, 3.0, '2022-02-01', '2022-08-01', 7000.00, 7700.00, 2, 1, 2);
-INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) VALUES (3, 4.0, '2022-03-01', '2022-09-01', 10000.00, 11200.00, 3, 1, 1);
-INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) VALUES (4, 1.5, '2022-04-01', '2022-10-01', 2000.00, 2100.00, 4, 1, 2);
-INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) VALUES (5, 5.0, '2022-05-01', '2022-11-01', 15000.00, 17250.00, 5, 1, 1);
+INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) 
+VALUES (1, 2.5, '2022-01-01', '2022-06-01', 5000.00, 5500.00, 1, 1, 1);
+
+INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) 
+VALUES (2, 3.0, '2022-02-01', '2022-08-01', 7000.00, 7700.00, 2, 1, 2);
+
+INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) 
+VALUES (3, 4.0, '2022-03-01', '2022-09-01', 10000.00, 11200.00, 3, 1, 1);
+
+INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) 
+VALUES (4, 1.5, '2022-04-01', '2022-10-01', 2000.00, 2100.00, 4, 1, 2);
+
+INSERT INTO Prestamo (Cliente_ID, Tasa_Interes, Fecha_Ingreso, Fecha_Final, Monto_Prestamo, Monto_Pagar, Banco_ID, Estado_ID, Moneda_ID) 
+VALUES (5, 5.0, '2022-05-01', '2022-11-01', 15000.00, 17250.00, 5, 1, 1);

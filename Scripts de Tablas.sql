@@ -108,20 +108,6 @@ CREATE TABLE Tipo_Cuenta(
 	Descripcion NVARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Cuenta_beneficiario(
-	Cuenta_ID int NOT NULL,
-	Beneficiario int NOT NULL,
-	Beneficiario_alias NVARCHAR(50) NOT NULL
-);
-
-CREATE TABLE Beneficiario(
-	Beneficiario_ID int identity(1,1),
-	Beneficiario_Documento int NOT NULL,
-	Beneficiario_Correo NVARCHAR(50) NOT NULL,
-	Banco_ID int NOT NULL,
-	Moneda_ID int NOT NULL
-);
-
 CREATE TABLE Banco(
 	Banco_ID int identity(1,1),
 	Descripcion NVARCHAR(50) NOT NULL,

@@ -211,7 +211,7 @@ GO
 
 --------------------------------------- CRUD Prestamo ---------------------------------------
 --Insert
-CREATE OR ALTER PROCEDURE sp_InsertPrestamo
+CREATE PROCEDURE sp_InsertPrestamo
 (
     @ClienteID INT,
     @TasaInteres DECIMAL(18,2),
@@ -230,7 +230,7 @@ END
 Go
 
 --UPDATE
-CREATE OR ALTER PROCEDURE sp_UpdatePrestamo
+CREATE PROCEDURE sp_UpdatePrestamo
 (
     @PrestamoID INT,
     @ClienteID INT,
@@ -255,12 +255,10 @@ SET
     Estado_ID = @EstadoID,
     Moneda_ID = @MonedaID
 WHERE Prestamo_ID = @PrestamoID
-
 END
-
 Go
 --DELETE
-CREATE OR ALTER PROCEDURE sp_DeletePrestamo
+CREATE PROCEDURE sp_DeletePrestamo
 (
     @PrestamoID INT
 )
@@ -272,7 +270,7 @@ END
 
 Go
 --GetAll
-CREATE OR ALTER PROCEDURE sp_GetPrestamos
+CREATE PROCEDURE sp_GetPrestamos
 AS
 BEGIN
     SELECT * FROM Prestamo
@@ -280,7 +278,7 @@ END
 
 Go
 --GetByID
-CREATE OR ALTER PROCEDURE sp_GetPrestamoByID
+CREATE PROCEDURE sp_GetPrestamoByID
 (
     @PrestamoID INT
 )
@@ -360,11 +358,9 @@ BEGIN
             WHEN t.Cuenta_ID = @CuentaID THEN '-' + CONVERT(NVARCHAR(50), t.Transaccion_Monto)
             ELSE '+' + CONVERT(NVARCHAR(50), t.Transaccion_Monto)
         END AS Monto,
-        m.Descripcion AS Moneda,
-        ISNULL(cb.Beneficiario_alias, '') AS Beneficiario
+        m.Descripcion AS Moneda
     FROM Transaccion t
     INNER JOIN Tipo_Transaccion tt ON t.Tipo_Transaccion_ID = tt.Tipo_Transaccion_ID
     INNER JOIN Moneda m ON t.Moneda_ID = m.Moneda_ID
-    LEFT JOIN Cuenta_beneficiario cb ON t.Beneficiario_ID = cb.Cuenta_ID AND t.Cuenta_ID = cb.Cuenta_ID
     WHERE t.Cuenta_ID = @CuentaID OR t.Beneficiario_ID = @CuentaID
 END
