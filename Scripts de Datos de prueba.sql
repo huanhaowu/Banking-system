@@ -3,7 +3,7 @@
 
 -- * Rolbik Urbaez 1105721
 
--- * Nelson UreÒa 1105268
+-- * Nelson Ure√±a 1105268
 
 -- * Cristofers Valdez 1104369
 
@@ -26,34 +26,34 @@ INSERT INTO Roles (Descripcion) VALUES ('Cliente');
 -- TRUNCATE TABLE Perfil;
 INSERT INTO Perfil (Descripcion) VALUES ('Administrador de Sistemas');
 INSERT INTO Perfil (Descripcion) VALUES ('Desarrollador Web');
-INSERT INTO Perfil (Descripcion) VALUES ('Analista de Datos');
+INSERT INTO Perfil (Descripcion) VALUES ('Cajero');
 INSERT INTO Perfil (Descripcion) VALUES ('Gerente de Proyectos');
-INSERT INTO Perfil (Descripcion) VALUES ('DiseÒador Gr·fico');
+INSERT INTO Perfil (Descripcion) VALUES ('Dise√±ador Gr√°fico');
 
 
 -- TRUNCATE TABLE Usuario;
 INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (1, 'Juan', 'abc123');
-INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (2, 'MarÌa', 'qwerty');
-INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (1, 'Pedro', 'contraseÒa');
+INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (2, 'Mar√≠a', 'qwerty');
+INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (1, 'Pedro', 'contrase√±a');
 INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (3, 'Ana', 'clave123');
 INSERT INTO Usuario (Cliente_ID, Usuario_Nombre, Usuario_Clave) VALUES (2, 'Luis', 'qwerty123');
 
 
 -- TRUNCATE TABLE Cliente;
 INSERT INTO Cliente (Cliente_Nombre, Cliente_Apellido, Cliente_TipoDocumento, Cliente_Documento, Cliente_Correo, Cliente_Telefono, Cliente_Direccion, Cliente_FNacimiento, Cliente_FRegistro)
-VALUES ('Juan', 'PÈrez', 'DNI', '12345678', 'juanperez@mail.com', '555-1234', 'Calle Falsa 123', '1990-05-15', '2022-01-01');
+VALUES ('Juan', 'P√©rez', 'DNI', '12345678', 'juanperez@mail.com', '555-1234', 'Calle Falsa 123', '1990-05-15', '2022-01-01');
 
 INSERT INTO Cliente (Cliente_Nombre, Cliente_Apellido, Cliente_TipoDocumento, Cliente_Documento, Cliente_Correo, Cliente_Telefono, Cliente_Direccion, Cliente_FNacimiento, Cliente_FRegistro)
-VALUES ('MarÌa', 'Gonz·lez', 'DNI', '23456789', 'mariagonzalez@mail.com', '555-5678', 'Avenida Siempreviva 456', '1985-10-20', '2022-01-02');
+VALUES ('Mar√≠a', 'Gonz√°lez', 'DNI', '23456789', 'mariagonzalez@mail.com', '555-5678', 'Avenida Siempreviva 456', '1985-10-20', '2022-01-02');
 
 INSERT INTO Cliente (Cliente_Nombre, Cliente_Apellido, Cliente_TipoDocumento, Cliente_Documento, Cliente_Correo, Cliente_Telefono, Cliente_Direccion, Cliente_FNacimiento, Cliente_FRegistro)
-VALUES ('Pedro', 'GÛmez', 'CÈdula', 'A1234567', 'pedrogomez@mail.com', '555-9012', 'Carrera 7 # 10-10', '1995-03-30', '2022-01-03');
+VALUES ('Pedro', 'G√≥mez', 'C√©dula', 'A1234567', 'pedrogomez@mail.com', '555-9012', 'Carrera 7 # 10-10', '1995-03-30', '2022-01-03');
 
 INSERT INTO Cliente (Cliente_Nombre, Cliente_Apellido, Cliente_TipoDocumento, Cliente_Documento, Cliente_Correo, Cliente_Telefono, Cliente_Direccion, Cliente_FNacimiento, Cliente_FRegistro)
-VALUES ('Ana', 'MartÌnez', 'DNI', '34567890', 'anamartinez@mail.com', '555-3456', 'Calle 13 # 15-20', '1980-11-05', '2022-01-04');
+VALUES ('Ana', 'Mart√≠nez', 'DNI', '34567890', 'anamartinez@mail.com', '555-3456', 'Calle 13 # 15-20', '1980-11-05', '2022-01-04');
 
 INSERT INTO Cliente (Cliente_Nombre, Cliente_Apellido, Cliente_TipoDocumento, Cliente_Documento, Cliente_Correo, Cliente_Telefono, Cliente_Direccion, Cliente_FNacimiento, Cliente_FRegistro)
-VALUES ('Luis', 'Fern·ndez', 'Pasaporte', 'A1B2C3D4', 'luisfernandez@mail.com', '555-7890', 'Avenida Circunvalar 789', '1998-06-10', '2022-01-05');
+VALUES ('Luis', 'Fern√°ndez', 'Pasaporte', 'A1B2C3D4', 'luisfernandez@mail.com', '555-7890', 'Avenida Circunvalar 789', '1998-06-10', '2022-01-05');
 
 
 -- TRUNCATE TABLE Cuenta;
@@ -75,7 +75,7 @@ VALUES (56789, 2, 5, 12000.00, '2022-01-05');
 
 -- TRUNCATE TABLE Moneda
 INSERT INTO Moneda (Descripcion, Moneda_abrev)
-VALUES ('DÛlar Estadounidense', 'USD');
+VALUES ('D√≥lar Estadounidense', 'USD');
 
 INSERT INTO Moneda (Descripcion, Moneda_abrev)
 VALUES ('Euro', 'EUR');
@@ -84,10 +84,10 @@ INSERT INTO Moneda (Descripcion, Moneda_abrev)
 VALUES ('Libra Esterlina', 'GBP');
 
 INSERT INTO Moneda (Descripcion, Moneda_abrev)
-VALUES ('Yen JaponÈs', 'JPY');
+VALUES ('Yen Japon√©s', 'JPY');
 
 INSERT INTO Moneda (Descripcion, Moneda_abrev)
-VALUES ('DÛlar Canadiense', 'CAD');
+VALUES ('D√≥lar Canadiense', 'CAD');
 
 
 -- TRUNCATE TABLE Transaccion
@@ -112,7 +112,7 @@ INSERT INTO Tipo_Transaccion (Descripcion)
 VALUES ('Transferencia');
 
 INSERT INTO Tipo_Transaccion (Descripcion)
-VALUES ('DepÛsito');
+VALUES ('Dep√≥sito');
 
 INSERT INTO Tipo_Transaccion (Descripcion)
 VALUES ('Retiro');
@@ -143,10 +143,10 @@ INSERT INTO Tipo_Cuenta (Descripcion)
 VALUES ('Cuenta de Ahorros');
 
 INSERT INTO Tipo_Cuenta (Descripcion)
-VALUES ('Cuenta NÛmina');
+VALUES ('Cuenta N√≥mina');
 
 INSERT INTO Tipo_Cuenta (Descripcion)
-VALUES ('Cuenta de InversiÛn');
+VALUES ('Cuenta de Inversi√≥n');
 
 INSERT INTO Tipo_Cuenta (Descripcion)
 VALUES ('Cuenta Estudiantil');
@@ -157,16 +157,16 @@ VALUES ('Cuenta Estudiantil');
 --VALUES (1, 2, 'Cuenta de Ahorros de Juan');
 
 --INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
---VALUES (2, 1, 'Cuenta Corriente de MarÌa');
+--VALUES (2, 1, 'Cuenta Corriente de Mar√≠a');
 
 --INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
 --VALUES (3, 4, 'Cuenta Estudiantil de Pedro');
 
 --INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
---VALUES (4, 3, 'Cuenta NÛmina de Ana');
+--VALUES (4, 3, 'Cuenta N√≥mina de Ana');
 
 --INSERT INTO Cuenta_beneficiario (Cuenta_ID, Beneficiario, Beneficiario_alias)
---VALUES (5, 2, 'Cuenta de InversiÛn de Juan');
+--VALUES (5, 2, 'Cuenta de Inversi√≥n de Juan');
 
 
 ---- TRUNCATE TABLE Beneficiario
@@ -200,7 +200,7 @@ INSERT INTO Banco (Descripcion)
 VALUES ('Banco Estado');
 
 INSERT INTO Banco (Descripcion) 
-VALUES ('Banco Ita˙');
+VALUES ('Banco Ita√∫');
 
 INSERT INTO Banco (Descripcion) 
 VALUES ('Scotiabank');
