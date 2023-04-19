@@ -51,6 +51,7 @@ CREATE TABLE Usuario(
 	Usuario_Nombre NVARCHAR(50) NOT NULL,
 	Usuario_Clave NVARCHAR(50) NOT NULL,
 	Fecha_creacion DATETIME DEFAULT GETDATE(),
+	Perfil_ID int NOT NULL
 );
 
 CREATE TABLE Cliente(
