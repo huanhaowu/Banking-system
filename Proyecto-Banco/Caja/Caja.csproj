@@ -67,23 +67,11 @@
     <Compile Include="InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\Beneficiario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Beneficiario.Designer.cs">
-      <DependentUpon>Beneficiario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas\Cuenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Cuenta.Designer.cs">
       <DependentUpon>Cuenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\CuentaTransacciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\CuentaTransacciones.Designer.cs">
-      <DependentUpon>CuentaTransacciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Deposito.cs">
       <SubType>Form</SubType>
@@ -109,12 +97,6 @@
     <Compile Include="Pantallas\Prestamos.Designer.cs">
       <DependentUpon>Prestamos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\RegistroUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\RegistroUsuario.Designer.cs">
-      <DependentUpon>RegistroUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas\RetiroEfectivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,14 +108,8 @@
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\Beneficiario.resx">
-      <DependentUpon>Beneficiario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Cuenta.resx">
       <DependentUpon>Cuenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\CuentaTransacciones.resx">
-      <DependentUpon>CuentaTransacciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Deposito.resx">
       <DependentUpon>Deposito.cs</DependentUpon>
@@ -146,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Prestamos.resx">
       <DependentUpon>Prestamos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\RegistroUsuario.resx">
-      <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\RetiroEfectivo.resx">
       <DependentUpon>RetiroEfectivo.cs</DependentUpon>

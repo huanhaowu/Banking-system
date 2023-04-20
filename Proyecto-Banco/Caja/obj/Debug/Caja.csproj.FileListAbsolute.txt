@@ -9,3 +9,14 @@ C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proye
 C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.exe
 C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.pdb
 C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.InicioSesion.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\bin\Debug\DbCaja.mdf
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\bin\Debug\DbCaja_log.ldf
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.Beneficiario.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.Cuenta.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.CuentaTransacciones.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.Deposito.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.FormPrincipal.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.PagoPrestamos.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.Prestamos.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.RegistroUsuario.resources
+C:\Users\msi\OneDrive - INTEC\INTEC\Trimestre 7\Desarrollo de software III\Proyecto Final\Proyecto-Banco\Proyecto-Banco\Caja\obj\Debug\Caja.Pantallas.RetiroEfectivo.resources

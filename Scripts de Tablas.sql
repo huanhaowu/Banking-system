@@ -126,3 +126,5 @@ CREATE TABLE Prestamo(
 	Estado_ID int NOT NULL, 
 	Moneda_ID int NOT NULL
 );
+
+-- Este es un comentario de prueba
