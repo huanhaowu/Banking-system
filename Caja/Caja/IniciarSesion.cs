@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caja.Pantalla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Caja
         public IniciarSesion()
         {
             InitializeComponent();
+        }
+
+        private void bttIniciar_Click(object sender, EventArgs e)
+        {
+            Deposito deposito = new Deposito();
+            deposito.Show();
+            this.Hide();
+        }
+
+        private void IniciarSesion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

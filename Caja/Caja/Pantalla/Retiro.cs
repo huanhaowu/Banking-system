@@ -16,5 +16,31 @@ namespace Caja.Pantalla
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttConfirmarR1_Click(object sender, EventArgs e)
+        {
+            grupoRetiro1.Hide();
+            grupoRetiro1.Visible = false;
+            grupoRetiro2.Show();
+            grupoRetiro2.Visible = true;
+            bttCancelarR.Visible = true;
+            bttConfirmarR.Visible = true;
+            bttReciboR.Visible = true;
+        }
+
+        private void Retiro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
