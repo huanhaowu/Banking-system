@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
             this.bttMontoInicial = new System.Windows.Forms.Button();
             this.bttCuadre = new System.Windows.Forms.Button();
             this.bttReciboTransa = new System.Windows.Forms.Button();
@@ -195,6 +196,7 @@
             this.Controls.Add(this.bttCuadre);
             this.Controls.Add(this.bttMontoInicial);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Configuracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuracion";

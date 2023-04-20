@@ -62,8 +62,10 @@
             this.bttCancelarR = new System.Windows.Forms.Button();
             this.bttReciboR = new System.Windows.Forms.Button();
             this.bttConfirmarR = new System.Windows.Forms.Button();
+            this.grupoBoton = new System.Windows.Forms.GroupBox();
             this.grupoRetiro1.SuspendLayout();
             this.grupoRetiro2.SuspendLayout();
+            this.grupoBoton.SuspendLayout();
             this.SuspendLayout();
             // 
             // grupoRetiro1
@@ -443,7 +445,7 @@
             this.bttCancelarR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bttCancelarR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(137)))), ((int)(((byte)(115)))));
+            this.bttCancelarR.BackColor = System.Drawing.Color.Transparent;
             this.bttCancelarR.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttCancelarR.FlatAppearance.BorderSize = 0;
             this.bttCancelarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
@@ -451,20 +453,19 @@
             this.bttCancelarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttCancelarR.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttCancelarR.ForeColor = System.Drawing.Color.White;
-            this.bttCancelarR.Location = new System.Drawing.Point(591, 109);
+            this.bttCancelarR.Location = new System.Drawing.Point(245, 7);
             this.bttCancelarR.Name = "bttCancelarR";
-            this.bttCancelarR.Size = new System.Drawing.Size(103, 53);
+            this.bttCancelarR.Size = new System.Drawing.Size(108, 54);
             this.bttCancelarR.TabIndex = 15;
             this.bttCancelarR.Text = "CANCELAR";
             this.bttCancelarR.UseVisualStyleBackColor = false;
-            this.bttCancelarR.Visible = false;
             // 
             // bttReciboR
             // 
             this.bttReciboR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bttReciboR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(198)))), ((int)(((byte)(84)))));
+            this.bttReciboR.BackColor = System.Drawing.Color.Transparent;
             this.bttReciboR.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttReciboR.FlatAppearance.BorderSize = 0;
             this.bttReciboR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
@@ -472,20 +473,19 @@
             this.bttReciboR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReciboR.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReciboR.ForeColor = System.Drawing.Color.White;
-            this.bttReciboR.Location = new System.Drawing.Point(476, 109);
+            this.bttReciboR.Location = new System.Drawing.Point(122, 7);
             this.bttReciboR.Name = "bttReciboR";
-            this.bttReciboR.Size = new System.Drawing.Size(103, 53);
+            this.bttReciboR.Size = new System.Drawing.Size(109, 54);
             this.bttReciboR.TabIndex = 14;
             this.bttReciboR.Text = "RECIBO";
             this.bttReciboR.UseVisualStyleBackColor = false;
-            this.bttReciboR.Visible = false;
             // 
             // bttConfirmarR
             // 
             this.bttConfirmarR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bttConfirmarR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(222)))), ((int)(((byte)(81)))));
+            this.bttConfirmarR.BackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarR.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttConfirmarR.FlatAppearance.BorderSize = 0;
             this.bttConfirmarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
@@ -493,13 +493,28 @@
             this.bttConfirmarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfirmarR.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfirmarR.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarR.Location = new System.Drawing.Point(362, 109);
+            this.bttConfirmarR.Location = new System.Drawing.Point(0, 7);
             this.bttConfirmarR.Name = "bttConfirmarR";
-            this.bttConfirmarR.Size = new System.Drawing.Size(103, 53);
+            this.bttConfirmarR.Size = new System.Drawing.Size(108, 54);
             this.bttConfirmarR.TabIndex = 13;
             this.bttConfirmarR.Text = "CONFIRMAR";
             this.bttConfirmarR.UseVisualStyleBackColor = false;
-            this.bttConfirmarR.Visible = false;
+            this.bttConfirmarR.Click += new System.EventHandler(this.bttConfirmarR_Click);
+            // 
+            // grupoBoton
+            // 
+            this.grupoBoton.BackColor = System.Drawing.Color.Transparent;
+            this.grupoBoton.BackgroundImage = global::Caja.ResourceFondo.Botones;
+            this.grupoBoton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.grupoBoton.Controls.Add(this.bttCancelarR);
+            this.grupoBoton.Controls.Add(this.bttConfirmarR);
+            this.grupoBoton.Controls.Add(this.bttReciboR);
+            this.grupoBoton.Location = new System.Drawing.Point(342, 102);
+            this.grupoBoton.Name = "grupoBoton";
+            this.grupoBoton.Size = new System.Drawing.Size(353, 68);
+            this.grupoBoton.TabIndex = 17;
+            this.grupoBoton.TabStop = false;
+            this.grupoBoton.Visible = false;
             // 
             // Retiro
             // 
@@ -508,14 +523,12 @@
             this.BackgroundImage = global::Caja.ResourceFondo.Retiro_titulo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(720, 520);
-            this.Controls.Add(this.bttCancelarR);
-            this.Controls.Add(this.bttReciboR);
-            this.Controls.Add(this.bttConfirmarR);
             this.Controls.Add(this.grupoRetiro2);
             this.Controls.Add(this.bttConfiguracion2);
             this.Controls.Add(this.bttPrestamos2);
             this.Controls.Add(this.bttDepositar2);
             this.Controls.Add(this.grupoRetiro1);
+            this.Controls.Add(this.grupoBoton);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Retiro";
@@ -526,6 +539,7 @@
             this.grupoRetiro1.PerformLayout();
             this.grupoRetiro2.ResumeLayout(false);
             this.grupoRetiro2.PerformLayout();
+            this.grupoBoton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -565,5 +579,6 @@
         private System.Windows.Forms.TextBox txt200;
         private System.Windows.Forms.TextBox txt100;
         private System.Windows.Forms.TextBox txt50;
+        private System.Windows.Forms.GroupBox grupoBoton;
     }
 }

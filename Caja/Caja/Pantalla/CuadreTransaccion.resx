@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="banco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\banco.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="circle_xmark_solid__1__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\circle-xmark-solid (1) 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Comboboxs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Comboboxs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Group 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Group 20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Group 25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Log_In__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Log In (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Main_Hub___Configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main Hub - Configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Main_Hub___Deposito__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main Hub - Deposito (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Main_Hub___Prestamos__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main Hub - Prestamos (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PrestamosPersonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\PrestamosPersonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Prrestamos_ComboBoxs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Prrestamos ComboBoxs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Retiro_titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Retiro titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

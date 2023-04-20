@@ -117,8 +117,14 @@
     <EmbeddedResource Include="Pantalla\Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla\CuadreTransaccion.resx">
+      <DependentUpon>CuadreTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantalla\Deposito.resx">
       <DependentUpon>Deposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla\MontoInicial.resx">
+      <DependentUpon>MontoInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantalla\Prestamos.resx">
       <DependentUpon>Prestamos.cs</DependentUpon>
@@ -161,6 +167,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DbCaja.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\circle-xmark-solid %281%29 1.png" />
+    <None Include="Resources\Group 15.png" />
+    <None Include="Resources\Group 25.png" />
+    <None Include="Resources\Botones.png" />
+    <None Include="Resources\Botonos.png" />
+    <None Include="Resources\banco.ico" />
     <None Include="Resources\Prrestamos ComboBoxs.png" />
     <None Include="Resources\Main Hub - Prestamos %281%29.png" />
     <None Include="Resources\Main Hub - Configuracion.png" />

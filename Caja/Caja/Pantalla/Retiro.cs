@@ -33,9 +33,7 @@ namespace Caja.Pantalla
             grupoRetiro1.Visible = false;
             grupoRetiro2.Show();
             grupoRetiro2.Visible = true;
-            bttCancelarR.Visible = true;
-            bttConfirmarR.Visible = true;
-            bttReciboR.Visible = true;
+            grupoBoton.Visible = true;
         }
 
         private void Retiro_Load(object sender, EventArgs e)
@@ -62,6 +60,11 @@ namespace Caja.Pantalla
             Configuracion configuracion2 = new Configuracion();
             configuracion2.Show();
             this.Hide();
+        }
+
+        private void bttConfirmarR_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

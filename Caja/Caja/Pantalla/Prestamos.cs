@@ -41,13 +41,6 @@ namespace Caja.Pantalla
         private void bttConfirmarP1_Click(object sender, EventArgs e)
         {
             grupoPrestamos1.Hide();
-            grupoPrestamos2.Show();
-            grupoPrestamos2.Visible = true;
-        }
-
-        private void bttPagar1_Click(object sender, EventArgs e)
-        {
-            grupoPrestamos2.Hide(); 
             grupoPrestamos3.Show();
             grupoPrestamos3.Visible = true;
         }
