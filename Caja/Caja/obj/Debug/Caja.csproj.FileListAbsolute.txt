@@ -15,3 +15,4 @@ C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Deposito.resources
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro.resources
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Configuracion.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources

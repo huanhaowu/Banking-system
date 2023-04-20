@@ -139,7 +139,7 @@
             this.bttConfirmarD.BackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarD.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttConfirmarD.FlatAppearance.BorderSize = 0;
-            this.bttConfirmarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(222)))), ((int)(((byte)(81)))));
+            this.bttConfirmarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfirmarD.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,7 +159,7 @@
             this.bttReciboD.BackColor = System.Drawing.Color.Transparent;
             this.bttReciboD.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttReciboD.FlatAppearance.BorderSize = 0;
-            this.bttReciboD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(198)))), ((int)(((byte)(84)))));
+            this.bttReciboD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReciboD.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,7 +179,7 @@
             this.bttCancelarD.BackColor = System.Drawing.Color.Transparent;
             this.bttCancelarD.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bttCancelarD.FlatAppearance.BorderSize = 0;
-            this.bttCancelarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(137)))), ((int)(((byte)(115)))));
+            this.bttCancelarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttCancelarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCancelarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttCancelarD.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,7 +193,7 @@
             // 
             // Deposito
             // 
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Caja.ResourceFondo.Main_Hub___Deposito__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(720, 520);
             this.Controls.Add(this.bttCancelarD);

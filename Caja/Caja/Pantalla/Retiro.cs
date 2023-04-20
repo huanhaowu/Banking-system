@@ -42,5 +42,26 @@ namespace Caja.Pantalla
         {
 
         }
+
+        private void bttDepositar2_Click(object sender, EventArgs e)
+        {
+            Deposito deposito2 = new Deposito();
+            deposito2.Show();
+            this.Hide();
+        }
+
+        private void bttPrestamos2_Click(object sender, EventArgs e)
+        {
+            Prestamos prestamos2 = new Prestamos();
+            prestamos2.Show();
+            this.Hide();
+        }
+
+        private void bttConfiguracion2_Click(object sender, EventArgs e)
+        {
+            Configuracion configuracion2 = new Configuracion();
+            configuracion2.Show();
+            this.Hide();
+        }
     }
 }

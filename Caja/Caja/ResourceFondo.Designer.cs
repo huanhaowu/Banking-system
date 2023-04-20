@@ -113,9 +113,9 @@ namespace Caja {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Main_Hub___Prestamos {
+        public static System.Drawing.Bitmap Main_Hub___Prestamos__1_ {
             get {
-                object obj = ResourceManager.GetObject("Main_Hub___Prestamos", resourceCulture);
+                object obj = ResourceManager.GetObject("Main_Hub___Prestamos__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +126,16 @@ namespace Caja {
         public static System.Drawing.Bitmap PrestamosPersonal {
             get {
                 object obj = ResourceManager.GetObject("PrestamosPersonal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Prrestamos_ComboBoxs {
+            get {
+                object obj = ResourceManager.GetObject("Prrestamos_ComboBoxs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

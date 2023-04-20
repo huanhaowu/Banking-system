@@ -133,11 +133,14 @@
   <data name="Main_Hub___Deposito__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Main Hub - Deposito (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Main_Hub___Prestamos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main Hub - Prestamos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Main_Hub___Prestamos__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Main Hub - Prestamos (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PrestamosPersonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\PrestamosPersonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prrestamos_ComboBoxs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Prrestamos ComboBoxs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Retiro_titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Retiro titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

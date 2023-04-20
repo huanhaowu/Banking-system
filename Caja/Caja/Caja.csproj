@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,11 +74,23 @@
     <Compile Include="Pantalla\Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantalla\CuadreTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla\CuadreTransaccion.Designer.cs">
+      <DependentUpon>CuadreTransaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantalla\Deposito.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantalla\Deposito.Designer.cs">
       <DependentUpon>Deposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla\MontoInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla\MontoInicial.Designer.cs">
+      <DependentUpon>MontoInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantalla\Prestamos.cs">
       <SubType>Form</SubType>
@@ -148,6 +161,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DbCaja.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Prrestamos ComboBoxs.png" />
+    <None Include="Resources\Main Hub - Prestamos %281%29.png" />
     <None Include="Resources\Main Hub - Configuracion.png" />
     <None Include="Resources\PrestamosPersonal.png" />
     <None Include="Resources\Main Hub - Prestamos.png" />
