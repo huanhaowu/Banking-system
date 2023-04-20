@@ -2,8 +2,9 @@
 <xs:schema id="dsCore" targetNamespace="http://tempuri.org/dsCore.xsd" xmlns:mstns="http://tempuri.org/dsCore.xsd" xmlns="http://tempuri.org/dsCore.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="DbCoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbCoreConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.DbCoreConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="DbCoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbCoreConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.DbCoreConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
@@ -56,7 +57,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ConsultarMovimientosCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ConsultarMovimientosCuenta" Modifier="Public" Name="sp_ConsultarMovimientosCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="sp_ConsultarMovimientosCuenta">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ConsultarMovimientosCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ConsultarMovimientosCuenta" Modifier="Public" Name="sp_ConsultarMovimientosCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="sp_ConsultarMovimientosCuenta">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ConsultarMovimientosCuenta</CommandText>
@@ -67,7 +68,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_EliminarCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_EliminarCuenta" Modifier="Public" Name="sp_EliminarCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="sp_EliminarCuenta">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_EliminarCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_EliminarCuenta" Modifier="Public" Name="sp_EliminarCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="sp_EliminarCuenta">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_EliminarCuenta</CommandText>
@@ -78,7 +79,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_InsertarCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_InsertarCuenta" Modifier="Public" Name="sp_InsertarCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="sp_InsertarCuenta">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_InsertarCuenta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_InsertarCuenta" Modifier="Public" Name="sp_InsertarCuenta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_InsertarCuenta">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_InsertarCuenta</CommandText>
@@ -104,7 +105,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodasLasCuentas" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodasLasCuentas" Modifier="Public" Name="sp_ObtenerTodasLasCuentas" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_ObtenerTodasLasCuentas">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodasLasCuentas" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodasLasCuentas" Modifier="Public" Name="sp_ObtenerTodasLasCuentas" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="sp_ObtenerTodasLasCuentas">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ObtenerTodasLasCuentas</CommandText>
@@ -175,7 +176,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerPerfilPorID" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerPerfilPorID" Modifier="Public" Name="sp_ObtenerPerfilPorID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="sp_ObtenerPerfilPorID">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerPerfilPorID" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerPerfilPorID" Modifier="Public" Name="sp_ObtenerPerfilPorID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_ObtenerPerfilPorID">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ObtenerPerfilPorID</CommandText>
@@ -186,7 +187,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodosLosPerfiles" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodosLosPerfiles" Modifier="Public" Name="sp_ObtenerTodosLosPerfiles" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_ObtenerTodosLosPerfiles">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodosLosPerfiles" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodosLosPerfiles" Modifier="Public" Name="sp_ObtenerTodosLosPerfiles" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="sp_ObtenerTodosLosPerfiles">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ObtenerTodosLosPerfiles</CommandText>
@@ -286,7 +287,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerClientePorID" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerClientePorID" Modifier="Public" Name="sp_ObtenerClientePorID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="sp_ObtenerClientePorID">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerClientePorID" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerClientePorID" Modifier="Public" Name="sp_ObtenerClientePorID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_ObtenerClientePorID">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ObtenerClientePorID</CommandText>
@@ -297,7 +298,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodosLosClientes" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodosLosClientes" Modifier="Public" Name="sp_ObtenerTodosLosClientes" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="sp_ObtenerTodosLosClientes">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.sp_ObtenerTodosLosClientes" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_ObtenerTodosLosClientes" Modifier="Public" Name="sp_ObtenerTodosLosClientes" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="sp_ObtenerTodosLosClientes">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.sp_ObtenerTodosLosClientes</CommandText>
@@ -593,7 +594,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.VerificarCredencialesCaja" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="VerificarCredencialesCaja" Modifier="Public" Name="VerificarCredencialesCaja" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="VerificarCredencialesCaja">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.VerificarCredencialesCaja" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="VerificarCredencialesCaja" Modifier="Public" Name="VerificarCredencialesCaja" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="VerificarCredencialesCaja">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.VerificarCredencialesCaja</CommandText>
@@ -605,7 +606,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.VerificarCredencialesCore" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="VerificarCredencialesCore" Modifier="Public" Name="VerificarCredencialesCore" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="VerificarCredencialesCore">
+              <DbSource ConnectionRef="DbCoreConnectionString (Web.config)" DbObjectName="[C:\USERS\000\SOURCE\REPOS\PROYECTO-BANCO\CORE\CORE\APP_DATA\DBCORE.MDF].dbo.VerificarCredencialesCore" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="VerificarCredencialesCore" Modifier="Public" Name="VerificarCredencialesCore" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="VerificarCredencialesCore">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.VerificarCredencialesCore</CommandText>
@@ -624,115 +625,27 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dsCore" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsCore" msprop:Generator_DataSetName="dsCore">
+  <xs:element name="dsCore" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCore" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCore">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Cuenta" msprop:Generator_RowEvHandlerName="CuentaRowChangeEventHandler" msprop:Generator_RowDeletedName="CuentaRowDeleted" msprop:Generator_RowDeletingName="CuentaRowDeleting" msprop:Generator_RowEvArgName="CuentaRowChangeEvent" msprop:Generator_TablePropName="Cuenta" msprop:Generator_RowChangedName="CuentaRowChanged" msprop:Generator_RowChangingName="CuentaRowChanging" msprop:Generator_TableClassName="CuentaDataTable" msprop:Generator_RowClassName="CuentaRow" msprop:Generator_TableVarName="tableCuenta" msprop:Generator_UserTableName="Cuenta">
+        <xs:element name="Cuenta" msprop:Generator_RowClassName="CuentaRow" msprop:Generator_RowEvHandlerName="CuentaRowChangeEventHandler" msprop:Generator_RowDeletedName="CuentaRowDeleted" msprop:Generator_RowDeletingName="CuentaRowDeleting" msprop:Generator_RowEvArgName="CuentaRowChangeEvent" msprop:Generator_TablePropName="Cuenta" msprop:Generator_RowChangedName="CuentaRowChanged" msprop:Generator_UserTableName="Cuenta" msprop:Generator_RowChangingName="CuentaRowChanging" msprop:Generator_TableClassName="CuentaDataTable" msprop:Generator_TableVarName="tableCuenta">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Cuenta_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Cuenta_ID" msprop:Generator_ColumnPropNameInTable="Cuenta_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCuenta_ID" msprop:Generator_UserColumnName="Cuenta_ID" type="xs:int" />
-              <xs:element name="Numero_Cuenta" msprop:Generator_ColumnPropNameInRow="Numero_Cuenta" msprop:Generator_ColumnPropNameInTable="Numero_CuentaColumn" msprop:Generator_ColumnVarNameInTable="columnNumero_Cuenta" msprop:Generator_UserColumnName="Numero_Cuenta" type="xs:int" />
-              <xs:element name="Tipo_Cuenta_ID" msprop:Generator_ColumnPropNameInRow="Tipo_Cuenta_ID" msprop:Generator_ColumnPropNameInTable="Tipo_Cuenta_IDColumn" msprop:Generator_ColumnVarNameInTable="columnTipo_Cuenta_ID" msprop:Generator_UserColumnName="Tipo_Cuenta_ID" type="xs:int" />
-              <xs:element name="Cliente_ID" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" msprop:Generator_UserColumnName="Cliente_ID" type="xs:int" />
-              <xs:element name="Monto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_UserColumnName="Monto" type="xs:decimal" />
-              <xs:element name="Fecha_Registro" msprop:Generator_ColumnPropNameInRow="Fecha_Registro" msprop:Generator_ColumnPropNameInTable="Fecha_RegistroColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_Registro" msprop:Generator_UserColumnName="Fecha_Registro" type="xs:dateTime" />
-              <xs:element name="Moneda_ID" msprop:Generator_ColumnPropNameInRow="Moneda_ID" msprop:Generator_ColumnPropNameInTable="Moneda_IDColumn" msprop:Generator_ColumnVarNameInTable="columnMoneda_ID" msprop:Generator_UserColumnName="Moneda_ID" type="xs:int" />
+              <xs:element name="Cuenta_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Cuenta_ID" msprop:Generator_ColumnPropNameInTable="Cuenta_IDColumn" msprop:Generator_ColumnPropNameInRow="Cuenta_ID" msprop:Generator_ColumnVarNameInTable="columnCuenta_ID" type="xs:int" />
+              <xs:element name="Numero_Cuenta" msprop:Generator_UserColumnName="Numero_Cuenta" msprop:Generator_ColumnPropNameInTable="Numero_CuentaColumn" msprop:Generator_ColumnPropNameInRow="Numero_Cuenta" msprop:Generator_ColumnVarNameInTable="columnNumero_Cuenta" type="xs:int" />
+              <xs:element name="Tipo_Cuenta_ID" msprop:Generator_UserColumnName="Tipo_Cuenta_ID" msprop:Generator_ColumnPropNameInTable="Tipo_Cuenta_IDColumn" msprop:Generator_ColumnPropNameInRow="Tipo_Cuenta_ID" msprop:Generator_ColumnVarNameInTable="columnTipo_Cuenta_ID" type="xs:int" />
+              <xs:element name="Cliente_ID" msprop:Generator_UserColumnName="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" type="xs:int" />
+              <xs:element name="Monto" msprop:Generator_UserColumnName="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" type="xs:decimal" />
+              <xs:element name="Fecha_Registro" msprop:Generator_UserColumnName="Fecha_Registro" msprop:Generator_ColumnPropNameInTable="Fecha_RegistroColumn" msprop:Generator_ColumnPropNameInRow="Fecha_Registro" msprop:Generator_ColumnVarNameInTable="columnFecha_Registro" type="xs:dateTime" />
+              <xs:element name="Moneda_ID" msprop:Generator_UserColumnName="Moneda_ID" msprop:Generator_ColumnPropNameInTable="Moneda_IDColumn" msprop:Generator_ColumnPropNameInRow="Moneda_ID" msprop:Generator_ColumnVarNameInTable="columnMoneda_ID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Perfil" msprop:Generator_RowEvHandlerName="PerfilRowChangeEventHandler" msprop:Generator_RowDeletedName="PerfilRowDeleted" msprop:Generator_RowDeletingName="PerfilRowDeleting" msprop:Generator_RowEvArgName="PerfilRowChangeEvent" msprop:Generator_TablePropName="Perfil" msprop:Generator_RowChangedName="PerfilRowChanged" msprop:Generator_RowChangingName="PerfilRowChanging" msprop:Generator_TableClassName="PerfilDataTable" msprop:Generator_RowClassName="PerfilRow" msprop:Generator_TableVarName="tablePerfil" msprop:Generator_UserTableName="Perfil">
+        <xs:element name="Perfil" msprop:Generator_RowClassName="PerfilRow" msprop:Generator_RowEvHandlerName="PerfilRowChangeEventHandler" msprop:Generator_RowDeletedName="PerfilRowDeleted" msprop:Generator_RowDeletingName="PerfilRowDeleting" msprop:Generator_RowEvArgName="PerfilRowChangeEvent" msprop:Generator_TablePropName="Perfil" msprop:Generator_RowChangedName="PerfilRowChanged" msprop:Generator_UserTableName="Perfil" msprop:Generator_RowChangingName="PerfilRowChanging" msprop:Generator_TableClassName="PerfilDataTable" msprop:Generator_TableVarName="tablePerfil">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Perfil_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Perfil_ID" msprop:Generator_ColumnPropNameInTable="Perfil_IDColumn" msprop:Generator_ColumnVarNameInTable="columnPerfil_ID" msprop:Generator_UserColumnName="Perfil_ID" type="xs:int" />
-              <xs:element name="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_UserColumnName="Descripcion">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Cliente" msprop:Generator_RowEvHandlerName="ClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="ClienteRowDeleted" msprop:Generator_RowDeletingName="ClienteRowDeleting" msprop:Generator_RowEvArgName="ClienteRowChangeEvent" msprop:Generator_TablePropName="Cliente" msprop:Generator_RowChangedName="ClienteRowChanged" msprop:Generator_RowChangingName="ClienteRowChanging" msprop:Generator_TableClassName="ClienteDataTable" msprop:Generator_RowClassName="ClienteRow" msprop:Generator_TableVarName="tableCliente" msprop:Generator_UserTableName="Cliente">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Cliente_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" msprop:Generator_UserColumnName="Cliente_ID" type="xs:int" />
-              <xs:element name="Cliente_Nombre" msprop:Generator_ColumnPropNameInRow="Cliente_Nombre" msprop:Generator_ColumnPropNameInTable="Cliente_NombreColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Nombre" msprop:Generator_UserColumnName="Cliente_Nombre">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_Apellido" msprop:Generator_ColumnPropNameInRow="Cliente_Apellido" msprop:Generator_ColumnPropNameInTable="Cliente_ApellidoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Apellido" msprop:Generator_UserColumnName="Cliente_Apellido">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_TipoDocumento" msprop:Generator_ColumnPropNameInRow="Cliente_TipoDocumento" msprop:Generator_ColumnPropNameInTable="Cliente_TipoDocumentoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_TipoDocumento" msprop:Generator_UserColumnName="Cliente_TipoDocumento">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_Documento" msprop:Generator_ColumnPropNameInRow="Cliente_Documento" msprop:Generator_ColumnPropNameInTable="Cliente_DocumentoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Documento" msprop:Generator_UserColumnName="Cliente_Documento">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_Correo" msprop:Generator_ColumnPropNameInRow="Cliente_Correo" msprop:Generator_ColumnPropNameInTable="Cliente_CorreoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Correo" msprop:Generator_UserColumnName="Cliente_Correo">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_Telefono" msprop:Generator_ColumnPropNameInRow="Cliente_Telefono" msprop:Generator_ColumnPropNameInTable="Cliente_TelefonoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Telefono" msprop:Generator_UserColumnName="Cliente_Telefono">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_Direccion" msprop:Generator_ColumnPropNameInRow="Cliente_Direccion" msprop:Generator_ColumnPropNameInTable="Cliente_DireccionColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_Direccion" msprop:Generator_UserColumnName="Cliente_Direccion">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Cliente_FNacimiento" msprop:Generator_ColumnPropNameInRow="Cliente_FNacimiento" msprop:Generator_ColumnPropNameInTable="Cliente_FNacimientoColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_FNacimiento" msprop:Generator_UserColumnName="Cliente_FNacimiento" type="xs:dateTime" />
-              <xs:element name="Cliente_FRegistro" msprop:Generator_ColumnPropNameInRow="Cliente_FRegistro" msprop:Generator_ColumnPropNameInTable="Cliente_FRegistroColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_FRegistro" msprop:Generator_UserColumnName="Cliente_FRegistro" type="xs:dateTime" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Prestamo" msprop:Generator_RowEvHandlerName="PrestamoRowChangeEventHandler" msprop:Generator_RowDeletedName="PrestamoRowDeleted" msprop:Generator_RowDeletingName="PrestamoRowDeleting" msprop:Generator_RowEvArgName="PrestamoRowChangeEvent" msprop:Generator_TablePropName="Prestamo" msprop:Generator_RowChangedName="PrestamoRowChanged" msprop:Generator_RowChangingName="PrestamoRowChanging" msprop:Generator_TableClassName="PrestamoDataTable" msprop:Generator_RowClassName="PrestamoRow" msprop:Generator_TableVarName="tablePrestamo" msprop:Generator_UserTableName="Prestamo">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Prestamo_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Prestamo_ID" msprop:Generator_ColumnPropNameInTable="Prestamo_IDColumn" msprop:Generator_ColumnVarNameInTable="columnPrestamo_ID" msprop:Generator_UserColumnName="Prestamo_ID" type="xs:int" />
-              <xs:element name="Cliente_ID" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" msprop:Generator_UserColumnName="Cliente_ID" type="xs:int" />
-              <xs:element name="Tasa_Interes" msprop:Generator_ColumnPropNameInRow="Tasa_Interes" msprop:Generator_ColumnPropNameInTable="Tasa_InteresColumn" msprop:Generator_ColumnVarNameInTable="columnTasa_Interes" msprop:Generator_UserColumnName="Tasa_Interes" type="xs:decimal" />
-              <xs:element name="Fecha_Ingreso" msprop:Generator_ColumnPropNameInRow="Fecha_Ingreso" msprop:Generator_ColumnPropNameInTable="Fecha_IngresoColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_Ingreso" msprop:Generator_UserColumnName="Fecha_Ingreso" type="xs:dateTime" />
-              <xs:element name="Fecha_Final" msprop:Generator_ColumnPropNameInRow="Fecha_Final" msprop:Generator_ColumnPropNameInTable="Fecha_FinalColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_Final" msprop:Generator_UserColumnName="Fecha_Final" type="xs:dateTime" />
-              <xs:element name="Monto_Prestamo" msprop:Generator_ColumnPropNameInRow="Monto_Prestamo" msprop:Generator_ColumnPropNameInTable="Monto_PrestamoColumn" msprop:Generator_ColumnVarNameInTable="columnMonto_Prestamo" msprop:Generator_UserColumnName="Monto_Prestamo" type="xs:decimal" />
-              <xs:element name="Monto_Pagar" msprop:Generator_ColumnPropNameInRow="Monto_Pagar" msprop:Generator_ColumnPropNameInTable="Monto_PagarColumn" msprop:Generator_ColumnVarNameInTable="columnMonto_Pagar" msprop:Generator_UserColumnName="Monto_Pagar" type="xs:decimal" />
-              <xs:element name="Banco_ID" msprop:Generator_ColumnPropNameInRow="Banco_ID" msprop:Generator_ColumnPropNameInTable="Banco_IDColumn" msprop:Generator_ColumnVarNameInTable="columnBanco_ID" msprop:Generator_UserColumnName="Banco_ID" type="xs:int" />
-              <xs:element name="Estado_ID" msprop:Generator_ColumnPropNameInRow="Estado_ID" msprop:Generator_ColumnPropNameInTable="Estado_IDColumn" msprop:Generator_ColumnVarNameInTable="columnEstado_ID" msprop:Generator_UserColumnName="Estado_ID" type="xs:int" />
-              <xs:element name="Moneda_ID" msprop:Generator_ColumnPropNameInRow="Moneda_ID" msprop:Generator_ColumnPropNameInTable="Moneda_IDColumn" msprop:Generator_ColumnVarNameInTable="columnMoneda_ID" msprop:Generator_UserColumnName="Moneda_ID" type="xs:int" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Tipo_Transaccion" msprop:Generator_RowEvHandlerName="Tipo_TransaccionRowChangeEventHandler" msprop:Generator_RowDeletedName="Tipo_TransaccionRowDeleted" msprop:Generator_RowDeletingName="Tipo_TransaccionRowDeleting" msprop:Generator_RowEvArgName="Tipo_TransaccionRowChangeEvent" msprop:Generator_TablePropName="Tipo_Transaccion" msprop:Generator_RowChangedName="Tipo_TransaccionRowChanged" msprop:Generator_RowChangingName="Tipo_TransaccionRowChanging" msprop:Generator_TableClassName="Tipo_TransaccionDataTable" msprop:Generator_RowClassName="Tipo_TransaccionRow" msprop:Generator_TableVarName="tableTipo_Transaccion" msprop:Generator_UserTableName="Tipo_Transaccion">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Tipo_Transaccion_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Tipo_Transaccion_ID" msprop:Generator_ColumnPropNameInTable="Tipo_Transaccion_IDColumn" msprop:Generator_ColumnVarNameInTable="columnTipo_Transaccion_ID" msprop:Generator_UserColumnName="Tipo_Transaccion_ID" type="xs:int" />
-              <xs:element name="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_UserColumnName="Descripcion">
+              <xs:element name="Perfil_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Perfil_ID" msprop:Generator_ColumnPropNameInTable="Perfil_IDColumn" msprop:Generator_ColumnPropNameInRow="Perfil_ID" msprop:Generator_ColumnVarNameInTable="columnPerfil_ID" type="xs:int" />
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -742,27 +655,115 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Usuario" msprop:Generator_RowEvHandlerName="UsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuarioRowDeleted" msprop:Generator_RowDeletingName="UsuarioRowDeleting" msprop:Generator_RowEvArgName="UsuarioRowChangeEvent" msprop:Generator_TablePropName="Usuario" msprop:Generator_RowChangedName="UsuarioRowChanged" msprop:Generator_RowChangingName="UsuarioRowChanging" msprop:Generator_TableClassName="UsuarioDataTable" msprop:Generator_RowClassName="UsuarioRow" msprop:Generator_TableVarName="tableUsuario" msprop:Generator_UserTableName="Usuario">
+        <xs:element name="Cliente" msprop:Generator_RowClassName="ClienteRow" msprop:Generator_RowEvHandlerName="ClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="ClienteRowDeleted" msprop:Generator_RowDeletingName="ClienteRowDeleting" msprop:Generator_RowEvArgName="ClienteRowChangeEvent" msprop:Generator_TablePropName="Cliente" msprop:Generator_RowChangedName="ClienteRowChanged" msprop:Generator_UserTableName="Cliente" msprop:Generator_RowChangingName="ClienteRowChanging" msprop:Generator_TableClassName="ClienteDataTable" msprop:Generator_TableVarName="tableCliente">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Usuario_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Usuario_ID" msprop:Generator_ColumnPropNameInTable="Usuario_IDColumn" msprop:Generator_ColumnVarNameInTable="columnUsuario_ID" msprop:Generator_UserColumnName="Usuario_ID" type="xs:int" />
-              <xs:element name="Cliente_ID" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" msprop:Generator_UserColumnName="Cliente_ID" type="xs:int" />
-              <xs:element name="Usuario_Nombre" msprop:Generator_ColumnPropNameInRow="Usuario_Nombre" msprop:Generator_ColumnPropNameInTable="Usuario_NombreColumn" msprop:Generator_ColumnVarNameInTable="columnUsuario_Nombre" msprop:Generator_UserColumnName="Usuario_Nombre">
+              <xs:element name="Cliente_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" type="xs:int" />
+              <xs:element name="Cliente_Nombre" msprop:Generator_UserColumnName="Cliente_Nombre" msprop:Generator_ColumnPropNameInTable="Cliente_NombreColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Nombre" msprop:Generator_ColumnVarNameInTable="columnCliente_Nombre">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Usuario_Clave" msprop:Generator_ColumnPropNameInRow="Usuario_Clave" msprop:Generator_ColumnPropNameInTable="Usuario_ClaveColumn" msprop:Generator_ColumnVarNameInTable="columnUsuario_Clave" msprop:Generator_UserColumnName="Usuario_Clave">
+              <xs:element name="Cliente_Apellido" msprop:Generator_UserColumnName="Cliente_Apellido" msprop:Generator_ColumnPropNameInTable="Cliente_ApellidoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Apellido" msprop:Generator_ColumnVarNameInTable="columnCliente_Apellido">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Fecha_creacion" msprop:Generator_ColumnPropNameInRow="Fecha_creacion" msprop:Generator_ColumnPropNameInTable="Fecha_creacionColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_creacion" msprop:Generator_UserColumnName="Fecha_creacion" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Perfil_ID" msprop:Generator_ColumnPropNameInRow="Perfil_ID" msprop:Generator_ColumnPropNameInTable="Perfil_IDColumn" msprop:Generator_ColumnVarNameInTable="columnPerfil_ID" msprop:Generator_UserColumnName="Perfil_ID" type="xs:int" />
+              <xs:element name="Cliente_TipoDocumento" msprop:Generator_UserColumnName="Cliente_TipoDocumento" msprop:Generator_ColumnPropNameInTable="Cliente_TipoDocumentoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_TipoDocumento" msprop:Generator_ColumnVarNameInTable="columnCliente_TipoDocumento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente_Documento" msprop:Generator_UserColumnName="Cliente_Documento" msprop:Generator_ColumnPropNameInTable="Cliente_DocumentoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Documento" msprop:Generator_ColumnVarNameInTable="columnCliente_Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente_Correo" msprop:Generator_UserColumnName="Cliente_Correo" msprop:Generator_ColumnPropNameInTable="Cliente_CorreoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Correo" msprop:Generator_ColumnVarNameInTable="columnCliente_Correo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente_Telefono" msprop:Generator_UserColumnName="Cliente_Telefono" msprop:Generator_ColumnPropNameInTable="Cliente_TelefonoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Telefono" msprop:Generator_ColumnVarNameInTable="columnCliente_Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente_Direccion" msprop:Generator_UserColumnName="Cliente_Direccion" msprop:Generator_ColumnPropNameInTable="Cliente_DireccionColumn" msprop:Generator_ColumnPropNameInRow="Cliente_Direccion" msprop:Generator_ColumnVarNameInTable="columnCliente_Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente_FNacimiento" msprop:Generator_UserColumnName="Cliente_FNacimiento" msprop:Generator_ColumnPropNameInTable="Cliente_FNacimientoColumn" msprop:Generator_ColumnPropNameInRow="Cliente_FNacimiento" msprop:Generator_ColumnVarNameInTable="columnCliente_FNacimiento" type="xs:dateTime" />
+              <xs:element name="Cliente_FRegistro" msprop:Generator_UserColumnName="Cliente_FRegistro" msprop:Generator_ColumnPropNameInTable="Cliente_FRegistroColumn" msprop:Generator_ColumnPropNameInRow="Cliente_FRegistro" msprop:Generator_ColumnVarNameInTable="columnCliente_FRegistro" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Prestamo" msprop:Generator_RowClassName="PrestamoRow" msprop:Generator_RowEvHandlerName="PrestamoRowChangeEventHandler" msprop:Generator_RowDeletedName="PrestamoRowDeleted" msprop:Generator_RowDeletingName="PrestamoRowDeleting" msprop:Generator_RowEvArgName="PrestamoRowChangeEvent" msprop:Generator_TablePropName="Prestamo" msprop:Generator_RowChangedName="PrestamoRowChanged" msprop:Generator_UserTableName="Prestamo" msprop:Generator_RowChangingName="PrestamoRowChanging" msprop:Generator_TableClassName="PrestamoDataTable" msprop:Generator_TableVarName="tablePrestamo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Prestamo_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Prestamo_ID" msprop:Generator_ColumnPropNameInTable="Prestamo_IDColumn" msprop:Generator_ColumnPropNameInRow="Prestamo_ID" msprop:Generator_ColumnVarNameInTable="columnPrestamo_ID" type="xs:int" />
+              <xs:element name="Cliente_ID" msprop:Generator_UserColumnName="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" type="xs:int" />
+              <xs:element name="Tasa_Interes" msprop:Generator_UserColumnName="Tasa_Interes" msprop:Generator_ColumnPropNameInTable="Tasa_InteresColumn" msprop:Generator_ColumnPropNameInRow="Tasa_Interes" msprop:Generator_ColumnVarNameInTable="columnTasa_Interes" type="xs:decimal" />
+              <xs:element name="Fecha_Ingreso" msprop:Generator_UserColumnName="Fecha_Ingreso" msprop:Generator_ColumnPropNameInTable="Fecha_IngresoColumn" msprop:Generator_ColumnPropNameInRow="Fecha_Ingreso" msprop:Generator_ColumnVarNameInTable="columnFecha_Ingreso" type="xs:dateTime" />
+              <xs:element name="Fecha_Final" msprop:Generator_UserColumnName="Fecha_Final" msprop:Generator_ColumnPropNameInTable="Fecha_FinalColumn" msprop:Generator_ColumnPropNameInRow="Fecha_Final" msprop:Generator_ColumnVarNameInTable="columnFecha_Final" type="xs:dateTime" />
+              <xs:element name="Monto_Prestamo" msprop:Generator_UserColumnName="Monto_Prestamo" msprop:Generator_ColumnPropNameInTable="Monto_PrestamoColumn" msprop:Generator_ColumnPropNameInRow="Monto_Prestamo" msprop:Generator_ColumnVarNameInTable="columnMonto_Prestamo" type="xs:decimal" />
+              <xs:element name="Monto_Pagar" msprop:Generator_UserColumnName="Monto_Pagar" msprop:Generator_ColumnPropNameInTable="Monto_PagarColumn" msprop:Generator_ColumnPropNameInRow="Monto_Pagar" msprop:Generator_ColumnVarNameInTable="columnMonto_Pagar" type="xs:decimal" />
+              <xs:element name="Banco_ID" msprop:Generator_UserColumnName="Banco_ID" msprop:Generator_ColumnPropNameInTable="Banco_IDColumn" msprop:Generator_ColumnPropNameInRow="Banco_ID" msprop:Generator_ColumnVarNameInTable="columnBanco_ID" type="xs:int" />
+              <xs:element name="Estado_ID" msprop:Generator_UserColumnName="Estado_ID" msprop:Generator_ColumnPropNameInTable="Estado_IDColumn" msprop:Generator_ColumnPropNameInRow="Estado_ID" msprop:Generator_ColumnVarNameInTable="columnEstado_ID" type="xs:int" />
+              <xs:element name="Moneda_ID" msprop:Generator_UserColumnName="Moneda_ID" msprop:Generator_ColumnPropNameInTable="Moneda_IDColumn" msprop:Generator_ColumnPropNameInRow="Moneda_ID" msprop:Generator_ColumnVarNameInTable="columnMoneda_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tipo_Transaccion" msprop:Generator_RowClassName="Tipo_TransaccionRow" msprop:Generator_RowEvHandlerName="Tipo_TransaccionRowChangeEventHandler" msprop:Generator_RowDeletedName="Tipo_TransaccionRowDeleted" msprop:Generator_RowDeletingName="Tipo_TransaccionRowDeleting" msprop:Generator_RowEvArgName="Tipo_TransaccionRowChangeEvent" msprop:Generator_TablePropName="Tipo_Transaccion" msprop:Generator_RowChangedName="Tipo_TransaccionRowChanged" msprop:Generator_UserTableName="Tipo_Transaccion" msprop:Generator_RowChangingName="Tipo_TransaccionRowChanging" msprop:Generator_TableClassName="Tipo_TransaccionDataTable" msprop:Generator_TableVarName="tableTipo_Transaccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipo_Transaccion_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Tipo_Transaccion_ID" msprop:Generator_ColumnPropNameInTable="Tipo_Transaccion_IDColumn" msprop:Generator_ColumnPropNameInRow="Tipo_Transaccion_ID" msprop:Generator_ColumnVarNameInTable="columnTipo_Transaccion_ID" type="xs:int" />
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Usuario" msprop:Generator_RowClassName="UsuarioRow" msprop:Generator_RowEvHandlerName="UsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuarioRowDeleted" msprop:Generator_RowDeletingName="UsuarioRowDeleting" msprop:Generator_RowEvArgName="UsuarioRowChangeEvent" msprop:Generator_TablePropName="Usuario" msprop:Generator_RowChangedName="UsuarioRowChanged" msprop:Generator_UserTableName="Usuario" msprop:Generator_RowChangingName="UsuarioRowChanging" msprop:Generator_TableClassName="UsuarioDataTable" msprop:Generator_TableVarName="tableUsuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usuario_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Usuario_ID" msprop:Generator_ColumnPropNameInTable="Usuario_IDColumn" msprop:Generator_ColumnPropNameInRow="Usuario_ID" msprop:Generator_ColumnVarNameInTable="columnUsuario_ID" type="xs:int" />
+              <xs:element name="Cliente_ID" msprop:Generator_UserColumnName="Cliente_ID" msprop:Generator_ColumnPropNameInTable="Cliente_IDColumn" msprop:Generator_ColumnPropNameInRow="Cliente_ID" msprop:Generator_ColumnVarNameInTable="columnCliente_ID" type="xs:int" />
+              <xs:element name="Usuario_Nombre" msprop:Generator_UserColumnName="Usuario_Nombre" msprop:Generator_ColumnPropNameInTable="Usuario_NombreColumn" msprop:Generator_ColumnPropNameInRow="Usuario_Nombre" msprop:Generator_ColumnVarNameInTable="columnUsuario_Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Usuario_Clave" msprop:Generator_UserColumnName="Usuario_Clave" msprop:Generator_ColumnPropNameInTable="Usuario_ClaveColumn" msprop:Generator_ColumnPropNameInRow="Usuario_Clave" msprop:Generator_ColumnVarNameInTable="columnUsuario_Clave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_creacion" msprop:Generator_UserColumnName="Fecha_creacion" msprop:Generator_ColumnPropNameInTable="Fecha_creacionColumn" msprop:Generator_ColumnPropNameInRow="Fecha_creacion" msprop:Generator_ColumnVarNameInTable="columnFecha_creacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Perfil_ID" msprop:Generator_UserColumnName="Perfil_ID" msprop:Generator_ColumnPropNameInTable="Perfil_IDColumn" msprop:Generator_ColumnPropNameInRow="Perfil_ID" msprop:Generator_ColumnVarNameInTable="columnPerfil_ID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

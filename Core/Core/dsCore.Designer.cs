@@ -6001,7 +6001,7 @@ namespace Core.dsCoreTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object VerificarCredencialesCaja(string NombreUsuario, string Contraseña) {
+        public virtual global::System.Nullable<bool> VerificarCredencialesCaja(string NombreUsuario, string Contraseña) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[6];
             if ((NombreUsuario == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -6020,28 +6020,27 @@ namespace Core.dsCoreTableAdapters {
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            object returnValue;
             try {
-                returnValue = command.ExecuteScalar();
+                command.ExecuteNonQuery();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null) 
-                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return null;
+            if (((command.Parameters[0].Value == null) 
+                        || (command.Parameters[0].Value.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<bool>();
             }
             else {
-                return ((object)(returnValue));
+                return new global::System.Nullable<bool>(((bool)(command.Parameters[0].Value)));
             }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object VerificarCredencialesCore(string NombreUsuario, string Contraseña) {
+        public virtual global::System.Nullable<bool> VerificarCredencialesCore(string NombreUsuario, string Contraseña) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[7];
             if ((NombreUsuario == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -6060,21 +6059,20 @@ namespace Core.dsCoreTableAdapters {
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            object returnValue;
             try {
-                returnValue = command.ExecuteScalar();
+                command.ExecuteNonQuery();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null) 
-                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return null;
+            if (((command.Parameters[0].Value == null) 
+                        || (command.Parameters[0].Value.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<bool>();
             }
             else {
-                return ((object)(returnValue));
+                return new global::System.Nullable<bool>(((bool)(command.Parameters[0].Value)));
             }
         }
     }

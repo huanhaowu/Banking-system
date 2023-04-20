@@ -69,8 +69,8 @@ namespace Core
             return true;
         }
 
-        //Clientes
-        [WebMethod]
+            //Clientes
+            [WebMethod]
         public void InsertarCliente(Cliente cliente)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
@@ -172,13 +172,13 @@ namespace Core
 
         //Usuarios
         [WebMethod]
-        public void CrearUsuarioCaja(int Cliente_ID, string Nombre, string Clave)
+        public string CrearUsuarioCaja(int Cliente_ID, string Nombre, string Clave)
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
             if (EsBuenaContraseña(Clave) == false)
             {
-                throw new Exception("La contraseña no cumple con los requisitos de seguridad");
+                return "La contraseña no cumple con los requisitos de seguridad";
             }
             else
             {
@@ -189,7 +189,7 @@ namespace Core
 
                 if ((bool)tblUsuario.VerificarCredencialesCaja(Nombre, Clave))
                 {
-                    throw new Exception("Ese usuario ya existe");
+                    return "Ese usuario ya existe";
                 }
                 else
                 {
@@ -199,11 +199,13 @@ namespace Core
                     {
                         tblUsuario.sp_InsertarUsuario(Cliente_ID, Nombre, Clave, 3);
                         transaction.Commit(); //confirmar la transaccion
+                        return "Usuario creado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        return "Error al crear usuario";
                     }
                 }
 
@@ -211,13 +213,13 @@ namespace Core
         }
 
         [WebMethod]
-        public void CrearUsuarioCore(int Cliente_ID, string Nombre, string Clave)
+        public string CrearUsuarioCore(int Cliente_ID, string Nombre, string Clave)
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
             if (EsBuenaContraseña(Clave) == false)
             {
-                throw new Exception("La contraseña no cumple con los requisitos de seguridad");
+                return "La contraseña no cumple con los requisitos de seguridad";
             }
             else
             {
@@ -226,9 +228,10 @@ namespace Core
                 byte[] hash = sha256.ComputeHash(bytes);
                 Clave = Convert.ToBase64String(hash);
 
+
                 if ((bool)tblUsuario.VerificarCredencialesCore(Nombre, Clave))
                 {
-                    throw new Exception("Ese usuario ya existe");
+                    return "Ese usuario ya existe";
                 }
                 else
                 {
@@ -238,11 +241,13 @@ namespace Core
                     {
                         tblUsuario.sp_InsertarUsuario(Cliente_ID, Nombre, Clave, 1);
                         transaction.Commit(); //confirmar la transaccion
+                        return "Usuario creado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        return "Error al crear usuario";
                     }
                 }
             }
@@ -268,13 +273,13 @@ namespace Core
         }
 
         [WebMethod]
-        public void ActualizarUsuario(int Usuario_ID, int Cliente_ID, string Nombre, string Clave)
+        public string ActualizarUsuario(int Usuario_ID, int Cliente_ID, string Nombre, string Clave)
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
             if (EsBuenaContraseña(Clave) == false)
             {
-                throw new Exception("La contraseña no cumple con los requisitos de seguridad");
+                return"La contraseña no cumple con los requisitos de seguridad";
             }
             else
             {
@@ -285,7 +290,7 @@ namespace Core
 
                 if ((bool)tblUsuario.VerificarCredencialesCaja(Nombre, Clave))
                 {
-                    throw new Exception("Ese usuario ya existe");
+                    return"Ese usuario ya existe";
                 }
                 else
                 {
@@ -295,11 +300,13 @@ namespace Core
                     {
                         tblUsuario.sp_ActualizarUsuario(Usuario_ID, Cliente_ID, Nombre, Clave);
                         transaction.Commit(); //confirmar la transaccion
+                        return "Usuario actualizado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        return "Error al actualizar usuario";
                     }
                 }
             }
@@ -655,7 +662,6 @@ namespace Core
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
-            SqlTransaction transaction = tblUsuario.Connection.BeginTransaction();
             HashAlgorithm sha256 = SHA256.Create();
             byte[] bytes = Encoding.UTF8.GetBytes(Clave);
             byte[] hash = sha256.ComputeHash(bytes);
@@ -676,7 +682,6 @@ namespace Core
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
-            SqlTransaction transaction = tblUsuario.Connection.BeginTransaction();
             HashAlgorithm sha256 = SHA256.Create();
             byte[] bytes = Encoding.UTF8.GetBytes(Clave);
             byte[] hash = sha256.ComputeHash(bytes);
