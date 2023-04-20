@@ -15,6 +15,7 @@ namespace Int
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
+            log4net.Config.XmlConfigurator.Configure();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);            
