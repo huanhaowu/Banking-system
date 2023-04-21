@@ -19,23 +19,44 @@ namespace Caja.Pantalla
 
         private void bttRetirar_Click(object sender, EventArgs e)
         {
-            Retiro retiro = new Retiro();
-            retiro.Show();
             this.Hide();
+            Retiro retiro = new Retiro();
+            if (retiro.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttPrestamos_Click(object sender, EventArgs e)
         {
-            Prestamos prestamos = new Prestamos();
-            prestamos.Show();
             this.Hide();
+            Prestamos prestamos = new Prestamos();
+            if (prestamos.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttConfiguracion_Click(object sender, EventArgs e)
         {
-            Configuracion configuracion = new Configuracion();
-            configuracion.Show();
             this.Hide();
+            Configuracion configuracion = new Configuracion();
+            if (configuracion.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Deposito_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttCancelarD_Click(object sender, EventArgs e)
+        {
+            txtMontoD.Clear();
+            txtDescripD.Clear();
+            txtCuentaD.Clear();
         }
     }
 }

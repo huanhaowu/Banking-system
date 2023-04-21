@@ -18,3 +18,23 @@ C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.MontoInicial.resources
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.CuadreTransaccion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\DbCaja.mdf
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\DbCaja_log.ldf
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.exe.config
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.exe
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.pdb
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.IniciarSesion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Configuracion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.CuadreTransaccion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Deposito.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.MontoInicial.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Properties.Resources.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.GenerateResource.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.CoreCompileInputs.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.pdb

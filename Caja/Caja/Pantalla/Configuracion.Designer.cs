@@ -49,9 +49,9 @@
             this.bttMontoInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttMontoInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttMontoInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttMontoInicial.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttMontoInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttMontoInicial.ForeColor = System.Drawing.Color.White;
-            this.bttMontoInicial.Location = new System.Drawing.Point(24, 195);
+            this.bttMontoInicial.Location = new System.Drawing.Point(24, 202);
             this.bttMontoInicial.Name = "bttMontoInicial";
             this.bttMontoInicial.Size = new System.Drawing.Size(216, 52);
             this.bttMontoInicial.TabIndex = 5;
@@ -70,7 +70,7 @@
             this.bttCuadre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttCuadre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCuadre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCuadre.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCuadre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttCuadre.ForeColor = System.Drawing.Color.White;
             this.bttCuadre.Location = new System.Drawing.Point(24, 260);
             this.bttCuadre.Name = "bttCuadre";
@@ -91,7 +91,7 @@
             this.bttReciboTransa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboTransa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboTransa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboTransa.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttReciboTransa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReciboTransa.ForeColor = System.Drawing.Color.White;
             this.bttReciboTransa.Location = new System.Drawing.Point(24, 325);
             this.bttReciboTransa.Name = "bttReciboTransa";
@@ -111,7 +111,7 @@
             this.bttLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttLogout.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttLogout.ForeColor = System.Drawing.Color.White;
             this.bttLogout.Location = new System.Drawing.Point(24, 388);
             this.bttLogout.Name = "bttLogout";
@@ -132,7 +132,7 @@
             this.bttRetirar3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttRetirar3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttRetirar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttRetirar3.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttRetirar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttRetirar3.ForeColor = System.Drawing.Color.White;
             this.bttRetirar3.Location = new System.Drawing.Point(385, 71);
             this.bttRetirar3.Name = "bttRetirar3";
@@ -152,7 +152,7 @@
             this.bttDepositar3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttDepositar3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttDepositar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttDepositar3.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttDepositar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttDepositar3.ForeColor = System.Drawing.Color.White;
             this.bttDepositar3.Location = new System.Drawing.Point(278, 71);
             this.bttDepositar3.Name = "bttDepositar3";
@@ -172,7 +172,7 @@
             this.bttPrestamos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttPrestamos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttPrestamos.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttPrestamos.ForeColor = System.Drawing.Color.White;
             this.bttPrestamos.Location = new System.Drawing.Point(542, 71);
             this.bttPrestamos.Name = "bttPrestamos";

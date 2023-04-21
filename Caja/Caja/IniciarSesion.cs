@@ -20,14 +20,17 @@ namespace Caja
 
         private void bttIniciar_Click(object sender, EventArgs e)
         {
-            Deposito deposito = new Deposito();
-            deposito.Show();
             this.Hide();
+            Deposito deposito = new Deposito();
+            if (deposito.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
+                
         }
 
         private void IniciarSesion_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

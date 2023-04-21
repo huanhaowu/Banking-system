@@ -19,23 +19,32 @@ namespace Caja.Pantalla
 
         private void bttDepositar3_Click(object sender, EventArgs e)
         {
-            Deposito deposito3 = new Deposito();
-            deposito3.Show();
             this.Hide();
+            Deposito deposito = new Deposito();
+            if (deposito.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttRetirar3_Click(object sender, EventArgs e)
         {
-            Retiro retiro3 = new Retiro();
-            retiro3.Show();
             this.Hide();
+            Retiro retiro = new Retiro();
+            if (retiro.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttConfiguracion3_Click(object sender, EventArgs e)
         {
-            Configuracion configuracion3 = new Configuracion();
-            configuracion3.Show();
             this.Hide();
+            Configuracion configuracion = new Configuracion();
+            if (configuracion.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttConfirmarP1_Click(object sender, EventArgs e)

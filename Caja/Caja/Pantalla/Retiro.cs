@@ -34,6 +34,7 @@ namespace Caja.Pantalla
             grupoRetiro2.Show();
             grupoRetiro2.Visible = true;
             grupoBoton.Visible = true;
+
         }
 
         private void Retiro_Load(object sender, EventArgs e)
@@ -43,28 +44,51 @@ namespace Caja.Pantalla
 
         private void bttDepositar2_Click(object sender, EventArgs e)
         {
-            Deposito deposito2 = new Deposito();
-            deposito2.Show();
             this.Hide();
+            Deposito deposito = new Deposito();
+            if (deposito.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttPrestamos2_Click(object sender, EventArgs e)
         {
-            Prestamos prestamos2 = new Prestamos();
-            prestamos2.Show();
             this.Hide();
+            Prestamos prestamos = new Prestamos();
+            if (prestamos.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttConfiguracion2_Click(object sender, EventArgs e)
         {
-            Configuracion configuracion2 = new Configuracion();
-            configuracion2.Show();
             this.Hide();
+            Configuracion configuracion = new Configuracion();
+            if (configuracion.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void bttConfirmarR_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Configuracion configuracion = new Configuracion();
+            if (configuracion.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
 
+        private void bttCancelarR_Click(object sender, EventArgs e)
+        {
+            grupoRetiro2.Hide();
+            grupoRetiro2.Visible = false;
+            grupoRetiro1.Show();
+            grupoRetiro1.Visible = true;
+            grupoBoton.Visible = false;
         }
     }
 }
