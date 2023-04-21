@@ -3,10 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Cryptography;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Web;
 using System.Web.Services;
+using static Core.dsCore;
 
 namespace Core
 {
@@ -151,16 +154,30 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerClienteByID(int Cliente_ID)
+        public Cliente ObtenerClienteByID(int Cliente_ID)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
             tblCliente.Connection.Open();
             SqlTransaction transaction = tblCliente.Connection.BeginTransaction();
             tblCliente.Transaction = transaction;
+            Cliente client = new Cliente();
+
             try
             {
-                tblCliente.sp_ObtenerClientePorID(Cliente_ID);
+                ClienteDataTable cliente= tblCliente.sp_ObtenerClientePorID(Cliente_ID);
                 transaction.Commit(); //confirmar la transaccion
+
+                foreach (var x in cliente)
+                {
+                    client.Nombre = x.Cliente_Nombre;
+                    client.Apellido = x.Cliente_Apellido;
+                    client.TipoDocumento = x.Cliente_TipoDocumento;
+                    client.Email = x.Cliente_Correo;
+                    client.Telefono = x.Cliente_Telefono;
+                    client.Direccion = x.Cliente_Direccion;
+                    client.FechaNacimiento = x.Cliente_FNacimiento;
+                }
+                return client;
             }
             catch (Exception e)
             {
@@ -168,6 +185,7 @@ namespace Core
                 transaction.Rollback(); //revertir la transaccion
 
             }
+            return client;
         }
 
         //Usuarios
@@ -332,22 +350,37 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerUsuarioByID(int Usuario_ID)
+        public Usuario ObtenerUsuarioByID(int Usuario_ID)
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
             SqlTransaction transaction = tblUsuario.Connection.BeginTransaction();
             tblUsuario.Transaction = transaction;
+            Usuario user = new Usuario();
             try
             {
-                tblUsuario.sp_ObtenerUsuarioPorID(Usuario_ID);
+                UsuarioDataTable usuarios = tblUsuario.sp_ObtenerUsuarioPorID(Usuario_ID);
                 transaction.Commit(); //confirmar la transaccion
+                //tblUsuario.Connection.Close();
+             
+                foreach (var x in usuarios)
+                {
+                    user.UsuarioId = x.Usuario_ID;
+                    user.ClienteId = x.Cliente_ID;
+                    user.NombreUser = x.Usuario_Nombre;
+                    user.Password = x.Usuario_Clave;
+                    user.PerfilId = x.Perfil_ID;
+                    user.FCreacion = x.Fecha_creacion;
+      
+                }
+                return user;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return user;
         }
 
         //Cuentas
@@ -428,23 +461,39 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerCuentaByID(int Cuenta_ID)
+        public Cuentas ObtenerCuentaByID(int Cuenta_ID)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
             SqlTransaction transaction = tblCuenta.Connection.BeginTransaction();
             tblCuenta.Transaction = transaction;
+            Cuentas acc = new Cuentas();
+
             try
             {
-                tblCuenta.sp_ObtenerCuentaPorID(Cuenta_ID);
+                CuentaDataTable cuentas = tblCuenta.sp_ObtenerCuentaPorID(Cuenta_ID);
                 transaction.Commit(); //confirmar la transaccion
+
+                foreach (var x in cuentas)
+                {
+                    acc.Tipo_Cuenta = x.Tipo_Cuenta_ID;
+                    acc.Cliente = x.Cliente_ID;
+                    acc.Numero_Cuenta = x.Numero_Cuenta;
+                    acc.Moneda = x.Moneda_ID;
+                    acc.Monto = x.Monto;
+                }
+                return acc;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+
+            return acc;
         }
+
+
         [WebMethod]
         public void ConsultarMovimientos(int Cuenta_ID)
         {
@@ -525,22 +574,37 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerPrestamosByID(int Prestamo_ID)
+        public Prestamos ObtenerPrestamosByID(int Prestamo_ID)
         {
             PrestamoTableAdapter tblPrestamo = new PrestamoTableAdapter();
             tblPrestamo.Connection.Open();
             SqlTransaction transaction = tblPrestamo.Connection.BeginTransaction();
             tblPrestamo.Transaction = transaction;
+            Prestamos loan = new Prestamos();
+
             try
             {
-                tblPrestamo.sp_GetPrestamoByID(Prestamo_ID);
+                PrestamoDataTable prestamo = tblPrestamo.sp_GetPrestamoByID(Prestamo_ID);
                 transaction.Commit(); //confirmar la transaccion
+                
+                foreach (var x in  prestamo)
+                {
+                    loan.Cliente_ID= x.Cliente_ID;
+                    loan.Tasa_Interes = x.Tasa_Interes;
+                    loan.FechaFinal = x.Fecha_Final;
+                    loan.Monto = x.Monto_Prestamo;
+                    loan.Banco_ID = x.Banco_ID;
+                    loan.Estado = x.Estado_ID;
+                    loan.Moneda = x.Moneda_ID;
+                }
+                return loan;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return loan;
         }
 
         [WebMethod]
@@ -620,22 +684,31 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerTipoTransaccionByID(int TipoT_ID)
+        public TipoTransaccion ObtenerTipoTransaccionByID(int TipoT_ID)
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();
             SqlTransaction transaction = tblTipoT.Connection.BeginTransaction();
             tblTipoT.Transaction = transaction;
+            TipoTransaccion transact = new TipoTransaccion();
+
             try
             {
-                tblTipoT.sp_GetTipoTransaccionByID(TipoT_ID);
+                Tipo_TransaccionDataTable transaccion = tblTipoT.sp_GetTipoTransaccionByID(TipoT_ID);
                 transaction.Commit(); //confirmar la transaccion
+                foreach (var x in transaccion)
+                {
+                    transact.TipoTransaccionID = x.Tipo_Transaccion_ID;
+                    transact.Descripcion = x.Descripcion;
+                }
+                return transact;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return transact;
         }
 
         [WebMethod]

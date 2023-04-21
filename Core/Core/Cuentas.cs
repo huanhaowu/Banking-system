@@ -11,6 +11,7 @@ namespace Core
         public int Tipo_Cuenta { get; set; }
         public int Cliente { get; set; }
         public int Moneda { get; set; }
+        public decimal Monto { get; set; }
 
     }
 }

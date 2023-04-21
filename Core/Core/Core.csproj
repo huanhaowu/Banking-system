@@ -243,6 +243,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Cuentas.cs" />
+    <Compile Include="dsCore.cs">
+      <DependentUpon>dsCore.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsCore.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -253,6 +256,8 @@
     </Compile>
     <Compile Include="Prestamos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoTransaccion.cs" />
+    <Compile Include="Usuario.cs" />
     <Compile Include="wsCore.asmx.cs">
       <DependentUpon>wsCore.asmx</DependentUpon>
       <SubType>Component</SubType>
