@@ -1,6 +1,8 @@
 ﻿using Core.dsCoreTableAdapters;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
@@ -72,8 +74,8 @@ namespace Core
             return true;
         }
 
-            //Clientes
-            [WebMethod]
+        //Clientes
+        [WebMethod]
         public void InsertarCliente(Cliente cliente)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
@@ -134,16 +136,34 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerClientes()
+        public Cliente[] ObtenerClientes()
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
             tblCliente.Connection.Open();
             SqlTransaction transaction = tblCliente.Connection.BeginTransaction();
             tblCliente.Transaction = transaction;
+            Cliente[] clientsNull = new Cliente[0];
             try
             {
-                tblCliente.sp_ObtenerTodosLosClientes();
+                ClienteDataTable clientes = tblCliente.sp_ObtenerTodosLosClientes();
                 transaction.Commit(); //confirmar la transaccion
+                Cliente[] clients = new Cliente[clientes.Rows.Count];
+
+                for (int i = 0; i < clientes.Rows.Count; i++)
+                {
+                    Cliente cli = new Cliente(); // Crear un objeto CuentaBancaria para cada fila de datos
+
+                    cli.Nombre = clientes.Rows[i]["Cliente_Nombre"].ToString();
+                    cli.Apellido = clientes.Rows[i]["Cliente_Apellido"].ToString();
+                    cli.TipoDocumento = clientes.Rows[i]["Cliente_TipoDocumento"].ToString();
+                    cli.Email = clientes.Rows[i]["Cliente_Correo"].ToString();
+                    cli.Telefono = clientes.Rows[i]["Cliente_Telefono"].ToString();
+                    cli.Direccion = clientes.Rows[i]["Cliente_Direccion"].ToString();
+                    cli.FechaNacimiento = DateTime.Parse(clientes.Rows[i]["Cliente_FNacimiento"].ToString());
+
+                    clients[i] = cli;
+                }
+                return clients;
             }
             catch (Exception e)
             {
@@ -151,6 +171,7 @@ namespace Core
                 transaction.Rollback(); //revertir la transaccion
 
             }
+            return clientsNull;
         }
 
         [WebMethod]
@@ -164,7 +185,7 @@ namespace Core
 
             try
             {
-                ClienteDataTable cliente= tblCliente.sp_ObtenerClientePorID(Cliente_ID);
+                ClienteDataTable cliente = tblCliente.sp_ObtenerClientePorID(Cliente_ID);
                 transaction.Commit(); //confirmar la transaccion
 
                 foreach (var x in cliente)
@@ -297,7 +318,7 @@ namespace Core
             tblUsuario.Connection.Open();
             if (EsBuenaContraseña(Clave) == false)
             {
-                return"La contraseña no cumple con los requisitos de seguridad";
+                return "La contraseña no cumple con los requisitos de seguridad";
             }
             else
             {
@@ -308,7 +329,7 @@ namespace Core
 
                 if ((bool)tblUsuario.VerificarCredencialesCaja(Nombre, Clave))
                 {
-                    return"Ese usuario ya existe";
+                    return "Ese usuario ya existe";
                 }
                 else
                 {
@@ -331,22 +352,38 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerUsuario()
+        public Usuario[] ObtenerUsuario()
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
             SqlTransaction transaction = tblUsuario.Connection.BeginTransaction();
             tblUsuario.Transaction = transaction;
+            Usuario[] usersNull = new Usuario[0];
             try
             {
-                tblUsuario.sp_ObtenerTodosLosUsuarios();
+                UsuarioDataTable usuarios = tblUsuario.sp_ObtenerTodosLosUsuarios();
                 transaction.Commit(); //confirmar la transaccion
+                Usuario[] users = new Usuario[usuarios.Rows.Count];
+
+                for (int i = 0; i < usuarios.Rows.Count; i++)
+                {
+                    Usuario us = new Usuario(); // Crear un objeto CuentaBancaria para cada fila de datos
+                    us.UsuarioId = int.Parse(usuarios.Rows[i]["Usuario_ID"].ToString());
+                    us.ClienteId = int.Parse(usuarios.Rows[i]["Cliente_ID"].ToString());
+                    us.NombreUser = usuarios.Rows[i]["Usuario_Nombre"].ToString();
+                    us.Password = usuarios.Rows[i]["Usuario_Clave"].ToString();
+                    us.PerfilId = int.Parse(usuarios.Rows[i]["Perfil_ID"].ToString());
+                    us.FCreacion = DateTime.Parse(usuarios.Rows[i]["Fecha_creacion"].ToString());
+                    users[i] = us;
+                }
+                return users;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return usersNull;
         }
 
         [WebMethod]
@@ -361,8 +398,8 @@ namespace Core
             {
                 UsuarioDataTable usuarios = tblUsuario.sp_ObtenerUsuarioPorID(Usuario_ID);
                 transaction.Commit(); //confirmar la transaccion
-                //tblUsuario.Connection.Close();
-             
+                                      //tblUsuario.Connection.Close();
+
                 foreach (var x in usuarios)
                 {
                     user.UsuarioId = x.Usuario_ID;
@@ -371,7 +408,7 @@ namespace Core
                     user.Password = x.Usuario_Clave;
                     user.PerfilId = x.Perfil_ID;
                     user.FCreacion = x.Fecha_creacion;
-      
+
                 }
                 return user;
             }
@@ -442,22 +479,40 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerCuentas(int Cliente_ID)
+        public Cuentas[] ObtenerCuentas(int Cliente_ID)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
             SqlTransaction transaction = tblCuenta.Connection.BeginTransaction();
             tblCuenta.Transaction = transaction;
+            Cuentas[] accountsNull = new Cuentas[0];
             try
             {
-                tblCuenta.sp_ObtenerTodasLasCuentas(Cliente_ID);
+                CuentaDataTable cuentas = tblCuenta.sp_ObtenerTodasLasCuentas(Cliente_ID);
                 transaction.Commit(); //confirmar la transaccion
+                Cuentas[] accounts = new Cuentas[cuentas.Rows.Count];
+
+                for (int i = 0; i < cuentas.Rows.Count; i++)
+                {
+                    Cuentas acc = new Cuentas();
+
+                    acc.Tipo_Cuenta = int.Parse(cuentas.Rows[i]["Tipo_Cuenta_ID"].ToString());
+                    acc.Cliente = int.Parse(cuentas.Rows[i]["Cliente_ID"].ToString());
+                    acc.Numero_Cuenta = int.Parse(cuentas.Rows[i]["Numero_Cuenta"].ToString());
+                    acc.Moneda = int.Parse(cuentas.Rows[i]["Moneda_ID"].ToString());
+                    acc.Monto = Decimal.Parse(cuentas.Rows[i]["Monto"].ToString());
+
+                    accounts[i] = acc;
+
+                }
+                return accounts;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return accountsNull;
         }
 
         [WebMethod]
@@ -586,10 +641,10 @@ namespace Core
             {
                 PrestamoDataTable prestamo = tblPrestamo.sp_GetPrestamoByID(Prestamo_ID);
                 transaction.Commit(); //confirmar la transaccion
-                
-                foreach (var x in  prestamo)
+
+                foreach (var x in prestamo)
                 {
-                    loan.Cliente_ID= x.Cliente_ID;
+                    loan.Cliente_ID = x.Cliente_ID;
                     loan.Tasa_Interes = x.Tasa_Interes;
                     loan.FechaFinal = x.Fecha_Final;
                     loan.Monto = x.Monto_Prestamo;
@@ -608,22 +663,40 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerPrestamos()
+        public Prestamos[] ObtenerPrestamos()
         {
             PrestamoTableAdapter tblPrestamo = new PrestamoTableAdapter();
             tblPrestamo.Connection.Open();
             SqlTransaction transaction = tblPrestamo.Connection.BeginTransaction();
             tblPrestamo.Transaction = transaction;
+            Prestamos[] loansNull = new Prestamos[0];
             try
             {
-                tblPrestamo.sp_GetPrestamos();
+                PrestamoDataTable prestamos =  tblPrestamo.sp_GetPrestamos();
                 transaction.Commit(); //confirmar la transaccion
+                Prestamos[] loans = new Prestamos[prestamos.Rows.Count];
+
+                for (int i = 0; i < prestamos.Rows.Count; i++)
+                {
+                    Prestamos lo = new Prestamos();
+
+                    lo.Cliente_ID = int.Parse(prestamos.Rows[i]["Usuario_ID"].ToString());
+                    lo.Tasa_Interes = decimal.Parse(prestamos.Rows[i]["Tasa_Interes"].ToString());
+                    lo.FechaFinal = DateTime.Parse(prestamos.Rows[i]["Fecha_Final"].ToString());
+                    lo.Monto = decimal.Parse(prestamos.Rows[i]["Monto_Prestamo"].ToString());
+                    lo.Estado = int.Parse(prestamos.Rows[i]["Estado_ID"].ToString());
+                    lo.Banco_ID = int.Parse(prestamos.Rows[i]["Banco_ID"].ToString());
+                    lo.Moneda = int.Parse(prestamos.Rows[i]["Moneda_ID"].ToString());
+                    loans[i] = lo;
+                }
+                return loans;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return loansNull;
         }
 
         [WebMethod]
@@ -712,22 +785,36 @@ namespace Core
         }
 
         [WebMethod]
-        public void ObtenerTipoTransaccion()
+        public TipoTransaccion[] ObtenerTipoTransaccion()
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();
             SqlTransaction transaction = tblTipoT.Connection.BeginTransaction();
             tblTipoT.Transaction = transaction;
+            TipoTransaccion[] trTypesNull = new TipoTransaccion[0];
+
             try
             {
-                tblTipoT.sp_ObtenerTodosTipoTransaccion();
+                Tipo_TransaccionDataTable tipos = tblTipoT.sp_ObtenerTodosTipoTransaccion();
                 transaction.Commit(); //confirmar la transaccion
+                TipoTransaccion[] types = new TipoTransaccion[tipos.Rows.Count];
+
+                for (int i = 0; i < tipos.Rows.Count; i++)
+                {
+                    TipoTransaccion ty = new TipoTransaccion();
+                    ty.TipoTransaccionID = int.Parse(tipos.Rows[i]["Tipo_Transaccion_ID"].ToString());
+                    ty.Descripcion = tipos.Rows[i]["Descripcion"].ToString();
+                    types[i] = ty;
+                }
+                return types;
+
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+            return trTypesNull;
         }
 
         [WebMethod]
@@ -769,5 +856,8 @@ namespace Core
                 return false;
             }
         }
+
+
+
     }
 }
