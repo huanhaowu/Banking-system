@@ -95,7 +95,7 @@ namespace Caja.Pantalla
                 }
                 catch (Exception error)
                 {
-                    Console.WriteLine(e.error);
+                    //Console.WriteLine(e.error);
                     trans.Rollback();
                 }
                 
@@ -107,7 +107,9 @@ namespace Caja.Pantalla
 
         private void bttReciboD_Click(object sender, EventArgs e)
         {
-
+            
+            TransacInd1 transac = new TransacInd1();
+            transac.ShowDialog();
         }
 
         private void txtMontoD_KeyPress(object sender, KeyPressEventArgs e)
