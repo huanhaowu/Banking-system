@@ -64,14 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DsCaja.cs">
-      <DependentUpon>DsCaja.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DsCaja.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DsCaja.xsd</DependentUpon>
-    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,17 +164,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceFondo.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DsCaja.xsc">
-      <DependentUpon>DsCaja.xsd</DependentUpon>
-    </None>
-    <None Include="DsCaja.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DsCaja.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DsCaja.xss">
-      <DependentUpon>DsCaja.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
