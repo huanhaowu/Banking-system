@@ -551,6 +551,8 @@ namespace CoreAPP.SRCore {
         
         private int MonedaField;
         
+        private decimal MontoPagarField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -648,6 +650,19 @@ namespace CoreAPP.SRCore {
                 if ((this.MonedaField.Equals(value) != true)) {
                     this.MonedaField = value;
                     this.RaisePropertyChanged("Moneda");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        public decimal MontoPagar {
+            get {
+                return this.MontoPagarField;
+            }
+            set {
+                if ((this.MontoPagarField.Equals(value) != true)) {
+                    this.MontoPagarField = value;
+                    this.RaisePropertyChanged("MontoPagar");
                 }
             }
         }

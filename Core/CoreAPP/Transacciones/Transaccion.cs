@@ -37,11 +37,19 @@ namespace CoreAPP.Transacciones
 
             if (txtTransaccionID.Text == "")
             {
+                dgvTransaccion.Visible = true;
+                txtData.Visible = false;
                 dgvTransaccion.DataSource = ws.ObtenerTiposTransacciones();
             }
-            else
+            if (txtTransaccionID.Text != "")
             {
-                dgvTransaccion.DataSource = ws.ObtenerTipoTransaccionByID(int.Parse(txtTransaccionID.Text));
+                SRCore.TipoTransaccion transaccion = new SRCore.TipoTransaccion();
+                dgvTransaccion.Visible = false;
+                txtData.Visible = true;
+                transaccion = ws.ObtenerTipoTransaccionByID(int.Parse(txtTransaccionID.Text));
+                txtData.Text = ("Tipo Transaccio ID : " + transaccion.TipoTransaccionID + "\n" +
+                                    "Descripcion : " + transaccion.Descripcion + "\n"
+                    );
             }
         }
 

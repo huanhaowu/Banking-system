@@ -83,3 +83,4 @@ C:\Users\000\source\repos\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.pdb
 C:\Users\000\source\repos\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.exe.config
 C:\Users\000\source\repos\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.exe
 C:\Users\000\source\repos\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.pdb
+C:\Users\000\source\repos\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Cuenta.Movimientos.resources

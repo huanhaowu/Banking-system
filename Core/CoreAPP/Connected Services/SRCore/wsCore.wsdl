@@ -319,6 +319,7 @@
           <s:element minOccurs="1" maxOccurs="1" name="Banco_ID" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="Estado" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="Moneda" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoPagar" type="s:decimal" />
         </s:sequence>
       </s:complexType>
       <s:element name="CrearPrestamosResponse">

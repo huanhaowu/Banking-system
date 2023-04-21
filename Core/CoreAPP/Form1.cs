@@ -27,20 +27,18 @@ namespace CoreAPP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtCuentaID cuenta = new txtCuentaID();
+            Usuarios.UsuariosV usuario = new UsuariosV();
             this.Hide();
-            cuenta.Show();
+            usuario.Show();
+            
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
-            Usuarios.UsuariosV usuario = new UsuariosV();
+            txtCuentaID cuenta = new txtCuentaID();
             this.Hide();
-            usuario.Show();
-
-
+            cuenta.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

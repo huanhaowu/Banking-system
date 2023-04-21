@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreAPP.SRCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,6 +62,13 @@ namespace CoreAPP.Usuarios
             Form1 form1 = new Form1();
             this.Hide();
             form1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Cuenta.Movimientos movimientos = new Cuenta.Movimientos();
+            this.Hide();
+            movimientos.Show();
         }
     }
 }

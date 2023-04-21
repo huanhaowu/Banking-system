@@ -37,6 +37,7 @@
             this.txtTransaccionID = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaccion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,12 +128,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(13, 97);
+            this.txtData.Multiline = true;
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(775, 252);
+            this.txtData.TabIndex = 9;
+            // 
             // Transaccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 361);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.txtTransaccionID);
@@ -161,5 +171,6 @@
         private System.Windows.Forms.TextBox txtTransaccionID;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtData;
     }
 }

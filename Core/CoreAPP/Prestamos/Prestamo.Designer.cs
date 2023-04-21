@@ -37,6 +37,7 @@
             this.txtPrestamo_ID = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.Volver = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,12 +131,21 @@
             this.Volver.UseVisualStyleBackColor = true;
             this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(13, 101);
+            this.txtData.Multiline = true;
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(775, 337);
+            this.txtData.TabIndex = 11;
+            // 
             // Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.Volver);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.txtPrestamo_ID);
@@ -164,5 +174,6 @@
         private System.Windows.Forms.TextBox txtPrestamo_ID;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.Button Volver;
+        private System.Windows.Forms.TextBox txtData;
     }
 }

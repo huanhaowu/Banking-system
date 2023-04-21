@@ -37,11 +37,25 @@ namespace CoreAPP.Prestamos
 
             if (txtPrestamo_ID.Text == "")
             {
+                dgvPrestamos.Visible = true;
+                txtData.Visible = false;
                 dgvPrestamos.DataSource = ws.ObtenerPrestamos();
             }
-            else
+            if (txtPrestamo_ID.Text != "")
             {
-                dgvPrestamos.DataSource = ws.ObtenerClienteByID(int.Parse(txtPrestamo_ID.Text));
+                txtData.Visible = true;
+                dgvPrestamos.Visible = false;
+                SRCore.Prestamos prestamo = new SRCore.Prestamos();
+                prestamo = ws.ObtenerPrestamosByID(int.Parse(txtPrestamo_ID.Text));
+                txtData.Text = ("Cliente ID : " + prestamo.Cliente_ID + "\n" +
+                                    "Tasa Interes : " + prestamo.Tasa_Interes + "\n" +
+                                    "Fecha Final : " + prestamo.FechaFinal + "\n" +
+                                    "Monto Prestamo : " + prestamo.Monto + "\n" +
+                                    "Banco ID : " + prestamo.Banco_ID + "\n" +
+                                    "Estado : " + prestamo.Estado + "\n" +
+                                    "Moneda : " + prestamo.Moneda + "\n" +
+                                    "Monto a Pagar : " + prestamo.MontoPagar + "\n"
+                    );
             }
         }
 

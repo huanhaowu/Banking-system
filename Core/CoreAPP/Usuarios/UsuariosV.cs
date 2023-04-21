@@ -37,11 +37,24 @@ namespace CoreAPP.Usuarios
 
             if (txtUsuario_ID.Text == "")
             {
+                dgvUsuario.Visible = true;
+                txtData.Visible = false;
                 dgvUsuario.DataSource = ws.ObtenerUsuarios();
             }
-            else
+            if (txtUsuario_ID.Text != "")
             {
-                dgvUsuario.DataSource = ws.ObtenerUsuarioByID(int.Parse(txtUsuario_ID.Text));
+                txtData.Visible = true;
+                dgvUsuario.Visible = false;
+                SRCore.Usuario user = new SRCore.Usuario();
+                user = ws.ObtenerUsuarioByID(int.Parse(txtUsuario_ID.Text));
+                txtData.Text = ("Usuario ID : " + user.UsuarioId + "\n" +
+                                    "Cliente ID : " + user.ClienteId + "\n" +
+                                    "Usuario : " + user.NombreUser + "\n" +
+                                    "Clave : " + user.Password + "\n" +
+                                    "Perfil ID: " + user.PerfilId + "\n" +
+                                    "Fecha Creacion : " + user.FCreacion + "\n"
+                    );
+                 
             }
         }
 
