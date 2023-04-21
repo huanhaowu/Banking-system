@@ -948,6 +948,27 @@ namespace Core
             }
         }
 
+        [WebMethod]
+        public bool InsertTransaccion(int Tipo_transaccion_ID, int Cuenta_ID, int Cuenta_Destino_ID, int Transaccion_Monto, int Estado_ID)
+        {
+            TransaccionTableAdapter tblTransaccion = new TransaccionTableAdapter();
+            tblTransaccion.Connection.Open();
+            SqlTransaction trans = tblTransaccion.Connection.BeginTransaction();
+            tblTransaccion.Transaction = trans;
+
+            try
+            {
+                tblTransaccion.sp_InsertTransaccion(Tipo_transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID);
+                trans.Commit();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                trans.Rollback();
+                return false;
+            }
+        }
 
 
     }
