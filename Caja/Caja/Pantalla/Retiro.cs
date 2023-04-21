@@ -29,12 +29,12 @@ namespace Caja.Pantalla
 
         private void bttConfirmarR1_Click(object sender, EventArgs e)
         {
-            grupoRetiro1.Hide();
-            grupoRetiro1.Visible = false;
-            grupoRetiro2.Show();
-            grupoRetiro2.Visible = true;
-            grupoBoton.Visible = true;
-
+            Retiro2 retiro = new Retiro2();
+            this.Hide();
+            if (retiro.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void Retiro_Load(object sender, EventArgs e)
@@ -79,11 +79,7 @@ namespace Caja.Pantalla
 
         private void bttCancelarR_Click(object sender, EventArgs e)
         {
-            grupoRetiro1.Show();
-            grupoRetiro1.Visible = true;
-            grupoRetiro2.Hide();
-            grupoRetiro2.Visible = false;
-            grupoBoton.Visible = false;
+
         }
     }
 }

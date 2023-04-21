@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
@@ -98,11 +100,23 @@
     <Compile Include="Pantalla\Prestamos.Designer.cs">
       <DependentUpon>Prestamos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantalla\Prestamos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla\Prestamos2.Designer.cs">
+      <DependentUpon>Prestamos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantalla\Retiro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantalla\Retiro.Designer.cs">
       <DependentUpon>Retiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla\Retiro2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla\Retiro2.Designer.cs">
+      <DependentUpon>Retiro2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,8 +143,17 @@
     <EmbeddedResource Include="Pantalla\Prestamos.resx">
       <DependentUpon>Prestamos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla\Prestamos2.aa-ER.resx">
+      <DependentUpon>Prestamos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla\Prestamos2.resx">
+      <DependentUpon>Prestamos2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantalla\Retiro.resx">
       <DependentUpon>Retiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla\Retiro2.resx">
+      <DependentUpon>Retiro2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,6 +190,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DbCaja.mdf</DependentUpon>
     </Content>
+    <None Include="Imagenes\Main Hub - Prestamos.png" />
     <None Include="Resources\circle-xmark-solid %281%29 1.png" />
     <None Include="Resources\Group 15.png" />
     <None Include="Resources\Group 25.png" />
