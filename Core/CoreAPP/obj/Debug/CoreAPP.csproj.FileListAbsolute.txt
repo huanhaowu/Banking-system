@@ -1,0 +1,58 @@
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.csproj.AssemblyReference.cache
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Cliente.Crear.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Cliente.Update.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Form1.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Properties.Resources.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.CrearCuenta.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.Update.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.Usuario.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.csproj.GenerateResource.cache
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.csproj.CoreCompileInputs.cache
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Perfiles.CrearPerfil.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Perfiles.Perfiles.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Perfiles.Update.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.CrearUsuario.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.Updt.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Usuarios.UsuariosV.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Prestamos.Prestamo.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\bin\Debug\CoreAPP.exe.config
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\bin\Debug\CoreAPP.exe
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\bin\Debug\CoreAPP.pdb
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.exe
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.pdb
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Cliente.Customer.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Prestamos.actualizarPrestamos.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Prestamos.CrearPrestamo.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Transacciones.CrearTransaccion.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Transacciones.Transaccion.resources
+D:\Visual Studio Code\Programas Uni\CoreAPP\CoreAPP\obj\Debug\CoreAPP.Transacciones.updateTransaccion.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.exe.config
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.exe
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\bin\Debug\CoreAPP.pdb
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.csproj.AssemblyReference.cache
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Cliente.Crear.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Cliente.Customer.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Cliente.Update.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Form1.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Perfiles.CrearPerfil.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Perfiles.Perfiles.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Perfiles.Update.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Prestamos.actualizarPrestamos.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Prestamos.CrearPrestamo.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Prestamos.Prestamo.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Properties.Resources.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.CrearCuenta.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.Update.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.Usuario.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Transacciones.CrearTransaccion.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Transacciones.Transaccion.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Transacciones.updateTransaccion.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.CrearUsuario.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.Updt.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.Usuarios.UsuariosV.resources
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.csproj.GenerateResource.cache
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.csproj.CoreCompileInputs.cache
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.exe
+C:\Users\Nelso\Desktop\Fork\Proyecto-Banco\Core\CoreAPP\obj\Debug\CoreAPP.pdb

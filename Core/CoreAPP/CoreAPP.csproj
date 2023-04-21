@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80F4CD2E-51F7-4FEB-94C8-E6F64D8C4488}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoreAPP</RootNamespace>
+    <AssemblyName>CoreAPP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\Crear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Crear.Designer.cs">
+      <DependentUpon>Crear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfiles\CrearPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfiles\CrearPerfil.Designer.cs">
+      <DependentUpon>CrearPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfiles\Perfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfiles\Perfiles.Designer.cs">
+      <DependentUpon>Perfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfiles\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfiles\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\actualizarPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\actualizarPrestamos.Designer.cs">
+      <DependentUpon>actualizarPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\CrearPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\CrearPrestamo.Designer.cs">
+      <DependentUpon>CrearPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cuenta\CrearCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuenta\CrearCuenta.Designer.cs">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\CrearTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\CrearTransaccion.Designer.cs">
+      <DependentUpon>CrearTransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\Transaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Transaccion.Designer.cs">
+      <DependentUpon>Transaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\updateTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\updateTransaccion.Designer.cs">
+      <DependentUpon>updateTransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\CrearUsuario.Designer.cs">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Updt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Updt.Designer.cs">
+      <DependentUpon>Updt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosV.Designer.cs">
+      <DependentUpon>UsuariosV.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente\Crear.resx">
+      <DependentUpon>Crear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfiles\CrearPerfil.resx">
+      <DependentUpon>CrearPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfiles\Perfiles.resx">
+      <DependentUpon>Perfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfiles\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\actualizarPrestamos.resx">
+      <DependentUpon>actualizarPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\CrearPrestamo.resx">
+      <DependentUpon>CrearPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cuenta\CrearCuenta.resx">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuenta\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuenta\Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones\CrearTransaccion.resx">
+      <DependentUpon>CrearTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones\Transaccion.resx">
+      <DependentUpon>Transaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones\updateTransaccion.resx">
+      <DependentUpon>updateTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\CrearUsuario.resx">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Updt.resx">
+      <DependentUpon>Updt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\UsuariosV.resx">
+      <DependentUpon>UsuariosV.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
