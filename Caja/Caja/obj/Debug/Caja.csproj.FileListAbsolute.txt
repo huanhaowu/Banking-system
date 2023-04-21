@@ -63,3 +63,7 @@ C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Pre
 C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\aa-ER\Caja.resources.dll
 C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\aa-ER\Caja.resources.dll
 C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro2.resources
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.pdb

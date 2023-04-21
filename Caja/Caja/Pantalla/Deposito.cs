@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Caja.DsCajaTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -59,13 +61,48 @@ namespace Caja.Pantalla
             txtCuentaD.Clear();
         }
 
+        // VERIFICAR LA INSERCION DE TRANSACTION
         private void bttConfirmarD_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proceso Completado", "Estado de Deposito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            TransaccionTableAdapter transaccionTableAdapter = new TransaccionTableAdapter();
+            transaccionTableAdapter.Connection.Open();
+            int tipo_transaccion = 2;
+            SqlTransaction trans = transaccionTableAdapter.Connection.BeginTransaction(); 
 
-            txtMontoD.Clear();
-            txtDescripD.Clear();
-            txtCuentaD.Clear();
+            //conexion a la capa de integracion
+            bool conn = false;
+
+            if (true)
+            {
+                //llamar la acción en el webservice
+            }
+            else 
+            {
+                try
+                {
+                    //Insert en la tabla de transacciones
+                    transaccionTableAdapter.spInsertTransaccion(tipo_transaccion, 0, int.Parse(txtCuentaD.Text), int.Parse(txtMontoD.Text), 1);
+                    
+                    //Upsert en la tabla de MontoDiario
+                    transaccionTableAdapter.spUpsertMontoInicial(tipo_transaccion, int.Parse(txtMontoD.Text));
+                    MessageBox.Show("Proceso Completado", "Estado de Deposito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    trans.Commit();
+                    txtMontoD.Clear();
+                    txtDescripD.Clear();
+                    txtCuentaD.Clear();
+
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(e.error);
+                    trans.Rollback();
+                }
+                
+            }
+
+
+         
         }
 
         private void bttReciboD_Click(object sender, EventArgs e)
