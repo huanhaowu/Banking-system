@@ -57,20 +57,20 @@ VALUES ('Luis', 'Fernández', 'Pasaporte', 'A1B2C3D4', 'luisfernandez@mail.com',
 
 
 -- TRUNCATE TABLE Cuenta;
-INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro)
-VALUES (12345, 1, 1, 5000.00, '2022-01-01');
+INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro, Moneda_ID)
+VALUES (12345, 1, 1, 5000.00, '2022-01-01', 6);
 
-INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro)
-VALUES (23456, 2, 2, 10000.00, '2022-01-02');
+INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro, Moneda_ID)
+VALUES (23456, 2, 2, 10000.00, '2022-01-02', 6);
 
-INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro)
-VALUES (34567, 1, 3, 8000.00, '2022-01-03');
+INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro, Moneda_ID)
+VALUES (34567, 1, 3, 8000.00, '2022-01-03', 6);
 
-INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro)
-VALUES (45678, 3, 4, 15000.00, '2022-01-04');
+INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro, Moneda_ID)
+VALUES (45678, 3, 4, 15000.00, '2022-01-04', 6);
 
-INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro)
-VALUES (56789, 2, 5, 12000.00, '2022-01-05');
+INSERT INTO Cuenta (Numero_Cuenta, Tipo_Cuenta_ID, Cliente_ID, Monto, Fecha_Registro, Moneda_ID)
+VALUES (56789, 2, 5, 12000.00, '2022-01-05', 6);
 
 
 -- TRUNCATE TABLE Moneda
@@ -91,19 +91,19 @@ VALUES ('Dólar Canadiense', 'CAD');
 
 
 -- TRUNCATE TABLE Transaccion
-INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Beneficiario_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
+INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
 VALUES (1, 1, 2, 1000.00, 1, 1);
 
-INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Beneficiario_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
+INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
 VALUES (2, 3, 4, 500.00, 2, 2);
 
-INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Beneficiario_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
+INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
 VALUES (1, 5, 6, 2000.00, 1, 3);
 
-INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Beneficiario_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
+INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
 VALUES (3, 7, 8, 1500.00, 2, 4);
 
-INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Beneficiario_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
+INSERT INTO Transaccion (Tipo_Transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID, Moneda_ID)
 VALUES (2, 9, 10, 3000.00, 1, 5);
 
 

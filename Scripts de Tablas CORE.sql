@@ -87,7 +87,7 @@ CREATE TABLE Transaccion(
 	Transaccion_ID int identity(1,1),
 	Tipo_Transaccion_ID int NOT NULL,
 	Cuenta_ID int NOT NULL, --Origen
-	Beneficiario_ID int NOT NULL, --Destino
+	Cuenta_Destino_ID int NOT NULL, --Destino
 	Transaccion_Monto int NOT NULL,
 	Transaccion_FechaRegistro datetime default getdate() NOT NULL,
 	Estado_ID int NOT NULL,
@@ -124,5 +124,5 @@ CREATE TABLE Prestamo(
 	Monto_Pagar decimal(18,2) NOT NULL,
 	Banco_ID int NOT NULL,
 	Estado_ID int NOT NULL, 
-	Moneda_ID int NOT NULL
+	Moneda_ID int default 6 NOT NULL
 );
