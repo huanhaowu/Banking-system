@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://intec.edu.do/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://intec.edu.do/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://intec.edu.do/">
+      <s:element name="ValidarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario_clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidarUsuarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMontoNumeroCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero_cuenta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMontoNumeroCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMontoNumeroCuentaResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTransaccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Tipo_transaccion_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Cuenta_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Cuenta_Destino_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Transaccion_Monto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Estado_ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTransaccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertTransaccionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMontoNumeroCuentaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMontoNumeroCuenta" />
+  </wsdl:message>
+  <wsdl:message name="GetMontoNumeroCuentaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMontoNumeroCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertTransaccionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertTransaccion" />
+  </wsdl:message>
+  <wsdl:message name="InsertTransaccionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertTransaccionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsIntegracionSoap">
+    <wsdl:operation name="ValidarUsuario">
+      <wsdl:input message="tns:ValidarUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontoNumeroCuenta">
+      <wsdl:input message="tns:GetMontoNumeroCuentaSoapIn" />
+      <wsdl:output message="tns:GetMontoNumeroCuentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccion">
+      <wsdl:input message="tns:InsertTransaccionSoapIn" />
+      <wsdl:output message="tns:InsertTransaccionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsIntegracionSoap" type="tns:wsIntegracionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarUsuario">
+      <soap:operation soapAction="http://intec.edu.do/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontoNumeroCuenta">
+      <soap:operation soapAction="http://intec.edu.do/GetMontoNumeroCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccion">
+      <soap:operation soapAction="http://intec.edu.do/InsertTransaccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsIntegracionSoap12" type="tns:wsIntegracionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarUsuario">
+      <soap12:operation soapAction="http://intec.edu.do/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontoNumeroCuenta">
+      <soap12:operation soapAction="http://intec.edu.do/GetMontoNumeroCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccion">
+      <soap12:operation soapAction="http://intec.edu.do/InsertTransaccion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsIntegracion">
+    <wsdl:port name="wsIntegracionSoap" binding="tns:wsIntegracionSoap">
+      <soap:address location="https://localhost:44388/wsIntegracion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsIntegracionSoap12" binding="tns:wsIntegracionSoap12">
+      <soap12:address location="https://localhost:44388/wsIntegracion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -47,7 +47,7 @@
             this.txtMontoD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMontoD.Location = new System.Drawing.Point(144, 226);
             this.txtMontoD.Name = "txtMontoD";
-            this.txtMontoD.Size = new System.Drawing.Size(206, 13);
+            this.txtMontoD.Size = new System.Drawing.Size(206, 16);
             this.txtMontoD.TabIndex = 1;
             this.txtMontoD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMontoD_KeyPress);
             // 
@@ -58,8 +58,9 @@
             this.txtCuentaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuentaD.Location = new System.Drawing.Point(144, 256);
             this.txtCuentaD.Name = "txtCuentaD";
-            this.txtCuentaD.Size = new System.Drawing.Size(206, 13);
+            this.txtCuentaD.Size = new System.Drawing.Size(206, 16);
             this.txtCuentaD.TabIndex = 2;
+            this.txtCuentaD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuentaD_KeyPress);
             // 
             // txtDescripD
             // 

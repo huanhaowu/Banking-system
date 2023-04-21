@@ -68,6 +68,8 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,6 +82,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\wsIntegracion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="DsCaja.cs">
       <DependentUpon>DsCaja.xsd</DependentUpon>
     </Compile>
@@ -208,6 +215,10 @@
     <EmbeddedResource Include="TransacTotal.resx">
       <DependentUpon>TransacTotal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\wsIntegracion\Caja.wsIntegracion.ValidarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsIntegracion\wsIntegracion.wsdl" />
     <None Include="DsCaja.xsc">
       <DependentUpon>DsCaja.xsd</DependentUpon>
     </None>
@@ -239,6 +250,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\wsIntegracion\wsIntegracion.disco" />
+    <None Include="Connected Services\wsIntegracion\configuration91.svcinfo" />
+    <None Include="Connected Services\wsIntegracion\configuration.svcinfo" />
+    <None Include="Connected Services\wsIntegracion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="DbCaja.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -276,6 +294,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\wsIntegracion\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

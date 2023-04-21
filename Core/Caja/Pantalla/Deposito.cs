@@ -66,43 +66,51 @@ namespace Caja.Pantalla
         {
             TransaccionTableAdapter transaccionTableAdapter = new TransaccionTableAdapter();
             transaccionTableAdapter.Connection.Open();
-            int tipo_transaccion = 2;
             SqlTransaction trans = transaccionTableAdapter.Connection.BeginTransaction(); 
 
             //conexion a la capa de integracion
-            bool conn = false;
+            bool conn = true;
 
-            if (true)
-            {
-                //llamar la acción en el webservice
-            }
-            else 
+            wsIntegracion.wsIntegracionSoapClient webServiceIntegracion = new wsIntegracion.wsIntegracionSoapClient();
+
+            bool Valido;
+
+            int monto = int.Parse(txtMontoD.Text);
+            int numero_cuenta = int.Parse(txtCuentaD.Text);
+            int tipo_transaccion = 2;
+
+            //Insert en la tabla de transacciones
+            transaccionTableAdapter.spInsertTransaccion(tipo_transaccion, 0, int.Parse(txtCuentaD.Text), int.Parse(txtMontoD.Text), 1);
+
+            //Upsert en la tabla de MontoDiario
+            transaccionTableAdapter.spUpsertMontoInicial(tipo_transaccion, int.Parse(txtMontoD.Text));
+            MessageBox.Show("Proceso Completado", "Estado de Deposito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            trans.Commit();
+
+            if (conn)
             {
                 try
                 {
-                    //Insert en la tabla de transacciones
-                    transaccionTableAdapter.spInsertTransaccion(tipo_transaccion, 0, int.Parse(txtCuentaD.Text), int.Parse(txtMontoD.Text), 1);
-                    
-                    //Upsert en la tabla de MontoDiario
-                    transaccionTableAdapter.spUpsertMontoInicial(tipo_transaccion, int.Parse(txtMontoD.Text));
-                    MessageBox.Show("Proceso Completado", "Estado de Deposito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    Valido = webServiceIntegracion.InsertTransaccion(tipo_transaccion, 0, numero_cuenta, monto, 1);
                     trans.Commit();
-                    txtMontoD.Clear();
-                    txtDescripD.Clear();
-                    txtCuentaD.Clear();
-
                 }
-                catch (Exception error)
+                catch (Exception Error)
                 {
-                    //Console.WriteLine(e.error);
+                    MessageBox.Show("ERROR", "Ocurrio un error en la transaccion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     trans.Rollback();
                 }
-                
+
+            }
+            else 
+            {
+                MessageBox.Show("Desconectado", "Se encuentra desconectado de la red", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            txtMontoD.Clear();
+            txtDescripD.Clear();
+            txtCuentaD.Clear();
 
-         
         }
 
         private void bttReciboD_Click(object sender, EventArgs e)
@@ -113,6 +121,11 @@ namespace Caja.Pantalla
         }
 
         private void txtMontoD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtCuentaD_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
