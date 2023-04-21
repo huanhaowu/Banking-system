@@ -352,7 +352,7 @@ namespace Core
         }
 
         [WebMethod]
-        public Usuario[] ObtenerUsuario()
+        public Usuario[] ObtenerUsuarios()
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
@@ -516,7 +516,7 @@ namespace Core
         }
 
         [WebMethod]
-        public Cuentas ObtenerCuentaByID(int Cuenta_ID)
+        public Cuentas ObtenerCuentaPorNo(int No_Cuenta)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
@@ -526,7 +526,7 @@ namespace Core
 
             try
             {
-                CuentaDataTable cuentas = tblCuenta.sp_ObtenerCuentaPorID(Cuenta_ID);
+                CuentaDataTable cuentas = tblCuenta.sp_ObtenerCuentaPorNo(No_Cuenta);
                 transaction.Commit(); //confirmar la transaccion
 
                 foreach (var x in cuentas)
@@ -550,7 +550,7 @@ namespace Core
 
 
         [WebMethod]
-        public void ConsultarMovimientos(int Cuenta_ID)
+        public void ConsultarMovimientos(int NO_Cuenta)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
@@ -680,12 +680,12 @@ namespace Core
                 {
                     Prestamos lo = new Prestamos();
 
-                    lo.Cliente_ID = int.Parse(prestamos.Rows[i]["Usuario_ID"].ToString());
+                    lo.Cliente_ID = int.Parse(prestamos.Rows[i]["Cliente_ID"].ToString());
                     lo.Tasa_Interes = decimal.Parse(prestamos.Rows[i]["Tasa_Interes"].ToString());
                     lo.FechaFinal = DateTime.Parse(prestamos.Rows[i]["Fecha_Final"].ToString());
                     lo.Monto = decimal.Parse(prestamos.Rows[i]["Monto_Prestamo"].ToString());
-                    lo.Estado = int.Parse(prestamos.Rows[i]["Estado_ID"].ToString());
                     lo.Banco_ID = int.Parse(prestamos.Rows[i]["Banco_ID"].ToString());
+                    lo.Estado = int.Parse(prestamos.Rows[i]["Estado_ID"].ToString());
                     lo.Moneda = int.Parse(prestamos.Rows[i]["Moneda_ID"].ToString());
                     loans[i] = lo;
                 }
@@ -785,7 +785,7 @@ namespace Core
         }
 
         [WebMethod]
-        public TipoTransaccion[] ObtenerTipoTransaccion()
+        public TipoTransaccion[] ObtenerTiposTransacciones()
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();

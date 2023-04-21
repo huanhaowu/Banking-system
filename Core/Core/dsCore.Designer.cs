@@ -3349,10 +3349,10 @@ namespace Core.dsCoreTableAdapters {
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Moneda_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "dbo.sp_ObtenerCuentaPorID";
+            this._commandCollection[5].CommandText = "dbo.sp_ObtenerCuentaPorNo";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cuenta_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Numero_Cuenta", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
             this._commandCollection[6].CommandText = "dbo.sp_ObtenerTodasLasCuentas";
@@ -3389,10 +3389,10 @@ namespace Core.dsCoreTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual dsCore.CuentaDataTable sp_ObtenerCuentaPorID(global::System.Nullable<int> Cuenta_ID) {
+        public virtual dsCore.CuentaDataTable sp_ObtenerCuentaPorNo(global::System.Nullable<int> Numero_Cuenta) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
-            if ((Cuenta_ID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cuenta_ID.Value));
+            if ((Numero_Cuenta.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Numero_Cuenta.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
