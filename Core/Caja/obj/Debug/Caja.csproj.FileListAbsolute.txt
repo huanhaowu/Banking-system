@@ -1,0 +1,129 @@
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\DbCaja.mdf
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\DbCaja_log.ldf
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Caja.exe.config
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Caja.exe
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Caja.pdb
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Properties.Resources.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.GenerateResource.cache
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.pdb
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.IniciarSesion.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Deposito.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Configuracion.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.MontoInicial.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.CuadreTransaccion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\DbCaja.mdf
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\DbCaja_log.ldf
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.exe.config
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.exe
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\bin\Debug\Caja.pdb
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.IniciarSesion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Configuracion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.CuadreTransaccion.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Deposito.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.MontoInicial.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.Properties.Resources.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.GenerateResource.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.csproj.CoreCompileInputs.cache
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\th3n4\Desktop\All\Trimestre 9\Desarrollo 3\Proyecto Banco\Caja\Caja\obj\Debug\Caja.pdb
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\DbCaja.mdf
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\DbCaja_log.ldf
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\Caja.exe.config
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\Caja.exe
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\Caja.pdb
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.IniciarSesion.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Configuracion.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.CuadreTransaccion.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Deposito.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.MontoInicial.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Properties.Resources.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.ResourceFondo.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.GenerateResource.cache
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.CoreCompileInputs.cache
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.pdb
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.aa-ER.resources
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\bin\Debug\aa-ER\Caja.resources.dll
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\aa-ER\Caja.resources.dll
+C:\Users\th3n4\Source\Repos\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro2.resources
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.exe
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.pdb
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro2.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.aa-ER.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.TransacInd1.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\aa-ER\Caja.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\EnvDTE.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\stdole.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\aa-ER\Caja.resources.dll
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.CopyComplete
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.TransacTotal.resources
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Core\Caja\obj\Debug\Caja.csproj.AssemblyReference.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Core\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Core\Caja\obj\Debug\Caja.exe
+C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Core\Caja\obj\Debug\Caja.pdb
