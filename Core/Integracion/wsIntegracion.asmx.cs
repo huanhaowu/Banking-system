@@ -19,7 +19,25 @@ namespace Integracion
     public class wsIntegracion : System.Web.Services.WebService
     {
 
-        [WebMethod]
+        public static void RegistrarLog(string Descripcion)
+        {
+            tbl_Log4NetTableAdapter tbl_Log = new tbl_Log4NetTableAdapter();
+            tbl_Log.Connection.Open();
+            SqlTransaction transaction = tbl_Log.Connection.BeginTransaction();
+            tbl_Log.Transaction = transaction;
+            try
+            {
+                tbl_Log.RegistrarLog(Descripcion);
+                transaction.Commit();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                transaction.Rollback(); //revertir la transaccion
+            }
+        }
+
+                [WebMethod]
         public bool ValidarUsuario(string Usuario_nombre, string Usuario_clave)
         {
             //Conexion al webservice del CORE
@@ -33,6 +51,7 @@ namespace Integracion
             {
                 //Variable con el valor de retorno de eso
                 Valido = webServiceCore.ValidarInicioSesionCaja(Usuario_nombre, Usuario_clave);
+                RegistrarLog("Crendeciales validadas exitosamente");
 
                 return Valido;
             }
@@ -49,10 +68,12 @@ namespace Integracion
 
                 if (Valido)
                 {
+                    RegistrarLog("Crendeciales validadas exitosamente");
                     return Valido;
                 }
                 else
                 {
+                    RegistrarLog("Ha ocurrido un erro al validar un usuario");
                     return Valido;
                 }
             }
@@ -77,6 +98,7 @@ namespace Integracion
             {
                 //Variable con el valor de retorno de eso
                 wsCore.Cuentas cuenta = webServiceCore.ObtenerCuentaPorNo(numero_cuenta);
+                RegistrarLog("Se ha solicitado exitosamente el monto de una cuenta");
                 return cuenta.Monto; //retorna el monto del objeto cuenta
             }
             else
@@ -100,11 +122,13 @@ namespace Integracion
                         acc.Moneda = x.Moneda_ID;
                         acc.Monto = x.Monto;
                     }
+                    RegistrarLog("Se ha solicitado exitosamente el monto de una cuenta");
                     return acc.Monto;
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
+                    RegistrarLog("Error al solicitar el monto de una cuenta");
                     transaction.Rollback(); //revertir la transaccion
                 }
 
@@ -129,7 +153,7 @@ namespace Integracion
             {
                 //Variable con el valor de retorno de eso
                 Valido = webServiceCore.InsertTransaccion(Tipo_transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID);
-
+                RegistrarLog("Se ha realizado una transaccion");
                 return Valido;
             }
             else
@@ -144,12 +168,16 @@ namespace Integracion
                     tblTransaccion.sp_InsertTransaccion(Tipo_transaccion_ID, Cuenta_ID, Cuenta_Destino_ID, Transaccion_Monto, Estado_ID);
                     trans.Commit();
                     return Valido = true;
+                    RegistrarLog("Se ha realizado una transaccion");
+
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
+                    RegistrarLog("Error al realizar una transaccion");
                     trans.Rollback();
                     return Valido = false;
+
                 }
 
             }
