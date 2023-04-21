@@ -60,6 +60,7 @@
             this.bttDepositar4.Size = new System.Drawing.Size(102, 25);
             this.bttDepositar4.TabIndex = 14;
             this.bttDepositar4.UseVisualStyleBackColor = false;
+            this.bttDepositar4.Click += new System.EventHandler(this.bttDepositar4_Click);
             // 
             // bttRetirar4
             // 
@@ -79,6 +80,7 @@
             this.bttRetirar4.Size = new System.Drawing.Size(151, 25);
             this.bttRetirar4.TabIndex = 15;
             this.bttRetirar4.UseVisualStyleBackColor = false;
+            this.bttRetirar4.Click += new System.EventHandler(this.bttRetirar4_Click);
             // 
             // bttConfiguracion4
             // 

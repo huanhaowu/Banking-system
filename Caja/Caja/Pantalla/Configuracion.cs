@@ -68,5 +68,10 @@ namespace Caja.Pantalla
                 Application.Exit();
             }
         }
+
+        private void bttReciboTransa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -67,5 +67,15 @@ namespace Caja.Pantalla
             txtDescripD.Clear();
             txtCuentaD.Clear();
         }
+
+        private void bttReciboD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMontoD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }

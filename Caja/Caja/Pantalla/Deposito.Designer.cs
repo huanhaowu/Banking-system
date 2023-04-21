@@ -44,27 +44,28 @@
             // 
             this.txtMontoD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtMontoD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMontoD.Font = new System.Drawing.Font("Nunito Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMontoD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMontoD.Location = new System.Drawing.Point(144, 226);
             this.txtMontoD.Name = "txtMontoD";
-            this.txtMontoD.Size = new System.Drawing.Size(206, 16);
+            this.txtMontoD.Size = new System.Drawing.Size(206, 13);
             this.txtMontoD.TabIndex = 1;
+            this.txtMontoD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMontoD_KeyPress);
             // 
             // txtCuentaD
             // 
             this.txtCuentaD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtCuentaD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCuentaD.Font = new System.Drawing.Font("Nunito Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuentaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuentaD.Location = new System.Drawing.Point(144, 256);
             this.txtCuentaD.Name = "txtCuentaD";
-            this.txtCuentaD.Size = new System.Drawing.Size(206, 16);
+            this.txtCuentaD.Size = new System.Drawing.Size(206, 13);
             this.txtCuentaD.TabIndex = 2;
             // 
             // txtDescripD
             // 
             this.txtDescripD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtDescripD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescripD.Font = new System.Drawing.Font("Nunito Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripD.Location = new System.Drawing.Point(143, 295);
             this.txtDescripD.Multiline = true;
             this.txtDescripD.Name = "txtDescripD";
@@ -142,11 +143,11 @@
             this.bttConfirmarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConfirmarD.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttConfirmarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttConfirmarD.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarD.Location = new System.Drawing.Point(24, 416);
+            this.bttConfirmarD.Location = new System.Drawing.Point(26, 416);
             this.bttConfirmarD.Name = "bttConfirmarD";
-            this.bttConfirmarD.Size = new System.Drawing.Size(103, 52);
+            this.bttConfirmarD.Size = new System.Drawing.Size(106, 52);
             this.bttConfirmarD.TabIndex = 7;
             this.bttConfirmarD.Text = "CONFIRMAR";
             this.bttConfirmarD.UseVisualStyleBackColor = false;
@@ -163,7 +164,7 @@
             this.bttReciboD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboD.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttReciboD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttReciboD.ForeColor = System.Drawing.Color.White;
             this.bttReciboD.Location = new System.Drawing.Point(138, 416);
             this.bttReciboD.Name = "bttReciboD";
@@ -171,6 +172,7 @@
             this.bttReciboD.TabIndex = 8;
             this.bttReciboD.Text = "RECIBO";
             this.bttReciboD.UseVisualStyleBackColor = false;
+            this.bttReciboD.Click += new System.EventHandler(this.bttReciboD_Click);
             // 
             // bttCancelarD
             // 
@@ -183,7 +185,7 @@
             this.bttCancelarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttCancelarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCancelarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCancelarD.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttCancelarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttCancelarD.ForeColor = System.Drawing.Color.White;
             this.bttCancelarD.Location = new System.Drawing.Point(253, 416);
             this.bttCancelarD.Name = "bttCancelarD";

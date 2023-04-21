@@ -35,7 +35,7 @@
             this.txtCuentaR = new System.Windows.Forms.TextBox();
             this.bttConfiguracion2 = new System.Windows.Forms.Button();
             this.bttPrestamos2 = new System.Windows.Forms.Button();
-            this.bttDepositar2 = new System.Windows.Forms.Button();
+            this.bttDepositar4 = new System.Windows.Forms.Button();
             this.grupoRetiro1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,25 +135,25 @@
             this.bttPrestamos2.UseVisualStyleBackColor = false;
             this.bttPrestamos2.Click += new System.EventHandler(this.bttPrestamos2_Click);
             // 
-            // bttDepositar2
+            // bttDepositar4
             // 
-            this.bttDepositar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.bttDepositar4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bttDepositar2.BackColor = System.Drawing.Color.Transparent;
-            this.bttDepositar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.bttDepositar2.FlatAppearance.BorderSize = 0;
-            this.bttDepositar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.bttDepositar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.bttDepositar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttDepositar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttDepositar2.ForeColor = System.Drawing.Color.White;
-            this.bttDepositar2.Location = new System.Drawing.Point(278, 71);
-            this.bttDepositar2.Name = "bttDepositar2";
-            this.bttDepositar2.Size = new System.Drawing.Size(102, 25);
-            this.bttDepositar2.TabIndex = 7;
-            this.bttDepositar2.UseVisualStyleBackColor = false;
-            this.bttDepositar2.Click += new System.EventHandler(this.bttDepositar2_Click);
+            this.bttDepositar4.BackColor = System.Drawing.Color.Transparent;
+            this.bttDepositar4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.bttDepositar4.FlatAppearance.BorderSize = 0;
+            this.bttDepositar4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.bttDepositar4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bttDepositar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttDepositar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttDepositar4.ForeColor = System.Drawing.Color.White;
+            this.bttDepositar4.Location = new System.Drawing.Point(278, 71);
+            this.bttDepositar4.Name = "bttDepositar4";
+            this.bttDepositar4.Size = new System.Drawing.Size(102, 25);
+            this.bttDepositar4.TabIndex = 7;
+            this.bttDepositar4.UseVisualStyleBackColor = false;
+            this.bttDepositar4.Click += new System.EventHandler(this.bttDepositar2_Click);
             // 
             // Retiro
             // 
@@ -164,7 +164,7 @@
             this.ClientSize = new System.Drawing.Size(720, 520);
             this.Controls.Add(this.bttConfiguracion2);
             this.Controls.Add(this.bttPrestamos2);
-            this.Controls.Add(this.bttDepositar2);
+            this.Controls.Add(this.bttDepositar4);
             this.Controls.Add(this.grupoRetiro1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -186,7 +186,7 @@
         private System.Windows.Forms.GroupBox grupoRetiro1;
         private System.Windows.Forms.Button bttConfiguracion2;
         private System.Windows.Forms.Button bttPrestamos2;
-        private System.Windows.Forms.Button bttDepositar2;
+        private System.Windows.Forms.Button bttDepositar4;
         private System.Windows.Forms.TextBox txtIDR;
         private System.Windows.Forms.TextBox txtCuentaR;
         private System.Windows.Forms.Button bttConfirmarR1;
