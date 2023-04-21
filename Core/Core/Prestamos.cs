@@ -14,5 +14,6 @@ namespace Core
         public int Banco_ID { get; set; }
         public int Estado { get; set; }
         public int Moneda { get; set; }
+        public decimal MontoPagar { get; set; }
     }
 }

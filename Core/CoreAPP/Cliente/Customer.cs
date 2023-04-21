@@ -20,14 +20,48 @@ namespace CoreAPP.Cliente
         private void BtnCrear_Click(object sender, EventArgs e)
         {
             Cliente.Crear Crear = new Cliente.Crear();
-            Crear.Show(this);
+            this.Hide();
+            Crear.Show();
 
         }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             Cliente.Update update = new Cliente.Update();
-            update.Show(this);
+            this.Hide();
+            update.Show();
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            SRCore.wsCoreSoapClient ws = new SRCore.wsCoreSoapClient();
+
+            if (txtClienteID.Text == "")
+            {
+                dgvClientes.DataSource =  ws.ObtenerClientes();
+            }
+            else
+            {
+                dgvClientes.DataSource = ws.ObtenerClienteByID(Convert.ToInt32(txtClienteID.Text));
+            }
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            SRCore.wsCoreSoapClient ws = new SRCore.wsCoreSoapClient();
+            MessageBox.Show(ws.BorrarCliente(Convert.ToInt32(txtClienteID.Text)));
+        }
+
+        private void txtClienteID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            this.Hide();
+            form.Show();
         }
     }
 }

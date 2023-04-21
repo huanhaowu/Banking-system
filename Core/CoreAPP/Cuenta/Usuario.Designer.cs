@@ -1,6 +1,6 @@
 ﻿namespace CoreAPP.Usuarios
 {
-    partial class Usuario
+    partial class txtCuentaID
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvCuentas = new System.Windows.Forms.DataGridView();
+            this.txtCuenta_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnUpdate = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,22 +50,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cuentas";
             // 
-            // dataGridView1
+            // dgvCuentas
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 103);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 335);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvCuentas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCuentas.Location = new System.Drawing.Point(12, 103);
+            this.dgvCuentas.Name = "dgvCuentas";
+            this.dgvCuentas.Size = new System.Drawing.Size(776, 335);
+            this.dgvCuentas.TabIndex = 1;
             // 
-            // textBox1
+            // txtCuenta_ID
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(116, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtCuenta_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCuenta_ID.Location = new System.Drawing.Point(116, 64);
+            this.txtCuenta_ID.Name = "txtCuenta_ID";
+            this.txtCuenta_ID.Size = new System.Drawing.Size(170, 20);
+            this.txtCuenta_ID.TabIndex = 2;
+            this.txtCuenta_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuenta_ID_KeyPress);
             // 
             // label2
             // 
@@ -104,6 +106,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // BtnBuscar
             // 
@@ -113,24 +116,36 @@
             this.BtnBuscar.TabIndex = 7;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
-            // Usuario
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(143, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Volver";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtCuentaID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtCuenta_ID);
+            this.Controls.Add(this.dgvCuentas);
             this.Controls.Add(this.label1);
-            this.Name = "Usuario";
+            this.Name = "txtCuentaID";
             this.Text = "Usuario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,12 +154,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvCuentas;
+        private System.Windows.Forms.TextBox txtCuenta_ID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button button2;
     }
 }

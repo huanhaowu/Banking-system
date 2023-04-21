@@ -21,5 +21,20 @@ namespace CoreAPP.Transacciones
         {
 
         }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            SRCore.wsCoreSoapClient ws = new SRCore.wsCoreSoapClient();
+            MessageBox.Show(ws.ActualizarTipoTransaccion(txtDescripcion.Text, int.Parse(txtTipoT_ID.Text)));
+            txtDescripcion.Text = string.Empty;
+            txtTipoT_ID.Text = string.Empty;
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Transaccion transaccion = new Transaccion();
+            this.Hide();
+            transaccion.Show();
+        }
     }
 }

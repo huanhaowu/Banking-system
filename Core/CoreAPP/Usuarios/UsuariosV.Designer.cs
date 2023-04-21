@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsuario_ID = new System.Windows.Forms.TextBox();
             this.BtnCrear = new System.Windows.Forms.Button();
             this.BtnUpdt = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvUsuario
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(775, 328);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvUsuario.BackgroundColor = System.Drawing.Color.White;
+            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuario.Location = new System.Drawing.Point(13, 110);
+            this.dgvUsuario.Name = "dgvUsuario";
+            this.dgvUsuario.Size = new System.Drawing.Size(775, 328);
+            this.dgvUsuario.TabIndex = 0;
             // 
             // label1
             // 
@@ -68,13 +69,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ID de Usuario:";
             // 
-            // textBox1
+            // txtUsuario_ID
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(123, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtUsuario_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsuario_ID.Location = new System.Drawing.Point(123, 67);
+            this.txtUsuario_ID.Name = "txtUsuario_ID";
+            this.txtUsuario_ID.Size = new System.Drawing.Size(150, 20);
+            this.txtUsuario_ID.TabIndex = 3;
             // 
             // BtnCrear
             // 
@@ -98,12 +99,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(483, 64);
+            this.button3.Location = new System.Drawing.Point(468, 64);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // BtnBuscar
             // 
@@ -113,6 +115,17 @@
             this.BtnBuscar.TabIndex = 7;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(160, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UsuariosV
             // 
@@ -120,17 +133,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.BtnUpdt);
             this.Controls.Add(this.BtnCrear);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUsuario_ID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvUsuario);
             this.Name = "UsuariosV";
             this.Text = "UsuariosV";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,13 +152,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsuario_ID;
         private System.Windows.Forms.Button BtnCrear;
         private System.Windows.Forms.Button BtnUpdt;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button button1;
     }
 }

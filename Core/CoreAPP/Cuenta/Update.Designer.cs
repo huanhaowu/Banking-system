@@ -35,14 +35,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtCuentaID = new System.Windows.Forms.TextBox();
+            this.txtNoCuenta = new System.Windows.Forms.TextBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.cbMoneda = new System.Windows.Forms.ComboBox();
+            this.cbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.txtCliente_ID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -115,54 +115,47 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Moneda:";
             // 
-            // textBox1
+            // txtCuentaID
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(158, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtCuentaID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCuentaID.Location = new System.Drawing.Point(158, 90);
+            this.txtCuentaID.Name = "txtCuentaID";
+            this.txtCuentaID.Size = new System.Drawing.Size(153, 20);
+            this.txtCuentaID.TabIndex = 9;
+            this.txtCuentaID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuentaID_KeyPress);
             // 
-            // textBox2
+            // txtNoCuenta
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(158, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 20);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtNoCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoCuenta.Location = new System.Drawing.Point(158, 137);
+            this.txtNoCuenta.Name = "txtNoCuenta";
+            this.txtNoCuenta.Size = new System.Drawing.Size(219, 20);
+            this.txtNoCuenta.TabIndex = 10;
             // 
-            // textBox3
+            // txtMonto
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(158, 288);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtMonto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMonto.Location = new System.Drawing.Point(158, 288);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(219, 20);
+            this.txtMonto.TabIndex = 11;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
-            // comboBox1
+            // cbMoneda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(158, 235);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cbMoneda.FormattingEnabled = true;
+            this.cbMoneda.Location = new System.Drawing.Point(158, 340);
+            this.cbMoneda.Name = "cbMoneda";
+            this.cbMoneda.Size = new System.Drawing.Size(219, 21);
+            this.cbMoneda.TabIndex = 13;
             // 
-            // comboBox2
+            // cbTipoCuenta
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(158, 340);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(219, 21);
-            this.comboBox2.TabIndex = 13;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(158, 186);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(219, 21);
-            this.comboBox3.TabIndex = 14;
+            this.cbTipoCuenta.FormattingEnabled = true;
+            this.cbTipoCuenta.Location = new System.Drawing.Point(158, 186);
+            this.cbTipoCuenta.Name = "cbTipoCuenta";
+            this.cbTipoCuenta.Size = new System.Drawing.Size(219, 21);
+            this.cbTipoCuenta.TabIndex = 14;
             // 
             // BtnActualizar
             // 
@@ -173,6 +166,7 @@
             this.BtnActualizar.TabIndex = 15;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnCancelar
             // 
@@ -183,6 +177,16 @@
             this.BtnCancelar.TabIndex = 16;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // txtCliente_ID
+            // 
+            this.txtCliente_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCliente_ID.Location = new System.Drawing.Point(158, 240);
+            this.txtCliente_ID.Name = "txtCliente_ID";
+            this.txtCliente_ID.Size = new System.Drawing.Size(219, 20);
+            this.txtCliente_ID.TabIndex = 17;
+            this.txtCliente_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCliente_ID_KeyPress);
             // 
             // Update
             // 
@@ -190,14 +194,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCliente_ID);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnActualizar);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbTipoCuenta);
+            this.Controls.Add(this.cbMoneda);
+            this.Controls.Add(this.txtMonto);
+            this.Controls.Add(this.txtNoCuenta);
+            this.Controls.Add(this.txtCuentaID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -221,13 +225,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtCuentaID;
+        private System.Windows.Forms.TextBox txtNoCuenta;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.ComboBox cbMoneda;
+        private System.Windows.Forms.ComboBox cbTipoCuenta;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.TextBox txtCliente_ID;
     }
 }

@@ -11,6 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integracion", "Integracion\
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreAPP", "CoreAPP\CoreAPP.csproj", "{80F4CD2E-51F7-4FEB-94C8-E6F64D8C4488}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1BCF6F00-FB8E-44A2-814E-151699314BB8} = {1BCF6F00-FB8E-44A2-814E-151699314BB8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

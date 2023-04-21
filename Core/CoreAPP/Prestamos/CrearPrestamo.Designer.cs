@@ -33,20 +33,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtTasaInteres = new System.Windows.Forms.TextBox();
+            this.txtMontoPrestamo = new System.Windows.Forms.TextBox();
+            this.cbBanco = new System.Windows.Forms.ComboBox();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
+            this.cbMoneda = new System.Windows.Forms.ComboBox();
+            this.dtFFinal = new System.Windows.Forms.DateTimePicker();
             this.BTNCREAR = new System.Windows.Forms.Button();
             this.BTNCANCELAR = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.txtCliente_ID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +56,6 @@
             this.label1.Size = new System.Drawing.Size(181, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Prestamo";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -100,21 +97,11 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Monto de prestamo:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F);
-            this.label6.Location = new System.Drawing.Point(14, 249);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Monto a pagar:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 12F);
-            this.label7.Location = new System.Drawing.Point(14, 296);
+            this.label7.Location = new System.Drawing.Point(14, 245);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 16);
             this.label7.TabIndex = 6;
@@ -124,7 +111,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 12F);
-            this.label8.Location = new System.Drawing.Point(14, 349);
+            this.label8.Location = new System.Drawing.Point(14, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 16);
             this.label8.TabIndex = 7;
@@ -134,67 +121,59 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 12F);
-            this.label9.Location = new System.Drawing.Point(14, 401);
+            this.label9.Location = new System.Drawing.Point(14, 350);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 16);
             this.label9.TabIndex = 8;
             this.label9.Text = "ID de Moneda:";
             // 
-            // textBox2
+            // txtTasaInteres
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(183, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtTasaInteres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTasaInteres.Location = new System.Drawing.Point(183, 102);
+            this.txtTasaInteres.Name = "txtTasaInteres";
+            this.txtTasaInteres.Size = new System.Drawing.Size(208, 20);
+            this.txtTasaInteres.TabIndex = 10;
             // 
-            // textBox3
+            // txtMontoPrestamo
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(183, 192);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtMontoPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMontoPrestamo.Location = new System.Drawing.Point(183, 192);
+            this.txtMontoPrestamo.Name = "txtMontoPrestamo";
+            this.txtMontoPrestamo.Size = new System.Drawing.Size(208, 20);
+            this.txtMontoPrestamo.TabIndex = 11;
             // 
-            // textBox4
+            // cbBanco
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(183, 245);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 20);
-            this.textBox4.TabIndex = 12;
+            this.cbBanco.FormattingEnabled = true;
+            this.cbBanco.Location = new System.Drawing.Point(183, 239);
+            this.cbBanco.Name = "cbBanco";
+            this.cbBanco.Size = new System.Drawing.Size(208, 21);
+            this.cbBanco.TabIndex = 13;
             // 
-            // comboBox1
+            // cbEstado
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 290);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 21);
-            this.comboBox1.TabIndex = 13;
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Location = new System.Drawing.Point(183, 292);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(208, 21);
+            this.cbEstado.TabIndex = 14;
             // 
-            // comboBox2
+            // cbMoneda
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(183, 343);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(208, 21);
-            this.comboBox2.TabIndex = 14;
+            this.cbMoneda.FormattingEnabled = true;
+            this.cbMoneda.Location = new System.Drawing.Point(183, 344);
+            this.cbMoneda.Name = "cbMoneda";
+            this.cbMoneda.Size = new System.Drawing.Size(208, 21);
+            this.cbMoneda.TabIndex = 15;
             // 
-            // comboBox3
+            // dtFFinal
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(183, 395);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(208, 21);
-            this.comboBox3.TabIndex = 15;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 147);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(96, 20);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dtFFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFFinal.Location = new System.Drawing.Point(183, 147);
+            this.dtFFinal.Name = "dtFFinal";
+            this.dtFFinal.Size = new System.Drawing.Size(96, 20);
+            this.dtFFinal.TabIndex = 16;
             // 
             // BTNCREAR
             // 
@@ -205,6 +184,7 @@
             this.BTNCREAR.TabIndex = 17;
             this.BTNCREAR.Text = "Crear";
             this.BTNCREAR.UseVisualStyleBackColor = true;
+            this.BTNCREAR.Click += new System.EventHandler(this.BTNCREAR_Click);
             // 
             // BTNCANCELAR
             // 
@@ -215,14 +195,15 @@
             this.BTNCANCELAR.TabIndex = 18;
             this.BTNCANCELAR.Text = "Cancelar";
             this.BTNCANCELAR.UseVisualStyleBackColor = true;
+            this.BTNCANCELAR.Click += new System.EventHandler(this.BTNCANCELAR_Click);
             // 
-            // comboBox4
+            // txtCliente_ID
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(183, 55);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(208, 21);
-            this.comboBox4.TabIndex = 19;
+            this.txtCliente_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCliente_ID.Location = new System.Drawing.Point(183, 57);
+            this.txtCliente_ID.Name = "txtCliente_ID";
+            this.txtCliente_ID.Size = new System.Drawing.Size(208, 20);
+            this.txtCliente_ID.TabIndex = 19;
             // 
             // CrearPrestamo
             // 
@@ -230,20 +211,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.txtCliente_ID);
             this.Controls.Add(this.BTNCANCELAR);
             this.Controls.Add(this.BTNCREAR);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.dtFFinal);
+            this.Controls.Add(this.cbMoneda);
+            this.Controls.Add(this.cbEstado);
+            this.Controls.Add(this.cbBanco);
+            this.Controls.Add(this.txtMontoPrestamo);
+            this.Controls.Add(this.txtTasaInteres);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -263,19 +242,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtTasaInteres;
+        private System.Windows.Forms.TextBox txtMontoPrestamo;
+        private System.Windows.Forms.ComboBox cbBanco;
+        private System.Windows.Forms.ComboBox cbEstado;
+        private System.Windows.Forms.ComboBox cbMoneda;
+        private System.Windows.Forms.DateTimePicker dtFFinal;
         private System.Windows.Forms.Button BTNCREAR;
         private System.Windows.Forms.Button BTNCANCELAR;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox txtCliente_ID;
     }
 }

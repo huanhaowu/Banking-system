@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,29 +66,22 @@
     <Compile Include="Cliente\Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\SRCore\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfiles\CrearPerfil.cs">
+    <Compile Include="Login\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfiles\CrearPerfil.Designer.cs">
-      <DependentUpon>CrearPerfil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Perfiles\Perfiles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Perfiles\Perfiles.Designer.cs">
-      <DependentUpon>Perfiles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Perfiles\Update.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Perfiles\Update.Designer.cs">
-      <DependentUpon>Update.cs</DependentUpon>
+    <Compile Include="Login\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Prestamos\actualizarPrestamos.cs">
       <SubType>Form</SubType>
@@ -174,14 +169,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfiles\CrearPerfil.resx">
-      <DependentUpon>CrearPerfil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Perfiles\Perfiles.resx">
-      <DependentUpon>Perfiles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Perfiles\Update.resx">
-      <DependentUpon>Update.cs</DependentUpon>
+    <EmbeddedResource Include="Login\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prestamos\actualizarPrestamos.resx">
       <DependentUpon>actualizarPrestamos.cs</DependentUpon>
@@ -228,6 +217,112 @@
     <EmbeddedResource Include="Usuarios\UsuariosV.resx">
       <DependentUpon>UsuariosV.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ActualizarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ActualizarCuentaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ActualizarPrestamosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ActualizarTipoTransaccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ActualizarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.BorrarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.BorrarCuentaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.BorrarPrestamosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.BorrarTipoTransaccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.BorrarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ConsultarMovimientosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.CrearCuentaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.CrearPrestamosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.CrearTipoTransaccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.CrearUsuarioCajaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.CrearUsuarioCoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.Cuentas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.InsertarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.Movimiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerClienteByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerClientesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerCuentaPorNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerCuentasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerPrestamosByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerPrestamosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerTiposTransaccionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerTipoTransaccionByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerUsuarioByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ObtenerUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.Prestamos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.TipoTransaccion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ValidarInicioSesionCajaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\CoreAPP.SRCore.ValidarInicioSesionCoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SRCore\wsCore.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -241,6 +336,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SRCore\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRCore\wsCore.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRCore\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRCore\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRCore\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

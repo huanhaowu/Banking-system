@@ -20,13 +20,42 @@ namespace CoreAPP.Usuarios
         private void BtnCrear_Click(object sender, EventArgs e)
         {
             CrearUsuario usuario = new CrearUsuario();
-            usuario.Show(this);
+            this.Hide();
+            usuario.Show();
         }
 
         private void BtnUpdt_Click(object sender, EventArgs e)
         {
             Updt updt = new Updt();
-            updt.Show(this);
+            this.Hide();
+            updt.Show();
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            SRCore.wsCoreSoapClient ws = new SRCore.wsCoreSoapClient();
+
+            if (txtUsuario_ID.Text == "")
+            {
+                dgvUsuario.DataSource = ws.ObtenerUsuarios();
+            }
+            else
+            {
+                dgvUsuario.DataSource = ws.ObtenerUsuarioByID(int.Parse(txtUsuario_ID.Text));
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SRCore.wsCoreSoapClient ws = new SRCore.wsCoreSoapClient();
+            MessageBox.Show(ws.BorrarUsuario(int.Parse(txtUsuario_ID.Text)));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Hide();
+            form1.Show();
         }
     }
 }

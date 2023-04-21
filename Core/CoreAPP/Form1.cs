@@ -21,29 +21,24 @@ namespace CoreAPP
         private void button1_Click(object sender, EventArgs e)
         {
             Cliente.Customer customer = new Cliente.Customer();
-            customer.Show(this);
-
-
+            this.Hide();
+            customer.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Usuario cuenta = new Usuario();
-            cuenta.Show(this);
+            txtCuentaID cuenta = new txtCuentaID();
+            this.Hide();
+            cuenta.Show();
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Perfiles.Perfiles perfil = new Perfiles.Perfiles();
-            perfil.Show(this);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             
             Usuarios.UsuariosV usuario = new UsuariosV();
-            usuario.Show(this);
+            this.Hide();
+            usuario.Show();
 
 
         }
@@ -51,13 +46,15 @@ namespace CoreAPP
         private void button4_Click(object sender, EventArgs e)
         {
             Prestamos.Prestamo prestamo = new Prestamos.Prestamo();
-            prestamo.Show(this);
+            this.Hide();
+            prestamo.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             Transacciones.Transaccion transaccion = new Transacciones.Transaccion();
-            transaccion.Show(this);
+            this.Hide();
+            transaccion.Show();
         }
     }
 }
