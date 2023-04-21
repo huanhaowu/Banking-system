@@ -20,6 +20,7 @@ namespace Caja
 
         private void bttIniciar_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             Deposito deposito = new Deposito();
             if (deposito.ShowDialog() != DialogResult.OK)
@@ -31,6 +32,11 @@ namespace Caja
 
         private void IniciarSesion_Load(object sender, EventArgs e)
         {
+        }
+
+        private void IniciarSesion_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

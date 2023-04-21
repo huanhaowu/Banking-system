@@ -74,20 +74,15 @@ namespace Caja.Pantalla
 
         private void bttConfirmarR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Configuracion configuracion = new Configuracion();
-            if (configuracion.ShowDialog() != DialogResult.OK)
-            {
-                Application.Exit();
-            }
+            
         }
 
         private void bttCancelarR_Click(object sender, EventArgs e)
         {
-            grupoRetiro2.Hide();
-            grupoRetiro2.Visible = false;
             grupoRetiro1.Show();
             grupoRetiro1.Visible = true;
+            grupoRetiro2.Hide();
+            grupoRetiro2.Visible = false;
             grupoBoton.Visible = false;
         }
     }

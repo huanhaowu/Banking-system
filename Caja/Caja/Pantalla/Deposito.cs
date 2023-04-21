@@ -58,5 +58,14 @@ namespace Caja.Pantalla
             txtDescripD.Clear();
             txtCuentaD.Clear();
         }
+
+        private void bttConfirmarD_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proceso Completado", "Estado de Deposito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtMontoD.Clear();
+            txtDescripD.Clear();
+            txtCuentaD.Clear();
+        }
     }
 }

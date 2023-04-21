@@ -37,21 +37,21 @@
             // 
             this.txtUusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtUusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUusuario.Font = new System.Drawing.Font("Nunito Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUusuario.Location = new System.Drawing.Point(256, 251);
             this.txtUusuario.Name = "txtUusuario";
-            this.txtUusuario.Size = new System.Drawing.Size(209, 13);
+            this.txtUusuario.Size = new System.Drawing.Size(209, 17);
             this.txtUusuario.TabIndex = 0;
             // 
             // txtClave
             // 
             this.txtClave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtClave.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Font = new System.Drawing.Font("Nunito Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClave.Location = new System.Drawing.Point(256, 319);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
-            this.txtClave.Size = new System.Drawing.Size(209, 13);
+            this.txtClave.Size = new System.Drawing.Size(209, 17);
             this.txtClave.TabIndex = 1;
             // 
             // bttIniciar
@@ -65,7 +65,7 @@
             this.bttIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttIniciar.Font = new System.Drawing.Font("Nunito Sans Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttIniciar.ForeColor = System.Drawing.Color.White;
             this.bttIniciar.Location = new System.Drawing.Point(256, 427);
             this.bttIniciar.Name = "bttIniciar";
@@ -92,6 +92,7 @@
             this.Name = "IniciarSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IniciarSesion";
+            this.Load += new System.EventHandler(this.IniciarSesion_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

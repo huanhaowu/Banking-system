@@ -49,9 +49,9 @@
             this.bttMontoInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttMontoInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttMontoInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttMontoInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttMontoInicial.Font = new System.Drawing.Font("Nunito Sans Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttMontoInicial.ForeColor = System.Drawing.Color.White;
-            this.bttMontoInicial.Location = new System.Drawing.Point(24, 202);
+            this.bttMontoInicial.Location = new System.Drawing.Point(24, 195);
             this.bttMontoInicial.Name = "bttMontoInicial";
             this.bttMontoInicial.Size = new System.Drawing.Size(216, 52);
             this.bttMontoInicial.TabIndex = 5;
@@ -70,7 +70,7 @@
             this.bttCuadre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.bttCuadre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCuadre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCuadre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCuadre.Font = new System.Drawing.Font("Nunito Sans Black", 12F, System.Drawing.FontStyle.Bold);
             this.bttCuadre.ForeColor = System.Drawing.Color.White;
             this.bttCuadre.Location = new System.Drawing.Point(24, 260);
             this.bttCuadre.Name = "bttCuadre";
@@ -91,7 +91,7 @@
             this.bttReciboTransa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboTransa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboTransa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboTransa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttReciboTransa.Font = new System.Drawing.Font("Nunito Sans Black", 12F, System.Drawing.FontStyle.Bold);
             this.bttReciboTransa.ForeColor = System.Drawing.Color.White;
             this.bttReciboTransa.Location = new System.Drawing.Point(24, 325);
             this.bttReciboTransa.Name = "bttReciboTransa";
@@ -111,9 +111,9 @@
             this.bttLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLogout.Font = new System.Drawing.Font("Nunito Sans Black", 12F, System.Drawing.FontStyle.Bold);
             this.bttLogout.ForeColor = System.Drawing.Color.White;
-            this.bttLogout.Location = new System.Drawing.Point(24, 388);
+            this.bttLogout.Location = new System.Drawing.Point(24, 389);
             this.bttLogout.Name = "bttLogout";
             this.bttLogout.Size = new System.Drawing.Size(216, 53);
             this.bttLogout.TabIndex = 10;
@@ -196,7 +196,10 @@
             this.Controls.Add(this.bttCuadre);
             this.Controls.Add(this.bttMontoInicial);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Configuracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuracion";

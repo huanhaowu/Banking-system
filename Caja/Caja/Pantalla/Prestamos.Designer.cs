@@ -188,11 +188,12 @@
             this.txtDescripP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtDescripP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripP.Font = new System.Drawing.Font("Nunito Sans", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripP.Location = new System.Drawing.Point(146, 133);
+            this.txtDescripP.Location = new System.Drawing.Point(144, 133);
             this.txtDescripP.Multiline = true;
             this.txtDescripP.Name = "txtDescripP";
-            this.txtDescripP.Size = new System.Drawing.Size(212, 65);
+            this.txtDescripP.Size = new System.Drawing.Size(214, 73);
             this.txtDescripP.TabIndex = 21;
+            this.txtDescripP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMontoP
             // 
@@ -203,6 +204,7 @@
             this.txtMontoP.Name = "txtMontoP";
             this.txtMontoP.Size = new System.Drawing.Size(212, 15);
             this.txtMontoP.TabIndex = 20;
+            this.txtMontoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtCodigoP
             // 
@@ -213,6 +215,7 @@
             this.txtCodigoP.Name = "txtCodigoP";
             this.txtCodigoP.Size = new System.Drawing.Size(212, 15);
             this.txtCodigoP.TabIndex = 19;
+            this.txtCodigoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bttCancelarP
             // 
@@ -227,9 +230,9 @@
             this.bttCancelarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttCancelarP.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttCancelarP.ForeColor = System.Drawing.Color.White;
-            this.bttCancelarP.Location = new System.Drawing.Point(256, 269);
+            this.bttCancelarP.Location = new System.Drawing.Point(255, 268);
             this.bttCancelarP.Name = "bttCancelarP";
-            this.bttCancelarP.Size = new System.Drawing.Size(110, 53);
+            this.bttCancelarP.Size = new System.Drawing.Size(113, 55);
             this.bttCancelarP.TabIndex = 18;
             this.bttCancelarP.Text = "CANCELAR";
             this.bttCancelarP.UseVisualStyleBackColor = false;
@@ -247,9 +250,9 @@
             this.bttConfirmarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfirmarP.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfirmarP.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarP.Location = new System.Drawing.Point(0, 269);
+            this.bttConfirmarP.Location = new System.Drawing.Point(0, 268);
             this.bttConfirmarP.Name = "bttConfirmarP";
-            this.bttConfirmarP.Size = new System.Drawing.Size(110, 53);
+            this.bttConfirmarP.Size = new System.Drawing.Size(113, 55);
             this.bttConfirmarP.TabIndex = 16;
             this.bttConfirmarP.Text = "CONFIRMAR";
             this.bttConfirmarP.UseVisualStyleBackColor = false;
@@ -267,9 +270,9 @@
             this.bttReciboP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReciboP.Font = new System.Drawing.Font("Nunito Sans ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReciboP.ForeColor = System.Drawing.Color.White;
-            this.bttReciboP.Location = new System.Drawing.Point(129, 270);
+            this.bttReciboP.Location = new System.Drawing.Point(128, 268);
             this.bttReciboP.Name = "bttReciboP";
-            this.bttReciboP.Size = new System.Drawing.Size(110, 53);
+            this.bttReciboP.Size = new System.Drawing.Size(113, 55);
             this.bttReciboP.TabIndex = 17;
             this.bttReciboP.Text = "RECIBO";
             this.bttReciboP.UseVisualStyleBackColor = false;
@@ -289,6 +292,8 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Prestamos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestamos";

@@ -94,11 +94,11 @@
             this.bttConfirmarR1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarR1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarR1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConfirmarR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttConfirmarR1.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfirmarR1.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarR1.Location = new System.Drawing.Point(0, 197);
+            this.bttConfirmarR1.Location = new System.Drawing.Point(1, 198);
             this.bttConfirmarR1.Name = "bttConfirmarR1";
-            this.bttConfirmarR1.Size = new System.Drawing.Size(233, 30);
+            this.bttConfirmarR1.Size = new System.Drawing.Size(233, 29);
             this.bttConfirmarR1.TabIndex = 10;
             this.bttConfirmarR1.Text = "CONFIRMAR";
             this.bttConfirmarR1.UseVisualStyleBackColor = false;
@@ -224,7 +224,8 @@
             // 
             this.lb002000.AutoSize = true;
             this.lb002000.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb002000.Location = new System.Drawing.Point(626, 169);
+            this.lb002000.ForeColor = System.Drawing.Color.Black;
+            this.lb002000.Location = new System.Drawing.Point(627, 169);
             this.lb002000.Name = "lb002000";
             this.lb002000.Size = new System.Drawing.Size(19, 13);
             this.lb002000.TabIndex = 31;
@@ -234,7 +235,8 @@
             // 
             this.lb001000.AutoSize = true;
             this.lb001000.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb001000.Location = new System.Drawing.Point(626, 149);
+            this.lb001000.ForeColor = System.Drawing.Color.Black;
+            this.lb001000.Location = new System.Drawing.Point(627, 149);
             this.lb001000.Name = "lb001000";
             this.lb001000.Size = new System.Drawing.Size(19, 13);
             this.lb001000.TabIndex = 30;
@@ -244,7 +246,8 @@
             // 
             this.lb00500.AutoSize = true;
             this.lb00500.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb00500.Location = new System.Drawing.Point(626, 129);
+            this.lb00500.ForeColor = System.Drawing.Color.Black;
+            this.lb00500.Location = new System.Drawing.Point(627, 129);
             this.lb00500.Name = "lb00500";
             this.lb00500.Size = new System.Drawing.Size(19, 13);
             this.lb00500.TabIndex = 29;
@@ -254,6 +257,7 @@
             // 
             this.lb00200.AutoSize = true;
             this.lb00200.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb00200.ForeColor = System.Drawing.Color.Black;
             this.lb00200.Location = new System.Drawing.Point(516, 248);
             this.lb00200.Name = "lb00200";
             this.lb00200.Size = new System.Drawing.Size(19, 13);
@@ -264,6 +268,7 @@
             // 
             this.lb00100.AutoSize = true;
             this.lb00100.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb00100.ForeColor = System.Drawing.Color.Black;
             this.lb00100.Location = new System.Drawing.Point(516, 228);
             this.lb00100.Name = "lb00100";
             this.lb00100.Size = new System.Drawing.Size(19, 13);
@@ -274,6 +279,7 @@
             // 
             this.lb0050.AutoSize = true;
             this.lb0050.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb0050.ForeColor = System.Drawing.Color.Black;
             this.lb0050.Location = new System.Drawing.Point(516, 208);
             this.lb0050.Name = "lb0050";
             this.lb0050.Size = new System.Drawing.Size(19, 13);
@@ -284,6 +290,7 @@
             // 
             this.lb0025.AutoSize = true;
             this.lb0025.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb0025.ForeColor = System.Drawing.Color.Black;
             this.lb0025.Location = new System.Drawing.Point(516, 189);
             this.lb0025.Name = "lb0025";
             this.lb0025.Size = new System.Drawing.Size(19, 13);
@@ -294,6 +301,7 @@
             // 
             this.lb0010.AutoSize = true;
             this.lb0010.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb0010.ForeColor = System.Drawing.Color.Black;
             this.lb0010.Location = new System.Drawing.Point(516, 169);
             this.lb0010.Name = "lb0010";
             this.lb0010.Size = new System.Drawing.Size(19, 13);
@@ -304,6 +312,7 @@
             // 
             this.lb005.AutoSize = true;
             this.lb005.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb005.ForeColor = System.Drawing.Color.Black;
             this.lb005.Location = new System.Drawing.Point(516, 149);
             this.lb005.Name = "lb005";
             this.lb005.Size = new System.Drawing.Size(19, 13);
@@ -314,6 +323,7 @@
             // 
             this.lb001.AutoSize = true;
             this.lb001.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb001.ForeColor = System.Drawing.Color.Black;
             this.lb001.Location = new System.Drawing.Point(516, 129);
             this.lb001.Name = "lb001";
             this.lb001.Size = new System.Drawing.Size(19, 13);
@@ -325,7 +335,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(310, 261);
+            this.label1.Location = new System.Drawing.Point(310, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 21;
@@ -452,11 +462,11 @@
             this.bttCancelarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttCancelarR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(137)))), ((int)(((byte)(115)))));
             this.bttCancelarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCancelarR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCancelarR.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttCancelarR.ForeColor = System.Drawing.Color.White;
             this.bttCancelarR.Location = new System.Drawing.Point(245, 7);
             this.bttCancelarR.Name = "bttCancelarR";
-            this.bttCancelarR.Size = new System.Drawing.Size(108, 54);
+            this.bttCancelarR.Size = new System.Drawing.Size(108, 53);
             this.bttCancelarR.TabIndex = 15;
             this.bttCancelarR.Text = "CANCELAR";
             this.bttCancelarR.UseVisualStyleBackColor = false;
@@ -473,11 +483,11 @@
             this.bttReciboR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(198)))), ((int)(((byte)(84)))));
             this.bttReciboR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttReciboR.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttReciboR.ForeColor = System.Drawing.Color.White;
             this.bttReciboR.Location = new System.Drawing.Point(122, 7);
             this.bttReciboR.Name = "bttReciboR";
-            this.bttReciboR.Size = new System.Drawing.Size(109, 54);
+            this.bttReciboR.Size = new System.Drawing.Size(109, 53);
             this.bttReciboR.TabIndex = 14;
             this.bttReciboR.Text = "RECIBO";
             this.bttReciboR.UseVisualStyleBackColor = false;
@@ -493,11 +503,11 @@
             this.bttConfirmarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(222)))), ((int)(((byte)(81)))));
             this.bttConfirmarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConfirmarR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttConfirmarR.Font = new System.Drawing.Font("Nunito Sans Black", 9.7F, System.Drawing.FontStyle.Bold);
             this.bttConfirmarR.ForeColor = System.Drawing.Color.White;
             this.bttConfirmarR.Location = new System.Drawing.Point(0, 7);
             this.bttConfirmarR.Name = "bttConfirmarR";
-            this.bttConfirmarR.Size = new System.Drawing.Size(108, 54);
+            this.bttConfirmarR.Size = new System.Drawing.Size(108, 53);
             this.bttConfirmarR.TabIndex = 13;
             this.bttConfirmarR.Text = "CONFIRMAR";
             this.bttConfirmarR.UseVisualStyleBackColor = false;
@@ -534,7 +544,10 @@
             this.Controls.Add(this.grupoRetiro1);
             this.Controls.Add(this.grupoBoton);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Retiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retiro";
