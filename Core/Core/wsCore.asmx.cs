@@ -552,15 +552,15 @@ namespace Core
         [WebMethod]
         public Movimiento[] ConsultarMovimientos(int Cuenta_ID)
         {
-            CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
-            tblCuenta.Connection.Open();
-            SqlTransaction transaction = tblCuenta.Connection.BeginTransaction();
-            tblCuenta.Transaction = transaction;
+            TransaccionTableAdapter tblTransaccion = new TransaccionTableAdapter();
+            tblTransaccion.Connection.Open();
+            SqlTransaction transaction = tblTransaccion.Connection.BeginTransaction();
+            tblTransaccion.Transaction = transaction;
             Movimiento[] movNulls = new Movimiento[0];
 
             try
             {
-                CuentaDataTable cuentas = tblCuenta.sp_ConsultarMovimientosCuenta(Cuenta_ID);
+                TransaccionDataTable cuentas = tblTransaccion.sp_ConsultarMovimientosCuenta(Cuenta_ID);
                 transaction.Commit(); //confirmar la transaccion
                 Movimiento[] movements = new Movimiento[cuentas.Rows.Count];
 
