@@ -55,9 +55,9 @@
             this.bttDepositar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttDepositar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttDepositar4.ForeColor = System.Drawing.Color.White;
-            this.bttDepositar4.Location = new System.Drawing.Point(277, 72);
+            this.bttDepositar4.Location = new System.Drawing.Point(279, 71);
             this.bttDepositar4.Name = "bttDepositar4";
-            this.bttDepositar4.Size = new System.Drawing.Size(102, 25);
+            this.bttDepositar4.Size = new System.Drawing.Size(100, 25);
             this.bttDepositar4.TabIndex = 14;
             this.bttDepositar4.UseVisualStyleBackColor = false;
             this.bttDepositar4.Click += new System.EventHandler(this.bttDepositar4_Click);
@@ -75,7 +75,7 @@
             this.bttRetirar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttRetirar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttRetirar4.ForeColor = System.Drawing.Color.White;
-            this.bttRetirar4.Location = new System.Drawing.Point(385, 72);
+            this.bttRetirar4.Location = new System.Drawing.Point(385, 71);
             this.bttRetirar4.Name = "bttRetirar4";
             this.bttRetirar4.Size = new System.Drawing.Size(151, 25);
             this.bttRetirar4.TabIndex = 15;
@@ -95,11 +95,12 @@
             this.bttConfiguracion4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfiguracion4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfiguracion4.ForeColor = System.Drawing.Color.White;
-            this.bttConfiguracion4.Location = new System.Drawing.Point(661, 72);
+            this.bttConfiguracion4.Location = new System.Drawing.Point(661, 71);
             this.bttConfiguracion4.Name = "bttConfiguracion4";
             this.bttConfiguracion4.Size = new System.Drawing.Size(34, 25);
             this.bttConfiguracion4.TabIndex = 16;
             this.bttConfiguracion4.UseVisualStyleBackColor = false;
+            this.bttConfiguracion4.Click += new System.EventHandler(this.bttConfiguracion4_Click);
             // 
             // grupoPrestamos3
             // 
@@ -125,7 +126,7 @@
             this.txtDescripP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtDescripP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripP.Location = new System.Drawing.Point(144, 133);
+            this.txtDescripP.Location = new System.Drawing.Point(147, 132);
             this.txtDescripP.Multiline = true;
             this.txtDescripP.Name = "txtDescripP";
             this.txtDescripP.Size = new System.Drawing.Size(214, 73);
@@ -137,7 +138,7 @@
             this.txtMontoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtMontoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMontoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMontoP.Location = new System.Drawing.Point(146, 90);
+            this.txtMontoP.Location = new System.Drawing.Point(149, 90);
             this.txtMontoP.Name = "txtMontoP";
             this.txtMontoP.Size = new System.Drawing.Size(212, 13);
             this.txtMontoP.TabIndex = 20;
@@ -148,7 +149,7 @@
             this.txtCodigoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtCodigoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoP.Location = new System.Drawing.Point(146, 56);
+            this.txtCodigoP.Location = new System.Drawing.Point(149, 55);
             this.txtCodigoP.Name = "txtCodigoP";
             this.txtCodigoP.Size = new System.Drawing.Size(212, 13);
             this.txtCodigoP.TabIndex = 19;
@@ -167,9 +168,9 @@
             this.bttCancelarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttCancelarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttCancelarP.ForeColor = System.Drawing.Color.White;
-            this.bttCancelarP.Location = new System.Drawing.Point(258, 272);
+            this.bttCancelarP.Location = new System.Drawing.Point(261, 271);
             this.bttCancelarP.Name = "bttCancelarP";
-            this.bttCancelarP.Size = new System.Drawing.Size(123, 55);
+            this.bttCancelarP.Size = new System.Drawing.Size(117, 56);
             this.bttCancelarP.TabIndex = 18;
             this.bttCancelarP.Text = "CANCELAR";
             this.bttCancelarP.UseVisualStyleBackColor = false;
@@ -187,9 +188,9 @@
             this.bttConfirmarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfirmarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfirmarP.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarP.Location = new System.Drawing.Point(0, 272);
+            this.bttConfirmarP.Location = new System.Drawing.Point(0, 271);
             this.bttConfirmarP.Name = "bttConfirmarP";
-            this.bttConfirmarP.Size = new System.Drawing.Size(123, 55);
+            this.bttConfirmarP.Size = new System.Drawing.Size(117, 56);
             this.bttConfirmarP.TabIndex = 16;
             this.bttConfirmarP.Text = "CONFIRMAR";
             this.bttConfirmarP.UseVisualStyleBackColor = false;
@@ -207,9 +208,9 @@
             this.bttReciboP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReciboP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReciboP.ForeColor = System.Drawing.Color.White;
-            this.bttReciboP.Location = new System.Drawing.Point(129, 272);
+            this.bttReciboP.Location = new System.Drawing.Point(130, 271);
             this.bttReciboP.Name = "bttReciboP";
-            this.bttReciboP.Size = new System.Drawing.Size(123, 55);
+            this.bttReciboP.Size = new System.Drawing.Size(118, 56);
             this.bttReciboP.TabIndex = 17;
             this.bttReciboP.Text = "RECIBO";
             this.bttReciboP.UseVisualStyleBackColor = false;
@@ -220,15 +221,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::Caja.ResourceFondo.Main_Hub___Prestamos__1_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(720, 520);
             this.Controls.Add(this.grupoPrestamos3);
             this.Controls.Add(this.bttConfiguracion4);
             this.Controls.Add(this.bttRetirar4);
             this.Controls.Add(this.bttDepositar4);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Prestamos2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestamos2";

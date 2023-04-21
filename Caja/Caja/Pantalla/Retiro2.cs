@@ -159,5 +159,16 @@ namespace Caja.Pantalla
             }
 
         }
+
+        private void bttConfiguracion4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Configuracion configuracion = new Configuracion();
+            if (configuracion.ShowDialog() != DialogResult.OK)
+            {
+                Application.Exit();
+            }
+
+        }
     }
 }

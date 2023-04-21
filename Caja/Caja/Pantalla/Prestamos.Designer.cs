@@ -67,9 +67,9 @@
             this.bttConfirmarP1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttConfirmarP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttConfirmarP1.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarP1.Location = new System.Drawing.Point(0, 197);
+            this.bttConfirmarP1.Location = new System.Drawing.Point(0, 206);
             this.bttConfirmarP1.Name = "bttConfirmarP1";
-            this.bttConfirmarP1.Size = new System.Drawing.Size(243, 41);
+            this.bttConfirmarP1.Size = new System.Drawing.Size(240, 28);
             this.bttConfirmarP1.TabIndex = 10;
             this.bttConfirmarP1.Text = "CONFIRMAR";
             this.bttConfirmarP1.UseVisualStyleBackColor = false;
@@ -80,7 +80,7 @@
             this.txtIDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtIDP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDP.Location = new System.Drawing.Point(4, 137);
+            this.txtIDP.Location = new System.Drawing.Point(5, 143);
             this.txtIDP.Name = "txtIDP";
             this.txtIDP.Size = new System.Drawing.Size(221, 13);
             this.txtIDP.TabIndex = 11;
@@ -90,7 +90,7 @@
             this.txtCuentaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.txtCuentaP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCuentaP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuentaP.Location = new System.Drawing.Point(4, 75);
+            this.txtCuentaP.Location = new System.Drawing.Point(6, 80);
             this.txtCuentaP.Name = "txtCuentaP";
             this.txtCuentaP.Size = new System.Drawing.Size(221, 13);
             this.txtCuentaP.TabIndex = 10;

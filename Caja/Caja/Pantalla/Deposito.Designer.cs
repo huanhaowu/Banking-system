@@ -105,9 +105,9 @@
             this.bttPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttPrestamos.ForeColor = System.Drawing.Color.White;
-            this.bttPrestamos.Location = new System.Drawing.Point(542, 71);
+            this.bttPrestamos.Location = new System.Drawing.Point(544, 71);
             this.bttPrestamos.Name = "bttPrestamos";
-            this.bttPrestamos.Size = new System.Drawing.Size(113, 25);
+            this.bttPrestamos.Size = new System.Drawing.Size(109, 25);
             this.bttPrestamos.TabIndex = 5;
             this.bttPrestamos.UseVisualStyleBackColor = false;
             this.bttPrestamos.Click += new System.EventHandler(this.bttPrestamos_Click);
@@ -143,11 +143,11 @@
             this.bttConfirmarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConfirmarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttConfirmarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttConfirmarD.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarD.Location = new System.Drawing.Point(26, 416);
+            this.bttConfirmarD.Location = new System.Drawing.Point(23, 416);
             this.bttConfirmarD.Name = "bttConfirmarD";
-            this.bttConfirmarD.Size = new System.Drawing.Size(106, 52);
+            this.bttConfirmarD.Size = new System.Drawing.Size(103, 52);
             this.bttConfirmarD.TabIndex = 7;
             this.bttConfirmarD.Text = "CONFIRMAR";
             this.bttConfirmarD.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@
             this.bttReciboD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttReciboD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttReciboD.ForeColor = System.Drawing.Color.White;
             this.bttReciboD.Location = new System.Drawing.Point(138, 416);
             this.bttReciboD.Name = "bttReciboD";
@@ -185,7 +185,7 @@
             this.bttCancelarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttCancelarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCancelarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCancelarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttCancelarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttCancelarD.ForeColor = System.Drawing.Color.White;
             this.bttCancelarD.Location = new System.Drawing.Point(253, 416);
             this.bttCancelarD.Name = "bttCancelarD";

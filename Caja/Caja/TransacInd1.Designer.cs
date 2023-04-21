@@ -34,12 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCuentaID = new System.Windows.Forms.TextBox();
             this.bttReciboD = new System.Windows.Forms.Button();
+            this.dsCajaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dsCaja = new Caja.DsCaja();
             this.dsCajaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsCajaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -52,7 +52,7 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 82);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(850, 439);
+            this.reportViewer1.Size = new System.Drawing.Size(776, 439);
             this.reportViewer1.TabIndex = 0;
             // 
             // label1
@@ -95,6 +95,11 @@
             this.bttReciboD.UseVisualStyleBackColor = false;
             this.bttReciboD.Click += new System.EventHandler(this.bttReciboD_Click);
             // 
+            // dsCajaBindingSource1
+            // 
+            this.dsCajaBindingSource1.DataSource = this.dsCaja;
+            this.dsCajaBindingSource1.Position = 0;
+            // 
             // dsCaja
             // 
             this.dsCaja.DataSetName = "DsCaja";
@@ -105,16 +110,11 @@
             this.dsCajaBindingSource.DataSource = this.dsCaja;
             this.dsCajaBindingSource.Position = 0;
             // 
-            // dsCajaBindingSource1
-            // 
-            this.dsCajaBindingSource1.DataSource = this.dsCaja;
-            this.dsCajaBindingSource1.Position = 0;
-            // 
             // TransacInd1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 520);
+            this.ClientSize = new System.Drawing.Size(777, 520);
             this.Controls.Add(this.bttReciboD);
             this.Controls.Add(this.txtCuentaID);
             this.Controls.Add(this.label1);
@@ -122,9 +122,9 @@
             this.Name = "TransacInd1";
             this.Text = "TransacInd1";
             this.Load += new System.EventHandler(this.TransacInd1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCaja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCajaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

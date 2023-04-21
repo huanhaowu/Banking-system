@@ -4,6 +4,9 @@
 
     partial class DsCaja
     {
+        partial class ClienteDataTable
+        {
+        }
     }
 }
 

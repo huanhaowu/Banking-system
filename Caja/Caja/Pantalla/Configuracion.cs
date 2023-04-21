@@ -71,7 +71,8 @@ namespace Caja.Pantalla
 
         private void bttReciboTransa_Click(object sender, EventArgs e)
         {
-
+            TransacTotal transacTotal = new TransacTotal();
+            transacTotal.ShowDialog();
         }
     }
 }

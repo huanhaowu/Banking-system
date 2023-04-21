@@ -122,3 +122,4 @@ C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\aa-ER\Caja.resources.dll
 C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.csproj.CopyComplete
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.TransacTotal.resources

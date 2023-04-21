@@ -37,6 +37,7 @@
             this.txtDescripD = new System.Windows.Forms.TextBox();
             this.bttPrestamos = new System.Windows.Forms.Button();
             this.btnDeposito = new System.Windows.Forms.Button();
+            this.bttConfiguracion4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bttConfirmarD
@@ -50,11 +51,11 @@
             this.bttConfirmarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(171)))), ((int)(((byte)(51)))));
             this.bttConfirmarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttConfirmarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConfirmarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttConfirmarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttConfirmarD.ForeColor = System.Drawing.Color.White;
-            this.bttConfirmarD.Location = new System.Drawing.Point(22, 415);
+            this.bttConfirmarD.Location = new System.Drawing.Point(24, 416);
             this.bttConfirmarD.Name = "bttConfirmarD";
-            this.bttConfirmarD.Size = new System.Drawing.Size(111, 52);
+            this.bttConfirmarD.Size = new System.Drawing.Size(103, 52);
             this.bttConfirmarD.TabIndex = 8;
             this.bttConfirmarD.Text = "CONFIRMAR";
             this.bttConfirmarD.UseVisualStyleBackColor = false;
@@ -71,9 +72,9 @@
             this.bttReciboD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(172)))), ((int)(((byte)(18)))));
             this.bttReciboD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttReciboD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReciboD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttReciboD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttReciboD.ForeColor = System.Drawing.Color.White;
-            this.bttReciboD.Location = new System.Drawing.Point(139, 415);
+            this.bttReciboD.Location = new System.Drawing.Point(139, 416);
             this.bttReciboD.Name = "bttReciboD";
             this.bttReciboD.Size = new System.Drawing.Size(103, 52);
             this.bttReciboD.TabIndex = 9;
@@ -92,11 +93,11 @@
             this.bttCancelarD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(47)))));
             this.bttCancelarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttCancelarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttCancelarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.7F, System.Drawing.FontStyle.Bold);
+            this.bttCancelarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.bttCancelarD.ForeColor = System.Drawing.Color.White;
-            this.bttCancelarD.Location = new System.Drawing.Point(248, 415);
+            this.bttCancelarD.Location = new System.Drawing.Point(253, 416);
             this.bttCancelarD.Name = "bttCancelarD";
-            this.bttCancelarD.Size = new System.Drawing.Size(109, 52);
+            this.bttCancelarD.Size = new System.Drawing.Size(103, 52);
             this.bttCancelarD.TabIndex = 10;
             this.bttCancelarD.Text = "CANCELAR";
             this.bttCancelarD.UseVisualStyleBackColor = false;
@@ -147,9 +148,9 @@
             this.bttPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttPrestamos.ForeColor = System.Drawing.Color.White;
-            this.bttPrestamos.Location = new System.Drawing.Point(541, 72);
+            this.bttPrestamos.Location = new System.Drawing.Point(543, 71);
             this.bttPrestamos.Name = "bttPrestamos";
-            this.bttPrestamos.Size = new System.Drawing.Size(113, 25);
+            this.bttPrestamos.Size = new System.Drawing.Size(111, 25);
             this.bttPrestamos.TabIndex = 14;
             this.bttPrestamos.UseVisualStyleBackColor = false;
             this.bttPrestamos.Click += new System.EventHandler(this.bttPrestamos_Click);
@@ -167,12 +168,32 @@
             this.btnDeposito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeposito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposito.ForeColor = System.Drawing.Color.White;
-            this.btnDeposito.Location = new System.Drawing.Point(283, 72);
+            this.btnDeposito.Location = new System.Drawing.Point(278, 71);
             this.btnDeposito.Name = "btnDeposito";
-            this.btnDeposito.Size = new System.Drawing.Size(92, 25);
+            this.btnDeposito.Size = new System.Drawing.Size(100, 25);
             this.btnDeposito.TabIndex = 15;
             this.btnDeposito.UseVisualStyleBackColor = false;
             this.btnDeposito.Click += new System.EventHandler(this.btnDeposito_Click);
+            // 
+            // bttConfiguracion4
+            // 
+            this.bttConfiguracion4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bttConfiguracion4.BackColor = System.Drawing.Color.Transparent;
+            this.bttConfiguracion4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.bttConfiguracion4.FlatAppearance.BorderSize = 0;
+            this.bttConfiguracion4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.bttConfiguracion4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bttConfiguracion4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttConfiguracion4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttConfiguracion4.ForeColor = System.Drawing.Color.White;
+            this.bttConfiguracion4.Location = new System.Drawing.Point(661, 71);
+            this.bttConfiguracion4.Name = "bttConfiguracion4";
+            this.bttConfiguracion4.Size = new System.Drawing.Size(34, 25);
+            this.bttConfiguracion4.TabIndex = 16;
+            this.bttConfiguracion4.UseVisualStyleBackColor = false;
+            this.bttConfiguracion4.Click += new System.EventHandler(this.bttConfiguracion4_Click);
             // 
             // Retiro2
             // 
@@ -182,6 +203,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(720, 520);
+            this.Controls.Add(this.bttConfiguracion4);
             this.Controls.Add(this.btnDeposito);
             this.Controls.Add(this.bttPrestamos);
             this.Controls.Add(this.txtDescripD);
@@ -212,5 +234,6 @@
         private System.Windows.Forms.TextBox txtDescripD;
         private System.Windows.Forms.Button bttPrestamos;
         private System.Windows.Forms.Button btnDeposito;
+        private System.Windows.Forms.Button bttConfiguracion4;
     }
 }

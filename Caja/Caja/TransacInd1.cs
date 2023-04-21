@@ -36,6 +36,7 @@ namespace Caja
 
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource source = new ReportDataSource("Transaccion1", dataTable);
+
             reportViewer1.LocalReport.ReportPath = "C:\\Users\\Dell\\Documents\\Visual Studio 2022\\Visual Studio 2017\\ProyectoFinal\\Caja\\Caja\\Registro\\TranIndi.rdlc";
             reportViewer1.LocalReport.DataSources.Add(source);
             reportViewer1.RefreshReport();
