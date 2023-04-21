@@ -133,9 +133,9 @@ namespace Caja {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Log_In__1_ {
+        public static System.Drawing.Bitmap Log_In__3_ {
             get {
-                object obj = ResourceManager.GetObject("Log_In__1_", resourceCulture);
+                object obj = ResourceManager.GetObject("Log_In__3_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Caja.ResourceFondo.Log_In__1_;
+            this.BackgroundImage = global::Caja.ResourceFondo.Log_In__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(720, 520);
             this.Controls.Add(this.bttIniciar);

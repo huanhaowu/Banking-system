@@ -67,3 +67,6 @@ C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.Ass
 C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.csproj.SuggestedBindingRedirects.cache
 C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.exe
 C:\Users\msi\OneDrive\Desktop\Proyecto-Banco\Caja\Caja\obj\Debug\Caja.pdb
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Retiro2.resources
+C:\Users\Dell\Documents\Visual Studio 2022\Visual Studio 2017\ProyectoFinal\Caja\Caja\obj\Debug\Caja.Pantalla.Prestamos2.aa-ER.resources

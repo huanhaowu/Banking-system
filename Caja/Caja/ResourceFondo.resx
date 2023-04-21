@@ -139,8 +139,8 @@
   <data name="Group_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Group 25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Log_In__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Log In (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Log_In__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Log In (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Main_Hub___Configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Main Hub - Configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
