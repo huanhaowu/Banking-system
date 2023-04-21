@@ -550,22 +550,38 @@ namespace Core
 
 
         [WebMethod]
-        public void ConsultarMovimientos(int NO_Cuenta)
+        public Movimiento[] ConsultarMovimientos(int Cuenta_ID)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
             SqlTransaction transaction = tblCuenta.Connection.BeginTransaction();
             tblCuenta.Transaction = transaction;
+            Movimiento[] movNulls = new Movimiento[0];
+
             try
             {
-                tblCuenta.sp_ConsultarMovimientosCuenta(Cuenta_ID);
+                CuentaDataTable cuentas = tblCuenta.sp_ConsultarMovimientosCuenta(Cuenta_ID);
                 transaction.Commit(); //confirmar la transaccion
+                Movimiento[] movements = new Movimiento[cuentas.Rows.Count];
+
+                for (int i = 0; i < cuentas.Rows.Count; i++)
+                {
+                    Movimiento mo = new Movimiento();
+                    mo.Fecha = DateTime.Parse(cuentas.Rows[i]["FechaRegistro"].ToString());
+                    mo.Tipo = cuentas.Rows[i]["Tipo_Transaccion"].ToString();
+                    mo.Monto = cuentas.Rows[i]["Monto"].ToString();
+                    mo.Moneda = cuentas.Rows[i]["Moneda"].ToString();
+                    movements[i] = mo;
+                }
+                return movements;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
             }
+
+            return movNulls;
         }
 
         //Prestamos

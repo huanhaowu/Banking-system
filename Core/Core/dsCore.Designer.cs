@@ -3389,6 +3389,23 @@ namespace Core.dsCoreTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual dsCore.CuentaDataTable sp_ConsultarMovimientosCuenta(global::System.Nullable<int> CuentaID) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((CuentaID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(CuentaID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            dsCore.CuentaDataTable dataTable = new dsCore.CuentaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual dsCore.CuentaDataTable sp_ObtenerCuentaPorNo(global::System.Nullable<int> Numero_Cuenta) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Numero_Cuenta.HasValue == true)) {
@@ -3509,34 +3526,6 @@ namespace Core.dsCoreTableAdapters {
             }
             else {
                 command.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int sp_ConsultarMovimientosCuenta(global::System.Nullable<int> CuentaID) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
-            if ((CuentaID.HasValue == true)) {
-                command.Parameters[1].Value = ((int)(CuentaID.Value));
-            }
-            else {
-                command.Parameters[1].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
