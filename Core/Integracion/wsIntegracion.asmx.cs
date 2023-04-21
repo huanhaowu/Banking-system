@@ -78,7 +78,7 @@ namespace Integracion
             {
                 //Variable con el valor de retorno de eso
                 wsCore.Cuentas cuenta = webServiceCore.ObtenerCuentaPorNo(numero_cuenta);
-                if(cuenta.Numero_Cuenta != 0) return true; //ahí retorna el valor
+                if (cuenta.Numero_Cuenta != 0) return true; //ahí retorna el valor
             }
             else
             {
@@ -191,3 +191,4 @@ namespace Integracion
 
         }
     }
+}
