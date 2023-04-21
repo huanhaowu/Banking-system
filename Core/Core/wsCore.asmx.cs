@@ -73,10 +73,27 @@ namespace Core
 
             return true;
         }
+        public static void RegistrarLog(string Descripcion)
+        {
+            tbl_Log4NetTableAdapter tbl_Log = new tbl_Log4NetTableAdapter();
+            tbl_Log.Connection.Open();
+            SqlTransaction transaction = tbl_Log.Connection.BeginTransaction();
+            tbl_Log.Transaction = transaction;
+            try
+            {
+                tbl_Log.RegistrarLog(Descripcion);
+                transaction.Commit();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                transaction.Rollback(); //revertir la transaccion
+            }
+        }
 
         //Clientes
         [WebMethod]
-        public void InsertarCliente(Cliente cliente)
+        public string InsertarCliente(Cliente cliente)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
             tblCliente.Connection.Open();
@@ -86,17 +103,20 @@ namespace Core
             {
                 tblCliente.sp_InsertarCliente(cliente.Nombre, cliente.Apellido, cliente.TipoDocumento, cliente.Documento, cliente.Email, cliente.Telefono, cliente.Direccion, cliente.FechaNacimiento);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha insertado un cliente");
+                return "Cliente insertado correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
-
+                RegistrarLog("Error al insertar un cliente");
+                return "Error al insertar el cliente";
             }
         }
 
         [WebMethod]
-        public void BorrarCliente(int ID_Cliente)
+        public string BorrarCliente(int ID_Cliente)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
             tblCliente.Connection.Open();
@@ -106,17 +126,20 @@ namespace Core
             {
                 tblCliente.sp_EliminarCliente(ID_Cliente);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha eliminado un cliente");
+                return "Cliente eliminado correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
-
+                RegistrarLog("Error al eliminar un cliente");
+                return "Error al eliminar el cliente";
             }
         }
 
         [WebMethod]
-        public void ActualizarCliente(int ID_Cliente, Cliente cliente)
+        public string ActualizarCliente(int ID_Cliente, Cliente cliente)
         {
             ClienteTableAdapter tblCliente = new ClienteTableAdapter();
             tblCliente.Connection.Open();
@@ -126,12 +149,15 @@ namespace Core
             {
                 tblCliente.sp_ActualizarCliente(ID_Cliente, cliente.Nombre, cliente.Apellido, cliente.TipoDocumento, cliente.Documento, cliente.Email, cliente.Telefono, cliente.Direccion, cliente.FechaNacimiento);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha actualizado un cliente");
+                return "Cliente actualizado correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
-
+                RegistrarLog("Error al actualizar un cliente");
+                return "Error al actualizar el cliente";
             }
         }
 
@@ -238,12 +264,14 @@ namespace Core
                     {
                         tblUsuario.sp_InsertarUsuario(Cliente_ID, Nombre, Clave, 3);
                         transaction.Commit(); //confirmar la transaccion
+                        RegistrarLog("Se ha creado un usuario");
                         return "Usuario creado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        RegistrarLog("Error al crear un usuario");
                         return "Error al crear usuario";
                     }
                 }
@@ -280,12 +308,14 @@ namespace Core
                     {
                         tblUsuario.sp_InsertarUsuario(Cliente_ID, Nombre, Clave, 1);
                         transaction.Commit(); //confirmar la transaccion
+                        RegistrarLog("Se ha creado un usuario");
                         return "Usuario creado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        RegistrarLog("Error al crear un usuario");
                         return "Error al crear usuario";
                     }
                 }
@@ -293,7 +323,7 @@ namespace Core
         }
 
         [WebMethod]
-        public void BorrarUsuario(int Usuario_ID)
+        public string BorrarUsuario(int Usuario_ID)
         {
             UsuarioTableAdapter tblUsuario = new UsuarioTableAdapter();
             tblUsuario.Connection.Open();
@@ -303,11 +333,15 @@ namespace Core
             {
                 tblUsuario.sp_EliminarUsuario(Usuario_ID);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha eliminado un usuario");
+                return "Usuario eliminado correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al eliminar un usuario");
+                return "Error al eliminar usuario";
             }
         }
 
@@ -339,12 +373,14 @@ namespace Core
                     {
                         tblUsuario.sp_ActualizarUsuario(Usuario_ID, Cliente_ID, Nombre, Clave);
                         transaction.Commit(); //confirmar la transaccion
+                        RegistrarLog("Se ha actualizado un usuario");
                         return "Usuario actualizado correctamente";
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                         transaction.Rollback(); //revertir la transaccion
+                        RegistrarLog("Error al actualizar un usuario");
                         return "Error al actualizar usuario";
                     }
                 }
@@ -422,7 +458,7 @@ namespace Core
 
         //Cuentas
         [WebMethod]
-        public void CrearCuenta(Cuentas cuenta)
+        public string CrearCuenta(Cuentas cuenta)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
@@ -432,16 +468,20 @@ namespace Core
             {
                 tblCuenta.sp_InsertarCuenta(cuenta.Tipo_Cuenta, cuenta.Cliente, 0, cuenta.Numero_Cuenta, cuenta.Moneda);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha creado una cuenta");
+                return "Cuenta creada correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al crear una cuenta");
+                return "Error al crear cuenta";
             }
         }
 
         [WebMethod]
-        public void BorrarCuenta(int Cuenta_ID)
+        public string BorrarCuenta(int Cuenta_ID)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
@@ -451,16 +491,20 @@ namespace Core
             {
                 tblCuenta.sp_EliminarCuenta(Cuenta_ID);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha eliminado una cuenta");
+                return "Cuenta eliminada correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al eliminar una cuenta");
+                return "Error al eliminar cuenta";
             }
         }
 
         [WebMethod]
-        public void ActualizarCuenta(int Cuenta_ID, Cuentas cuentas)
+        public string ActualizarCuenta(int Cuenta_ID, Cuentas cuentas)
         {
             CuentaTableAdapter tblCuenta = new CuentaTableAdapter();
             tblCuenta.Connection.Open();
@@ -470,11 +514,15 @@ namespace Core
             {
                 tblCuenta.sp_ActualizarCuenta(Cuenta_ID, cuentas.Tipo_Cuenta, cuentas.Cliente, cuentas.Numero_Cuenta, cuentas.Moneda);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha actualizado una cuenta");
+                return "Cuenta actualizada correctamente";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al actualizar una cuenta");
+                return "Error al actualizar cuenta";
             }
         }
 
@@ -567,10 +615,13 @@ namespace Core
                 for (int i = 0; i < cuentas.Rows.Count; i++)
                 {
                     Movimiento mo = new Movimiento();
-                    mo.Fecha = DateTime.Parse(cuentas.Rows[i]["FechaRegistro"].ToString());
-                    mo.Tipo = cuentas.Rows[i]["Tipo_Transaccion"].ToString();
-                    mo.Monto = cuentas.Rows[i]["Monto"].ToString();
-                    mo.Moneda = cuentas.Rows[i]["Moneda"].ToString();
+                    mo.Id = int.Parse(cuentas.Rows[i]["Transaccion_ID"].ToString());
+                    mo.Tipo_Transaccion = int.Parse(cuentas.Rows[i]["Tipo_Transaccion_ID"].ToString());
+                    mo.IdCuenta = int.Parse(cuentas.Rows[i]["Cuenta_ID"].ToString());
+                    mo.IdCuentaDestino = int.Parse(cuentas.Rows[i]["Cuenta_Destino_ID"].ToString());
+                    mo.Monto = int.Parse(cuentas.Rows[i]["Transaccion_Monto"].ToString());
+                    mo.Moneda = int.Parse(cuentas.Rows[i]["Moneda_ID"].ToString());
+                    mo.Fecha = DateTime.Parse(cuentas.Rows[i]["Transaccion_FechaRegistro"].ToString());
                     movements[i] = mo;
                 }
                 return movements;
@@ -586,7 +637,7 @@ namespace Core
 
         //Prestamos
         [WebMethod]
-        public void CrearPrestamos(Prestamos prestamo)
+        public string CrearPrestamos(Prestamos prestamo)
         {
             decimal MontoPagar = prestamo.Monto * prestamo.Tasa_Interes;
             PrestamoTableAdapter tblPrestamo = new PrestamoTableAdapter();
@@ -597,16 +648,20 @@ namespace Core
             {
                 tblPrestamo.sp_InsertPrestamo(prestamo.Cliente_ID, prestamo.Tasa_Interes, prestamo.FechaFinal, prestamo.Monto, MontoPagar, prestamo.Banco_ID, prestamo.Estado, prestamo.Moneda);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha creado un prestamo");
+                return "Prestamo creado";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al crear el prestamo");
+                return "Error al crear el prestamo";
             }
         }
 
         [WebMethod]
-        public void BorrarPrestamos(int Prestamo_ID)
+        public string BorrarPrestamos(int Prestamo_ID)
         {
             PrestamoTableAdapter tblPrestamo = new PrestamoTableAdapter();
             tblPrestamo.Connection.Open();
@@ -616,16 +671,20 @@ namespace Core
             {
                 tblPrestamo.sp_DeletePrestamo(Prestamo_ID);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha eliminado un prestamo");
+                return "Prestamo eliminado";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al eliminar el prestamo");
+                return "Error al eliminar el prestamo";
             }
         }
 
         [WebMethod]
-        public void ActualizarPrestamos(int Prestamo_ID, Prestamos prestamo)
+        public string ActualizarPrestamos(int Prestamo_ID, Prestamos prestamo)
         {
             decimal MontoPagar = prestamo.Monto * prestamo.Tasa_Interes;
             PrestamoTableAdapter tblPrestamo = new PrestamoTableAdapter();
@@ -636,11 +695,15 @@ namespace Core
             {
                 tblPrestamo.sp_UpdatePrestamo(Prestamo_ID, prestamo.Cliente_ID, prestamo.Tasa_Interes, prestamo.FechaFinal, prestamo.Monto, MontoPagar, prestamo.Banco_ID, prestamo.Estado, prestamo.Moneda);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha actualizado un prestamo");
+                return "Prestamo actualizado";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al actualizar el prestamo");
+                return "Error al actualizar el prestamo";
             }
         }
 
@@ -716,7 +779,7 @@ namespace Core
         }
 
         [WebMethod]
-        public void CrearTipoTransaccion(string Descripcion)
+        public string CrearTipoTransaccion(string Descripcion)
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();
@@ -726,16 +789,20 @@ namespace Core
             {
                 tblTipoT.sp_InsertTipoTransaccion(Descripcion);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha creado un tipo de transaccion");
+                return "Tipo Transaccion creado con exito";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al crear el tipo de transaccion");
+                return "Error al crear el tipo de transaccion";
             }
         }
 
         [WebMethod]
-        public void BorrarTipoTransaccion(int TipoT_ID)
+        public string BorrarTipoTransaccion(int TipoT_ID)
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();
@@ -745,16 +812,20 @@ namespace Core
             {
                 tblTipoT.sp_EliminarTipoTransaccion(TipoT_ID);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha eliminado un tipo de transaccion");
+                return "Tipo Transaccion eliminado con exito";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al eliminar el tipo de transaccion");
+                return "Error al eliminar el tipo de transaccion";
             }
         }
 
         [WebMethod]
-        public void ActualizarTipoTransaccion(string Descripcion, int TipoT_ID)
+        public string ActualizarTipoTransaccion(string Descripcion, int TipoT_ID)
         {
             Tipo_TransaccionTableAdapter tblTipoT = new Tipo_TransaccionTableAdapter();
             tblTipoT.Connection.Open();
@@ -764,11 +835,15 @@ namespace Core
             {
                 tblTipoT.sp_UpdateTipoTransaccion(TipoT_ID, Descripcion);
                 transaction.Commit(); //confirmar la transaccion
+                RegistrarLog("Se ha actualizado un tipo de transaccion");
+                return "Tipo Transaccion actualizado con exito";
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 transaction.Rollback(); //revertir la transaccion
+                RegistrarLog("Error al actualizar el tipo de transaccion");
+                return "Error al actualizar el tipo de transaccion";
             }
         }
 
