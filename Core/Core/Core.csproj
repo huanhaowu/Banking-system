@@ -234,10 +234,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DbCore.mdf" />
-    <Content Include="App_Data\DbCore_log.ldf">
-      <DependentUpon>DbCore.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="wsCore.asmx" />
