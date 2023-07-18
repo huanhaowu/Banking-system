@@ -41,6 +41,8 @@ E-Banking
 ## System Requirements
 - Only compatible with Windows operating system
 - Must have installed the .Net Framework 4.7.2 or later versions.
+- Visual Studio: Version 2017 or above (for development)
+- Microsoft SQL Server: Version 2012 or above (for data storage)
 - Before running the project it is necessary to rebuild the references by clicking on the Build option in Visual Studio.
 - Must install the following dependencies:
   - Log4Net
