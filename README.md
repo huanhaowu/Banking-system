@@ -1,4 +1,4 @@
-<img src="/E-banking banner.png" alt="Blue banner for e-banking system" style="pointer-events: none">
+[![My Project Banner](/E-banking banner.png)]([https://example.com](https://github.com/huanhaowu/Banking-system/tree/main))
 
 ## Description
 The C# e-banking system is a secure and user-friendly application developed using Windows Forms and web services. It provides customers with convenient access to their accounts, allowing them perform fund transfers, deposit funds into their associated bank cards or accounts directly, view transaction history, and pay bills electronically. The system ensures robust authentication and encryption mechanisms to safeguard user data. With its intuitive interface and seamless integration with web services, this e-banking system offers a comprehensive and efficient solution for users to conduct their banking activities online.
