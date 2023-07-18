@@ -38,9 +38,13 @@ E-Banking
 └── README.md                                         # Project documentation and instructions
 ```
 
-## External Dependencies
-- Log4Net
-- WindowsForms
-- WebServices
-- ReportViewer
-- MVC
+## System Requirements
+- Only compatible with Windows operating system
+- Must have installed the .Net Framework 4.7.2 or later versions.
+- Before running the project it is necessary to rebuild the references by clicking on the Build option in Visual Studio.
+- Must install the following dependencies:
+  - Log4Net
+  - WindowsForms
+  - WebServices
+  - ReportViewer
+  - MVC
