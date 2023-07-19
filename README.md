@@ -2,6 +2,8 @@
 
 ## Description
 The C# e-banking system is a secure and user-friendly application developed using Windows Forms and web services. It provides customers with convenient access to their accounts, allowing them perform fund transfers, deposit funds into their associated bank cards or accounts directly, view transaction history, and pay bills electronically. The system ensures robust authentication and encryption mechanisms to safeguard user data. With its intuitive interface and seamless integration with web services, this e-banking system offers a comprehensive and efficient solution for users to conduct their banking activities online.
+ 
+<br>
 
 ## Project Structure
 ```
@@ -39,6 +41,8 @@ E-Banking
 ├── Scripts de Tablas.sql                             # Unit tests
 └── README.md                                         # Project documentation and instructions
 ```
+ 
+<br>
 
 ## System Requirements
 - Only compatible with Windows operating system
